@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name SharedLogic
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 @_exported import SharedLogic
 import Swift
@@ -148,109 +149,109 @@ public enum Skie {
   public typealias org_jetbrains_kotlinx__kotlinx_io_core = SharedLogic.Skie.KotlinxIoCore
 }
 @_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func next() async -> T?
+  #endif
   @objc deinit
   public typealias Element = T
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-  #endif
 }
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   associatedtype Element
   associatedtype Delegate : SharedLogic.Kotlinx_coroutines_coreFlow
 }
-#else
-public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence {
-  associatedtype Element
-  associatedtype Delegate : SharedLogic.Kotlinx_coroutines_coreFlow
-}
-#endif
 @_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinFlow<Swift.AnyObject>
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T>
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinOptionalFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T?>
+  #endif
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinOptionalFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var replayCache: [T] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinSharedFlow<Swift.AnyObject>
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T>
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinSharedFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreSharedFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var replayCache: [T?] {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T?>
+  #endif
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreSharedFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -264,51 +265,61 @@ public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence {
   final public func emit(value: T) async throws
   final public func tryEmit(value: T) -> Swift.Bool
   final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinMutableSharedFlow<Swift.AnyObject>
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T>
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinMutableSharedFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreMutableSharedFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
   final public var subscriptionCount: SharedLogic.SkieSwiftStateFlow<SharedLogic.KotlinInt> {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var replayCache: [T?] {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
   final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T?>
+  #endif
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreMutableSharedFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -318,47 +329,55 @@ public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence {
   final public var replayCache: [T] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinStateFlow<Swift.AnyObject>
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T>
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinStateFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreStateFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var value: T? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var replayCache: [T?] {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T?>
+  #endif
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinOptionalStateFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreStateFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
@@ -377,56 +396,70 @@ public protocol SkieSwiftFlowProtocol : _Concurrency.AsyncSequence {
   final public func emit(value: T) async throws
   final public func tryEmit(value: T) -> Swift.Bool
   final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinMutableStateFlow<Swift.AnyObject>
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T>
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T>
   public typealias Element = T
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinMutableStateFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreMutableStateFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : SharedLogic.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var value: T? {
     get
     set(value)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var replayCache: [T?] {
     get
   }
+  #endif
   final public var subscriptionCount: SharedLogic.SkieSwiftStateFlow<SharedLogic.KotlinInt> {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
   final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout SharedLogic.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
   final public func _bridgeToObjectiveC() -> SharedLogic.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func makeAsyncIterator() -> SharedLogic.SkieSwiftFlowIterator<T?>
+  #endif
   public typealias AsyncIterator = SharedLogic.SkieSwiftFlowIterator<T?>
   public typealias Element = T?
   public typealias _ObjectiveCType = SharedLogic.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
   public typealias Delegate = any SharedLogic.Kotlinx_coroutines_coreMutableStateFlow
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
   @objc deinit
 }
 extension SharedLogic.Skie.RuntimeKotlin.SkieColdFlowIterator {
@@ -445,8 +478,10 @@ extension SharedLogic.Kotlinx_coroutines_coreFlow {
   public func collect(collector: any SharedLogic.Kotlinx_coroutines_coreFlowCollector) async throws
 }
 extension SharedLogic.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func emit(value: Any?) async throws
+  #endif
 }
 extension SharedLogic.Kotlinx_coroutines_coreJob {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -464,14 +499,18 @@ extension SharedLogic.Skie.KtorUtils.Pipeline.__Suspend {
   public func execute(context: TContext, subject: TSubject) async throws -> TSubject
 }
 extension SharedLogic.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
 }
 extension SharedLogic.Ktor_client_coreHttpClientCall {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func body(info: SharedLogic.Ktor_utilsTypeInfo) async throws -> Any
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func bodyNullable(info: SharedLogic.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getResponseContent() async throws -> any SharedLogic.Ktor_ioByteReadChannel
 }
@@ -488,8 +527,10 @@ extension SharedLogic.NetworkTransport {
   public func execute(request: SharedLogic.NetworkRequest) async throws -> SharedLogic.NetworkRawResponse
 }
 extension SharedLogic.NetworkClient {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func request(endpoint: any SharedLogic.Endpoint, orderId: Swift.String?) async throws -> any SharedLogic.NetworkResult
+  #endif
 }
 extension SharedLogic.ApplePayDemoViewModel {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -522,8 +563,10 @@ extension SharedLogic.CancelPaymentUseCase {
   public func invoke(config: SharedLogic.PaymentApiConfig, input: SharedLogic.CancelPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
 }
 extension SharedLogic.CardPaymentDemoViewModel {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitNewCard(cvv: Swift.String, cardNumber: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, nameOnCard: Swift.String?, payerConsentForToken: Swift.Bool) async throws
+  #endif
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submitSavedCard(tokenIdentifier: Swift.String, cvv: Swift.String) async throws
 }
@@ -552,8 +595,10 @@ extension SharedLogic.GooglePayDemoViewModel {
   public func submit(paymentMethodDataJson: Swift.String, apiVersion: Swift.Int32, apiVersionMinor: Swift.Int32, payerConsentForToken: Swift.Bool) async throws
 }
 extension SharedLogic.FetchOrderStatusDemoViewModel {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func fetch(orderIdOverride: Swift.String?) async throws
+  #endif
 }
 extension SharedLogic.NoonPaymentService {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -568,22 +613,6 @@ extension SharedLogic.NoonPaymentService {
   public func tokenizeApplePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.ApplePayPaymentInput) async throws -> any SharedLogic.NetworkResult
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func tokenizeGooglePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.GooglePayPaymentInput) async throws -> any SharedLogic.NetworkResult
-}
-extension SharedLogic.PaymentSheetViewModel {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func loadPaymentTransaction(transactionId: Swift.Int32) async throws
-}
-extension SharedLogic.GetPaymentTransactionUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(transactionId: Swift.Int32) async throws -> SharedLogic.PaymentTransaction?
-}
-extension SharedLogic.IPaymentSheetRepository {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getPaymentById(id: Swift.Int32) async throws -> SharedLogic.PaymentTransaction?
-}
-extension SharedLogic.PaymentSheetService {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func fetchPaymentTransaction(transactionId: Swift.Int32) async throws -> any SharedLogic.NetworkResult
 }
 extension SharedLogic.Ktor_httpOutgoingContent.ProtocolUpgrade {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -922,17 +951,23 @@ extension SharedLogic.SkieSwiftOptionalMutableStateFlow where T : Swift._Objecti
   public var ordinal: Swift.Int32 {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__KotlinKVariance, result: inout SharedLogic.KotlinKVariance?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__KotlinKVariance, result: inout SharedLogic.KotlinKVariance?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__KotlinKVariance?) -> SharedLogic.KotlinKVariance
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__KotlinKVariance
   public typealias _ObjectiveCType = SharedLogic.__KotlinKVariance
   public static func == (a: SharedLogic.KotlinKVariance, b: SharedLogic.KotlinKVariance) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.KotlinKVariance]
   nonisolated public static var allCases: [SharedLogic.KotlinKVariance] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -954,17 +989,23 @@ extension SharedLogic.__KotlinKVariance {
   public var ordinal: Swift.Int32 {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__LogLevel, result: inout SharedLogic.LogLevel?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__LogLevel, result: inout SharedLogic.LogLevel?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__LogLevel?) -> SharedLogic.LogLevel
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__LogLevel
   public typealias _ObjectiveCType = SharedLogic.__LogLevel
   public static func == (a: SharedLogic.LogLevel, b: SharedLogic.LogLevel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.LogLevel]
   nonisolated public static var allCases: [SharedLogic.LogLevel] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -984,17 +1025,23 @@ extension SharedLogic.__LogLevel {
   public var ordinal: Swift.Int32 {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__HttpMethod, result: inout SharedLogic.HttpMethod?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__HttpMethod, result: inout SharedLogic.HttpMethod?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__HttpMethod?) -> SharedLogic.HttpMethod
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__HttpMethod
   public typealias _ObjectiveCType = SharedLogic.__HttpMethod
   public static func == (a: SharedLogic.HttpMethod, b: SharedLogic.HttpMethod) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.HttpMethod]
   nonisolated public static var allCases: [SharedLogic.HttpMethod] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1023,17 +1070,23 @@ extension SharedLogic.__HttpMethod {
   public var ordinal: Swift.Int32 {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__CardType, result: inout SharedLogic.CardType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__CardType, result: inout SharedLogic.CardType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__CardType?) -> SharedLogic.CardType
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__CardType
   public typealias _ObjectiveCType = SharedLogic.__CardType
   public static func == (a: SharedLogic.CardType, b: SharedLogic.CardType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.CardType]
   nonisolated public static var allCases: [SharedLogic.CardType] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1054,17 +1107,23 @@ extension SharedLogic.__CardType {
   public var ordinal: Swift.Int32 {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode, result: inout SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode, result: inout SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode?) -> SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode
   public typealias _ObjectiveCType = SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode
   public static func == (a: SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode, b: SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode]
   nonisolated public static var allCases: [SharedLogic.Kotlinx_serialization_jsonClassDiscriminatorMode] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1100,18 +1159,24 @@ extension SharedLogic.__Kotlinx_serialization_jsonClassDiscriminatorMode {
   public static var companion: SharedLogic.__Ktor_utilsMonth.Companion {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsMonth, result: inout SharedLogic.Ktor_utilsMonth?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsMonth, result: inout SharedLogic.Ktor_utilsMonth?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsMonth?) -> SharedLogic.Ktor_utilsMonth
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__Ktor_utilsMonth
   public typealias _ObjectiveCType = SharedLogic.__Ktor_utilsMonth
   public typealias Companion = SharedLogic.__Ktor_utilsMonth.Companion
   public static func == (a: SharedLogic.Ktor_utilsMonth, b: SharedLogic.Ktor_utilsMonth) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.Ktor_utilsMonth]
   nonisolated public static var allCases: [SharedLogic.Ktor_utilsMonth] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1142,18 +1207,24 @@ extension SharedLogic.__Ktor_utilsMonth {
   public static var companion: SharedLogic.__Ktor_utilsWeekDay.Companion {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsWeekDay, result: inout SharedLogic.Ktor_utilsWeekDay?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsWeekDay, result: inout SharedLogic.Ktor_utilsWeekDay?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__Ktor_utilsWeekDay?) -> SharedLogic.Ktor_utilsWeekDay
+  #endif
   public func _bridgeToObjectiveC() -> SharedLogic.__Ktor_utilsWeekDay
   public typealias _ObjectiveCType = SharedLogic.__Ktor_utilsWeekDay
   public typealias Companion = SharedLogic.__Ktor_utilsWeekDay.Companion
   public static func == (a: SharedLogic.Ktor_utilsWeekDay, b: SharedLogic.Ktor_utilsWeekDay) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [SharedLogic.Ktor_utilsWeekDay]
   nonisolated public static var allCases: [SharedLogic.Ktor_utilsWeekDay] {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1169,15 +1240,17 @@ extension SharedLogic.Skie.RuntimeKotlin.Skie_SuspendResult {
     case canceled(SharedLogic.Skie_SuspendResult.Canceled)
     case error(SharedLogic.Skie_SuspendResult.Error)
     case success(SharedLogic.Skie_SuspendResult.Success)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: SharedLogic.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : SharedLogic.Skie_SuspendResult
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : SharedLogic.Skie_SuspendResult
+#endif
 extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause0 {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1189,7 +1262,9 @@ extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause0 {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause0
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause0
+#endif
 extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause {
   @frozen public enum __Sealed {
     case selectClause0(any SharedLogic.Kotlinx_coroutines_coreSelectClause0)
@@ -1198,7 +1273,9 @@ extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause
+#endif
 extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectInstance {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1210,7 +1287,9 @@ extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectInstance {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectInstance
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectInstance
+#endif
 extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause1 {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1222,7 +1301,9 @@ extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause1 {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause1
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause1
+#endif
 extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause2 {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1234,61 +1315,71 @@ extension SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause2 {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause2
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause2
+#endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult {
   @frozen public enum __Sealed : Swift.Hashable {
     case failure(SharedLogic.NetworkResultFailure)
     case success(SharedLogic.NetworkResultSuccess<Swift.AnyObject>)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult.__Sealed where __Sealed : SharedLogic.NetworkResult
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult.__Sealed? where __Sealed : SharedLogic.NetworkResult
+#endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError {
   @frozen public enum __Sealed : Swift.Hashable {
     case http(SharedLogic.NetworkErrorHttp)
     case serialization(SharedLogic.NetworkErrorSerialization)
     case transport(SharedLogic.NetworkErrorTransport)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed where __Sealed : SharedLogic.NetworkError
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed? where __Sealed : SharedLogic.NetworkError
+#endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult {
   @frozen public enum __Sealed : Swift.Hashable {
     case failure(SharedLogic.PaymentOperationResultFailure)
     case success(SharedLogic.PaymentOperationResultSuccess<Swift.AnyObject>)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed where __Sealed : SharedLogic.PaymentOperationResult
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed? where __Sealed : SharedLogic.PaymentOperationResult
+#endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure {
   @frozen public enum __Sealed : Swift.Hashable {
     case http(SharedLogic.PaymentFailureHttp)
     case serialization(SharedLogic.PaymentFailureSerialization)
     case transport(SharedLogic.PaymentFailureTransport)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure.__Sealed where __Sealed : SharedLogic.PaymentFailure
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure.__Sealed? where __Sealed : SharedLogic.PaymentFailure
+#endif
 extension SharedLogic.PaymentFailure {
   public func toDisplayMessage() -> Swift.String
 }
@@ -1296,41 +1387,47 @@ extension SharedLogic.Skie.KotlinxSerializationJson.JsonElement {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonPrimitive(SharedLogic.Kotlinx_serialization_jsonJsonPrimitive)
     case `else`
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: SharedLogic.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_jsonJsonElement
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_jsonJsonElement
+#endif
 extension SharedLogic.Skie.KotlinxSerializationJson.Json {
   @frozen public enum __Sealed : Swift.Hashable {
     case `default`(SharedLogic.Kotlinx_serialization_jsonJson.Default)
     case `else`
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationJson.Json.__Sealed, b: SharedLogic.Skie.KotlinxSerializationJson.Json.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationJson.Json.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_jsonJson
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationJson.Json.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_jsonJson
+#endif
 extension SharedLogic.Skie.KotlinxSerializationJson.JsonPrimitive {
   @frozen public enum __Sealed : Swift.Hashable {
     case jsonNull(SharedLogic.Kotlinx_serialization_jsonJsonNull)
     case `else`
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: SharedLogic.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_jsonJsonPrimitive
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_jsonJsonPrimitive
+#endif
 extension SharedLogic.Skie.KotlinxSerializationCore.SerialKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case polymorphicKind(SharedLogic.Kotlinx_serialization_corePolymorphicKind)
@@ -1338,15 +1435,17 @@ extension SharedLogic.Skie.KotlinxSerializationCore.SerialKind {
     case cONTEXTUAL(SharedLogic.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
     case eNUM(SharedLogic.Kotlinx_serialization_coreSerialKind.ENUM)
     case structureKind(SharedLogic.Kotlinx_serialization_coreStructureKind)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: SharedLogic.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_coreSerialKind
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_coreSerialKind
+#endif
 extension SharedLogic.Skie.KotlinxSerializationCore.SerializersModule {
   @frozen public enum __Sealed : Swift.Hashable {
     case `else`
@@ -1358,20 +1457,24 @@ extension SharedLogic.Skie.KotlinxSerializationCore.SerializersModule {
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_coreSerializersModule
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_coreSerializersModule
+#endif
 extension SharedLogic.Skie.KotlinxSerializationCore.PolymorphicKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case oPEN(SharedLogic.Kotlinx_serialization_corePolymorphicKind.OPEN)
     case sEALED(SharedLogic.Kotlinx_serialization_corePolymorphicKind.SEALED)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: SharedLogic.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_corePolymorphicKind
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_corePolymorphicKind
+#endif
 extension SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case bOOLEAN(SharedLogic.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
@@ -1383,30 +1486,34 @@ extension SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind {
     case lONG(SharedLogic.Kotlinx_serialization_corePrimitiveKind.LONG)
     case sHORT(SharedLogic.Kotlinx_serialization_corePrimitiveKind.SHORT)
     case sTRING(SharedLogic.Kotlinx_serialization_corePrimitiveKind.STRING)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_corePrimitiveKind
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_corePrimitiveKind
+#endif
 extension SharedLogic.Skie.KotlinxSerializationCore.StructureKind {
   @frozen public enum __Sealed : Swift.Hashable {
     case cLASS(SharedLogic.Kotlinx_serialization_coreStructureKind.CLASS)
     case lIST(SharedLogic.Kotlinx_serialization_coreStructureKind.LIST)
     case mAP(SharedLogic.Kotlinx_serialization_coreStructureKind.MAP)
     case oBJECT(SharedLogic.Kotlinx_serialization_coreStructureKind.OBJECT)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: SharedLogic.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : SharedLogic.Kotlinx_serialization_coreStructureKind
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : SharedLogic.Kotlinx_serialization_coreStructureKind
+#endif
 extension SharedLogic.Skie.KtorHttp.OutgoingContent {
   @frozen public enum __Sealed : Swift.Hashable {
     case byteArrayContent(SharedLogic.Ktor_httpOutgoingContent.ByteArrayContent)
@@ -1415,41 +1522,50 @@ extension SharedLogic.Skie.KtorHttp.OutgoingContent {
     case protocolUpgrade(SharedLogic.Ktor_httpOutgoingContent.ProtocolUpgrade)
     case readChannelContent(SharedLogic.Ktor_httpOutgoingContent.ReadChannelContent)
     case writeChannelContent(SharedLogic.Ktor_httpOutgoingContent.WriteChannelContent)
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KtorHttp.OutgoingContent.__Sealed, b: SharedLogic.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : SharedLogic.Ktor_httpOutgoingContent
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : SharedLogic.Ktor_httpOutgoingContent
+#endif
 extension SharedLogic.Skie.KotlinxIoCore.Source {
   @frozen public enum __Sealed : Swift.Hashable {
     case buffer(SharedLogic.Kotlinx_io_coreBuffer)
     case `else`
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxIoCore.Source.__Sealed, b: SharedLogic.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxIoCore.Source.__Sealed where __Sealed : SharedLogic.Kotlinx_io_coreSource
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxIoCore.Source.__Sealed? where __Sealed : SharedLogic.Kotlinx_io_coreSource
+#endif
 extension SharedLogic.Skie.KotlinxIoCore.Sink {
   @frozen public enum __Sealed : Swift.Hashable {
     case buffer(SharedLogic.Kotlinx_io_coreBuffer)
     case `else`
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: SharedLogic.Skie.KotlinxIoCore.Sink.__Sealed, b: SharedLogic.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
 }
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxIoCore.Sink.__Sealed where __Sealed : SharedLogic.Kotlinx_io_coreSink
+#if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxIoCore.Sink.__Sealed? where __Sealed : SharedLogic.Kotlinx_io_coreSink
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func reportSdkValidationFailure(screen: Swift.String, reason: Swift.String, orderId: Swift.String?)
+#endif
 public func normalizeApplePayTokenForTransport(token: Swift.String) -> Swift.String
 public func normalizeGooglePayPaymentMethodDataForTransport(paymentMethodDataJson: Swift.String) -> Swift.String
 extension SharedLogic.KotlinKVariance : Swift.Sendable {}

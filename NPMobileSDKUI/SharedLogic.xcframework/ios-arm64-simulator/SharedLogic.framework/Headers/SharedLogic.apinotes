@@ -1188,6 +1188,72 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+- Name: "SharedLogicSdkFailureDelegateCompanion"
+  SwiftName: "SdkFailureDelegateCompanion"
+  Methods:
+  - Selector: "default"
+    MethodKind: "Instance"
+    SwiftName: "default()"
+    ResultType: "id<SharedLogicSdkFailureDelegate> _Nonnull"
+- Name: "SharedLogicNoOpSdkFailureDelegate"
+  SwiftName: "NoOpSdkFailureDelegate"
+  Methods:
+  - Selector: "onHttpFailureOperation:statusCode:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onHttpFailure(operation:statusCode:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "onSerializationFailureOperation:message:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onSerializationFailure(operation:message:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "onTransportFailureOperation:throwableName:message:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onTransportFailure(operation:throwableName:message:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "onValidationFailureScreen:reason:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onValidationFailure(screen:reason:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+- Name: "SharedLogicSdkFailureDelegateConfig"
+  SwiftName: "SdkFailureDelegateConfig"
+  Methods:
+  - Selector: "configureDelegate:"
+    MethodKind: "Instance"
+    SwiftName: "configure(delegate:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicSdkFailureDelegate> _Nonnull"
 - Name: "SharedLogicLogLevel"
   SwiftBridge: "LogLevel"
   SwiftName: "__LogLevel"
@@ -1425,9 +1491,9 @@ Classes:
 - Name: "SharedLogicNetworkClient"
   SwiftName: "NetworkClient"
   Methods:
-  - Selector: "initWithTransport:json:logger:"
+  - Selector: "initWithTransport:json:logger:failureDelegate:"
     MethodKind: "Instance"
-    SwiftName: "init(transport:json:logger:)"
+    SwiftName: "init(transport:json:logger:failureDelegate:)"
     Parameters:
     - Position: 0
       Type: "id<SharedLogicNetworkTransport> _Nonnull"
@@ -1435,6 +1501,8 @@ Classes:
       Type: "SharedLogicKotlinx_serialization_jsonJson * _Nonnull"
     - Position: 2
       Type: "id<SharedLogicSdkLogger> _Nonnull"
+    - Position: 3
+      Type: "id<SharedLogicSdkFailureDelegate> _Nonnull"
   - Selector: "requestEndpoint:orderId:completionHandler:"
     MethodKind: "Instance"
     SwiftName: "__request(endpoint:orderId:completionHandler:)"
@@ -4377,383 +4445,20 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentSheetState"
-  SwiftName: "PaymentSheetState"
-  Properties:
-  - Name: "errorMessage"
-    PropertyKind: "Instance"
-    SwiftName: "errorMessage"
-    Type: "NSString * _Nullable"
-  - Name: "isLoading"
-    PropertyKind: "Instance"
-    SwiftName: "isLoading"
-    Type: "BOOL"
-  - Name: "transaction"
-    PropertyKind: "Instance"
-    SwiftName: "transaction"
-    Type: "SharedLogicPaymentTransaction * _Nullable"
+- Name: "SharedLogicSdkFailureDelegateKt"
+  SwiftName: "SdkFailureDelegateKt"
   Methods:
-  - Selector: "initWithIsLoading:transaction:errorMessage:"
-    MethodKind: "Instance"
-    SwiftName: "init(isLoading:transaction:errorMessage:)"
+  - Selector: "reportSdkValidationFailureScreen:reason:orderId:"
+    MethodKind: "Class"
+    SwiftName: "reportSdkValidationFailure(screen:reason:orderId:)"
+    ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "BOOL"
+      Type: "NSString * _Nonnull"
     - Position: 1
-      Type: "SharedLogicPaymentTransaction * _Nullable"
+      Type: "NSString * _Nonnull"
     - Position: 2
       Type: "NSString * _Nullable"
-  - Selector: "doCopyIsLoading:transaction:errorMessage:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(isLoading:transaction:errorMessage:)"
-    ResultType: "SharedLogicPaymentSheetState * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "BOOL"
-    - Position: 1
-      Type: "SharedLogicPaymentTransaction * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentTransaction"
-  SwiftName: "PaymentTransaction"
-  Properties:
-  - Name: "details"
-    PropertyKind: "Instance"
-    SwiftName: "details"
-    Type: "NSString * _Nonnull"
-  - Name: "id"
-    PropertyKind: "Instance"
-    SwiftName: "id"
-    Type: "int32_t"
-  - Name: "title"
-    PropertyKind: "Instance"
-    SwiftName: "title"
-    Type: "NSString * _Nonnull"
-  - Name: "userId"
-    PropertyKind: "Instance"
-    SwiftName: "userId"
-    Type: "int32_t"
-  Methods:
-  - Selector: "initWithId:userId:title:details:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:userId:title:details:)"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyId:userId:title:details:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:userId:title:details:)"
-    ResultType: "SharedLogicPaymentTransaction * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentSheetViewModel"
-  SwiftName: "PaymentSheetViewModel"
-  Properties:
-  - Name: "state"
-    PropertyKind: "Instance"
-    SwiftName: "state"
-    Type: "SharedLogicSkieKotlinStateFlow<SharedLogicPaymentSheetState *> * _Nonnull"
-  Methods:
-  - Selector: "initWithGetPaymentTransactionUseCase:"
-    MethodKind: "Instance"
-    SwiftName: "init(getPaymentTransactionUseCase:)"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicGetPaymentTransactionUseCase * _Nullable"
-  - Selector: "getMessage"
-    MethodKind: "Instance"
-    SwiftName: "getMessage()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "loadPaymentTransactionTransactionId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__loadPaymentTransaction(transactionId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "void (^ _Nonnull)(NSError * _Nullable)"
-- Name: "SharedLogicGetPaymentTransactionUseCase"
-  SwiftName: "GetPaymentTransactionUseCase"
-  Methods:
-  - Selector: "initWithRepository:"
-    MethodKind: "Instance"
-    SwiftName: "init(repository:)"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicIPaymentSheetRepository> _Nonnull"
-  - Selector: "invokeTransactionId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__invoke(transactionId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "void (^ _Nonnull)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable)"
-- Name: "SharedLogicPaymentSheetViewModelFactory"
-  SwiftName: "PaymentSheetViewModelFactory"
-  Methods:
-  - Selector: "create"
-    MethodKind: "Instance"
-    SwiftName: "create()"
-    ResultType: "SharedLogicPaymentSheetViewModel * _Nonnull"
-- Name: "SharedLogicPaymentTransactionDto"
-  SwiftName: "PaymentTransactionDto"
-  Properties:
-  - Name: "body"
-    PropertyKind: "Instance"
-    SwiftName: "body"
-    Type: "NSString * _Nonnull"
-  - Name: "id"
-    PropertyKind: "Instance"
-    SwiftName: "id"
-    Type: "int32_t"
-  - Name: "title"
-    PropertyKind: "Instance"
-    SwiftName: "title"
-    Type: "NSString * _Nonnull"
-  - Name: "userId"
-    PropertyKind: "Instance"
-    SwiftName: "userId"
-    Type: "int32_t"
-  Methods:
-  - Selector: "initWithId:userId:title:body:"
-    MethodKind: "Instance"
-    SwiftName: "init(id:userId:title:body:)"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyId:userId:title:body:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(id:userId:title:body:)"
-    ResultType: "SharedLogicPaymentTransactionDto * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentTransactionDtoCompanion"
-  SwiftName: "PaymentTransactionDto.Companion"
-  Methods:
-  - Selector: "serializer"
-    MethodKind: "Instance"
-    SwiftName: "serializer()"
-    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
-- Name: "SharedLogicPaymentSheetRepository"
-  SwiftName: "PaymentSheetRepository"
-  Methods:
-  - Selector: "initWithService:"
-    MethodKind: "Instance"
-    SwiftName: "init(service:)"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentSheetService * _Nonnull"
-  - Selector: "getPaymentByIdId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getPaymentById(id:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "void (^ _Nonnull)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable)"
-- Name: "SharedLogicPaymentSheetService"
-  SwiftName: "PaymentSheetService"
-  Methods:
-  - Selector: "initWithNetworkClient:"
-    MethodKind: "Instance"
-    SwiftName: "init(networkClient:)"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicNetworkClient * _Nonnull"
-  - Selector: "fetchPaymentTransactionTransactionId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__fetchPaymentTransaction(transactionId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "void (^ _Nonnull)(id<SharedLogicNetworkResult> _Nullable, NSError * _Nullable)"
-- Name: "SharedLogicPaymentSheetEndpoints"
-  SwiftName: "PaymentSheetEndpoints"
-- Name: "SharedLogicPaymentSheetEndpointsGetPaymentTransaction"
-  SwiftName: "PaymentSheetEndpoints.GetPaymentTransaction"
-  Properties:
-  - Name: "baseUrl"
-    PropertyKind: "Instance"
-    SwiftName: "baseUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "commonHeaders"
-    PropertyKind: "Instance"
-    SwiftName: "commonHeaders"
-    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
-  - Name: "method"
-    PropertyKind: "Instance"
-    SwiftName: "method"
-    Type: "SharedLogicHttpMethod * _Nonnull"
-  - Name: "path"
-    PropertyKind: "Instance"
-    SwiftName: "path"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithTransactionId:"
-    MethodKind: "Instance"
-    SwiftName: "init(transactionId:)"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-  - Selector: "doCopyTransactionId:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(transactionId:)"
-    ResultType: "SharedLogicPaymentSheetEndpointsGetPaymentTransaction * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentSheetEndpointsGetPaymentStatus"
-  SwiftName: "PaymentSheetEndpoints.GetPaymentStatus"
-  Properties:
-  - Name: "baseUrl"
-    PropertyKind: "Instance"
-    SwiftName: "baseUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "commonHeaders"
-    PropertyKind: "Instance"
-    SwiftName: "commonHeaders"
-    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
-  - Name: "headers"
-    PropertyKind: "Instance"
-    SwiftName: "headers"
-    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
-  - Name: "method"
-    PropertyKind: "Instance"
-    SwiftName: "method"
-    Type: "SharedLogicHttpMethod * _Nonnull"
-  - Name: "path"
-    PropertyKind: "Instance"
-    SwiftName: "path"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithPaymentId:authToken:"
-    MethodKind: "Instance"
-    SwiftName: "init(paymentId:authToken:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyPaymentId:authToken:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(paymentId:authToken:)"
-    ResultType: "SharedLogicPaymentSheetEndpointsGetPaymentStatus * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
 - Name: "SharedLogicWalletPayloadNormalizerKt"
   SwiftName: "WalletPayloadNormalizerKt"
   Methods:
@@ -8367,57 +8072,9 @@ Classes:
       Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__loadPaymentTransactionDispatchReceiver:transactionId:suspendHandler:"
+  - Selector: "Skie_Suspend__38__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__loadPaymentTransaction(dispatchReceiver:transactionId:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentSheetViewModel * _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__invokeDispatchReceiver:transactionId:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__invoke(dispatchReceiver:transactionId:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicGetPaymentTransactionUseCase * _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__getPaymentByIdDispatchReceiver:id:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__getPaymentById(dispatchReceiver:id:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "Skie__TypeDef__0__id_SharedLogicIPaymentSheetRepository_"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__fetchPaymentTransactionDispatchReceiver:transactionId:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__fetchPaymentTransaction(dispatchReceiver:transactionId:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentSheetService * _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__42__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__42__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__38__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8433,9 +8090,9 @@ Classes:
       Type: "id<SharedLogicKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__43__flushDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__39__flushDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__43__flush(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__flush(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8443,9 +8100,9 @@ Classes:
       Type: "id<SharedLogicKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__44__flushAndCloseDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__40__flushAndCloseDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__44__flushAndClose(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__flushAndClose(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8453,9 +8110,9 @@ Classes:
       Type: "id<SharedLogicKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__45__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__41__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__45__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8897,7 +8554,7 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "id<SharedLogicKotlinx_coroutines_coreChildJob> _Nonnull"
-  - Selector: "cancelCause:"
+  - Selector: "cancelCause_:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"
@@ -9047,6 +8704,55 @@ Protocols:
   SwiftName: "Kotlinx_coroutines_coreSelectClause1"
 - Name: "SharedLogicKotlinx_coroutines_coreSelectClause2"
   SwiftName: "Kotlinx_coroutines_coreSelectClause2"
+- Name: "SharedLogicSdkFailureDelegate"
+  SwiftName: "SdkFailureDelegate"
+  Methods:
+  - Selector: "onHttpFailureOperation:statusCode:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onHttpFailure(operation:statusCode:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "onSerializationFailureOperation:message:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onSerializationFailure(operation:message:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+  - Selector: "onTransportFailureOperation:throwableName:message:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onTransportFailure(operation:throwableName:message:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "onValidationFailureScreen:reason:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "onValidationFailure(screen:reason:orderId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
 - Name: "SharedLogicSdkLogger"
   SwiftName: "SdkLogger"
   Methods:
@@ -9212,19 +8918,6 @@ Protocols:
       Type: "NSString * _Nonnull"
 - Name: "SharedLogicPaymentFailure"
   SwiftName: "PaymentFailure"
-- Name: "SharedLogicIPaymentSheetRepository"
-  SwiftName: "IPaymentSheetRepository"
-  Methods:
-  - Selector: "getPaymentByIdId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getPaymentById(id:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "void (^ _Nonnull)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable)"
 - Name: "SharedLogicKotlinx_serialization_jsonJsonNamingStrategy"
   SwiftName: "Kotlinx_serialization_jsonJsonNamingStrategy"
   Methods:
@@ -10352,7 +10045,7 @@ Protocols:
       Type: "int32_t"
     - Position: 1
       Type: "void (^ _Nonnull)(SharedLogicBoolean * _Nullable, NSError * _Nullable)"
-  - Selector: "cancelCause_:"
+  - Selector: "cancelCause:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"
@@ -10382,7 +10075,7 @@ Protocols:
     SwiftName: "writeBuffer"
     Type: "id<SharedLogicKotlinx_io_coreSink> _Nonnull"
   Methods:
-  - Selector: "cancelCause_:"
+  - Selector: "cancelCause:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"

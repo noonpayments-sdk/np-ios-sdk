@@ -7937,6 +7937,9 @@
                 "genericSig": "<τ_0_0 where τ_0_0 : SharedLogic.SkieSwiftFlowProtocol>",
                 "sugared_genericSig": "<Self where Self : SharedLogic.SkieSwiftFlowProtocol>",
                 "protocolReq": true,
+                "spi_group_names": [
+                  "SKIE"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -8040,6 +8043,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -9606,6 +9612,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -12330,6 +12339,9 @@
                 "declAttributes": [
                   "Final"
                 ],
+                "spi_group_names": [
+                  "SKIE"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -13730,6 +13742,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -16080,6 +16095,9 @@
                 "declAttributes": [
                   "Final"
                 ],
+                "spi_group_names": [
+                  "SKIE"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -16956,6 +16974,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -18123,6 +18144,9 @@
                 "declAttributes": [
                   "Final"
                 ],
+                "spi_group_names": [
+                  "SKIE"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -19117,6 +19141,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -20627,6 +20654,9 @@
                 "declAttributes": [
                   "Final"
                 ],
+                "spi_group_names": [
+                  "SKIE"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -21631,6 +21661,9 @@
                 "implicit": true,
                 "declAttributes": [
                   "Final"
+                ],
+                "spi_group_names": [
+                  "SKIE"
                 ],
                 "accessorKind": "get"
               }
@@ -23056,46 +23089,6 @@
           "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SharedLogic",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SharedLogic",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SharedLogic",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SharedLogic",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -33860,6 +33853,62 @@
       },
       {
         "kind": "Function",
+        "name": "reportSdkValidationFailure",
+        "printedName": "reportSdkValidationFailure(screen:reason:orderId:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11SharedLogic26reportSdkValidationFailure6screen6reason7orderIdySS_S2SSgtF",
+        "mangledName": "$s11SharedLogic26reportSdkValidationFailure6screen6reason7orderIdySS_S2SSgtF",
+        "moduleName": "SharedLogic",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SharedLogic",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
         "name": "normalizeApplePayTokenForTransport",
         "printedName": "normalizeApplePayTokenForTransport(token:)",
         "children": [
@@ -36957,466 +37006,6 @@
         "usr": "c:objc(cs)SharedLogicNoonPaymentService",
         "moduleName": "SharedLogic",
         "objc_name": "SharedLogicNoonPaymentService",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)SharedLogicBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "SharedLogic.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PaymentSheetViewModel",
-        "printedName": "PaymentSheetViewModel",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "loadPaymentTransaction",
-            "printedName": "loadPaymentTransaction(transactionId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So32SharedLogicPaymentSheetViewModelC0aB0E04loadC11Transaction13transactionIdys5Int32V_tYaKF",
-            "mangledName": "$sSo32SharedLogicPaymentSheetViewModelC0aB0E04loadC11Transaction13transactionIdys5Int32V_tYaKF",
-            "moduleName": "SharedLogic",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)SharedLogicPaymentSheetViewModel",
-        "moduleName": "SharedLogic",
-        "objc_name": "SharedLogicPaymentSheetViewModel",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)SharedLogicBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "SharedLogic.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GetPaymentTransactionUseCase",
-        "printedName": "GetPaymentTransactionUseCase",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "invoke",
-            "printedName": "invoke(transactionId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SharedLogic.PaymentTransaction?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PaymentTransaction",
-                    "printedName": "SharedLogic.PaymentTransaction",
-                    "usr": "c:objc(cs)SharedLogicPaymentTransaction"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So39SharedLogicGetPaymentTransactionUseCaseC0aB0E6invoke13transactionIdSo0abdE0CSgs5Int32V_tYaKF",
-            "mangledName": "$sSo39SharedLogicGetPaymentTransactionUseCaseC0aB0E6invoke13transactionIdSo0abdE0CSgs5Int32V_tYaKF",
-            "moduleName": "SharedLogic",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)SharedLogicGetPaymentTransactionUseCase",
-        "moduleName": "SharedLogic",
-        "objc_name": "SharedLogicGetPaymentTransactionUseCase",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)SharedLogicBase",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "SharedLogic.KotlinBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "IPaymentSheetRepository",
-        "printedName": "IPaymentSheetRepository",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getPaymentById",
-            "printedName": "getPaymentById(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SharedLogic.PaymentTransaction?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PaymentTransaction",
-                    "printedName": "SharedLogic.PaymentTransaction",
-                    "usr": "c:objc(cs)SharedLogicPaymentTransaction"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So34SharedLogicIPaymentSheetRepositoryP0aB0E14getPaymentById2idSo0abG11TransactionCSgs5Int32V_tYaKF",
-            "mangledName": "$sSo34SharedLogicIPaymentSheetRepositoryP0aB0E14getPaymentById2idSo0abG11TransactionCSgs5Int32V_tYaKF",
-            "moduleName": "SharedLogic",
-            "genericSig": "<τ_0_0 where τ_0_0 : SharedLogic.IPaymentSheetRepository>",
-            "sugared_genericSig": "<Self where Self : SharedLogic.IPaymentSheetRepository>",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:objc(pl)SharedLogicIPaymentSheetRepository",
-        "moduleName": "SharedLogic",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "objc_name": "SharedLogicIPaymentSheetRepository",
-        "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PaymentSheetService",
-        "printedName": "PaymentSheetService",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "fetchPaymentTransaction",
-            "printedName": "fetchPaymentTransaction(transactionId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkResult",
-                "printedName": "any SharedLogic.NetworkResult",
-                "usr": "c:objc(pl)SharedLogicNetworkResult"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So30SharedLogicPaymentSheetServiceC0aB0E05fetchC11Transaction13transactionIdSo0aB13NetworkResult_ps5Int32V_tYaKF",
-            "mangledName": "$sSo30SharedLogicPaymentSheetServiceC0aB0E05fetchC11Transaction13transactionIdSo0aB13NetworkResult_ps5Int32V_tYaKF",
-            "moduleName": "SharedLogic",
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
-            "intro_tvOS": "13",
-            "intro_watchOS": "6",
-            "declAttributes": [
-              "AccessControl",
-              "Available",
-              "Available",
-              "Available",
-              "Available"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)SharedLogicPaymentSheetService",
-        "moduleName": "SharedLogic",
-        "objc_name": "SharedLogicPaymentSheetService",
         "declAttributes": [
           "ObjC",
           "Dynamic"

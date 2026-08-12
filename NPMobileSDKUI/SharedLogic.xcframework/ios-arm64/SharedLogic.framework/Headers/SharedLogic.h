@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedLogic__SkieTypeExportsKt, SharedLogic__SkieSuspendWrappersKt, SharedLogicWalletPayloadNormalizerKt, SharedLogicVisaDetector, SharedLogicUnionPayDetector, SharedLogicUShort, SharedLogicULong, SharedLogicUInt, SharedLogicUByte, SharedLogicTokenizeGooglePayUseCase, SharedLogicTokenizeApplePayUseCase, SharedLogicSkie_SuspendResultSuccess, SharedLogicSkie_SuspendResultError, SharedLogicSkie_SuspendResultCanceled, SharedLogicSkie_SuspendResult, SharedLogicSkie_SuspendHandler, SharedLogicSkie_CancellationHandler, SharedLogicSkieKotlinStateFlow<T>, SharedLogicSkieKotlinSharedFlow<T>, SharedLogicSkieKotlinOptionalStateFlow<T>, SharedLogicSkieKotlinOptionalSharedFlow<T>, SharedLogicSkieKotlinOptionalMutableStateFlow<T>, SharedLogicSkieKotlinOptionalMutableSharedFlow<T>, SharedLogicSkieKotlinOptionalFlow<T>, SharedLogicSkieKotlinMutableStateFlow<T>, SharedLogicSkieKotlinMutableSharedFlow<T>, SharedLogicSkieKotlinFlow<T>, SharedLogicSkieColdFlowIterator<E>, SharedLogicSignatureGenerator, SharedLogicSignatureDebug, SharedLogicShort, SharedLogicSdkLoggerConfig, SharedLogicSdkLoggerCompanion, SharedLogicPrintSdkLogger, SharedLogicPaymentUseCasesFactoryCompanion, SharedLogicPaymentUseCasesFactory, SharedLogicPaymentUseCases, SharedLogicPaymentTransactionDtoCompanion, SharedLogicPaymentTransactionDto, SharedLogicPaymentTransaction, SharedLogicPaymentSheetViewModelFactory, SharedLogicPaymentSheetViewModel, SharedLogicPaymentSheetState, SharedLogicPaymentSheetSessionStore, SharedLogicPaymentSheetSessionState, SharedLogicPaymentSheetService, SharedLogicPaymentSheetRepository, SharedLogicPaymentSheetFailureMapperKt, SharedLogicPaymentSheetEndpointsGetPaymentTransaction, SharedLogicPaymentSheetEndpointsGetPaymentStatus, SharedLogicPaymentSheetEndpoints, SharedLogicPaymentSheetDemoComponentFactory, SharedLogicPaymentSheetDemoComponent, SharedLogicPaymentOrderRepository, SharedLogicPaymentOperationResultSuccess<T>, SharedLogicPaymentOperationResultFailure, SharedLogicPaymentFailureTransport, SharedLogicPaymentFailureSerialization, SharedLogicPaymentFailureHttp, SharedLogicPaymentApiConfig, SharedLogicOrderStatusResult, SharedLogicOrderConfigurationDemoViewModel, SharedLogicOrderConfigurationDemoState, SharedLogicOrderConfiguration, SharedLogicNumber, SharedLogicNoonPaymentService, SharedLogicNoOpSdkLogger, SharedLogicNetworkResultSuccess<T>, SharedLogicNetworkResultFailure, SharedLogicNetworkRequest, SharedLogicNetworkRawResponse, SharedLogicNetworkErrorTransport, SharedLogicNetworkErrorSerialization, SharedLogicNetworkErrorHttp, SharedLogicNetworkClient, SharedLogicMutableSet<ObjectType>, SharedLogicMutableDictionary<KeyType, ObjectType>, SharedLogicMeezaDetector, SharedLogicMasterCardDetector, SharedLogicMaestroDetector, SharedLogicMadaDetector, SharedLogicLong, SharedLogicLogSanitizer, SharedLogicLogLevel, SharedLogicKtor_utilsWeekDayCompanion, SharedLogicKtor_utilsWeekDay, SharedLogicKtor_utilsTypeInfo, SharedLogicKtor_utilsStringValuesBuilderImpl, SharedLogicKtor_utilsPipelinePhase, SharedLogicKtor_utilsPipeline<TSubject, TContext>, SharedLogicKtor_utilsMonthCompanion, SharedLogicKtor_utilsMonth, SharedLogicKtor_utilsGMTDateCompanion, SharedLogicKtor_utilsGMTDate, SharedLogicKtor_utilsAttributeKey<T>, SharedLogicKtor_httpUrlCompanion, SharedLogicKtor_httpUrl, SharedLogicKtor_httpURLProtocolCompanion, SharedLogicKtor_httpURLProtocol, SharedLogicKtor_httpURLBuilderCompanion, SharedLogicKtor_httpURLBuilder, SharedLogicKtor_httpOutgoingContentWriteChannelContent, SharedLogicKtor_httpOutgoingContentReadChannelContent, SharedLogicKtor_httpOutgoingContentProtocolUpgrade, SharedLogicKtor_httpOutgoingContentNoContent, SharedLogicKtor_httpOutgoingContentContentWrapper, SharedLogicKtor_httpOutgoingContentByteArrayContent, SharedLogicKtor_httpOutgoingContent, SharedLogicKtor_httpHttpStatusCodeCompanion, SharedLogicKtor_httpHttpStatusCode, SharedLogicKtor_httpHttpProtocolVersionCompanion, SharedLogicKtor_httpHttpProtocolVersion, SharedLogicKtor_httpHttpMethodCompanion, SharedLogicKtor_httpHttpMethod, SharedLogicKtor_httpHeadersBuilder, SharedLogicKtor_httpHeaderValueWithParametersCompanion, SharedLogicKtor_httpHeaderValueWithParameters, SharedLogicKtor_httpHeaderValueParam, SharedLogicKtor_httpContentTypeCompanion, SharedLogicKtor_httpContentType, SharedLogicKtor_eventsEvents, SharedLogicKtor_eventsEventDefinition<T>, SharedLogicKtor_client_coreProxyConfig, SharedLogicKtor_client_coreHttpSendPipelinePhases, SharedLogicKtor_client_coreHttpSendPipeline, SharedLogicKtor_client_coreHttpResponsePipelinePhases, SharedLogicKtor_client_coreHttpResponsePipeline, SharedLogicKtor_client_coreHttpResponseData, SharedLogicKtor_client_coreHttpResponseContainer, SharedLogicKtor_client_coreHttpResponse, SharedLogicKtor_client_coreHttpRequestPipelinePhases, SharedLogicKtor_client_coreHttpRequestPipeline, SharedLogicKtor_client_coreHttpRequestData, SharedLogicKtor_client_coreHttpRequestBuilderCompanion, SharedLogicKtor_client_coreHttpRequestBuilder, SharedLogicKtor_client_coreHttpReceivePipelinePhases, SharedLogicKtor_client_coreHttpReceivePipeline, SharedLogicKtor_client_coreHttpClientEngineConfig, SharedLogicKtor_client_coreHttpClientConfig<T>, SharedLogicKtor_client_coreHttpClientCallCompanion, SharedLogicKtor_client_coreHttpClientCall, SharedLogicKtor_client_coreHttpClient, SharedLogicKtorNetworkTransport, SharedLogicKotlinx_serialization_jsonJsonPrimitiveCompanion, SharedLogicKotlinx_serialization_jsonJsonPrimitive, SharedLogicKotlinx_serialization_jsonJsonNull, SharedLogicKotlinx_serialization_jsonJsonElementCompanion, SharedLogicKotlinx_serialization_jsonJsonElement, SharedLogicKotlinx_serialization_jsonJsonDefault, SharedLogicKotlinx_serialization_jsonJsonConfiguration, SharedLogicKotlinx_serialization_jsonJson, SharedLogicKotlinx_serialization_jsonClassDiscriminatorMode, SharedLogicKotlinx_serialization_coreStructureKindOBJECT, SharedLogicKotlinx_serialization_coreStructureKindMAP, SharedLogicKotlinx_serialization_coreStructureKindLIST, SharedLogicKotlinx_serialization_coreStructureKindCLASS, SharedLogicKotlinx_serialization_coreStructureKind, SharedLogicKotlinx_serialization_coreSerializersModule, SharedLogicKotlinx_serialization_coreSerialKindENUM, SharedLogicKotlinx_serialization_coreSerialKindCONTEXTUAL, SharedLogicKotlinx_serialization_coreSerialKind, SharedLogicKotlinx_serialization_corePrimitiveKindSTRING, SharedLogicKotlinx_serialization_corePrimitiveKindSHORT, SharedLogicKotlinx_serialization_corePrimitiveKindLONG, SharedLogicKotlinx_serialization_corePrimitiveKindINT, SharedLogicKotlinx_serialization_corePrimitiveKindFLOAT, SharedLogicKotlinx_serialization_corePrimitiveKindDOUBLE, SharedLogicKotlinx_serialization_corePrimitiveKindCHAR, SharedLogicKotlinx_serialization_corePrimitiveKindBYTE, SharedLogicKotlinx_serialization_corePrimitiveKindBOOLEAN, SharedLogicKotlinx_serialization_corePrimitiveKind, SharedLogicKotlinx_serialization_corePolymorphicKindSEALED, SharedLogicKotlinx_serialization_corePolymorphicKindOPEN, SharedLogicKotlinx_serialization_corePolymorphicKind, SharedLogicKotlinx_io_coreBuffer, SharedLogicKotlinx_coroutines_coreCoroutineDispatcherKey, SharedLogicKotlinx_coroutines_coreCoroutineDispatcher, SharedLogicKotlinUnit, SharedLogicKotlinThrowable, SharedLogicKotlinRuntimeException, SharedLogicKotlinNothing, SharedLogicKotlinLongRangeCompanion, SharedLogicKotlinLongRange, SharedLogicKotlinLongProgressionCompanion, SharedLogicKotlinLongProgression, SharedLogicKotlinLongIterator, SharedLogicKotlinKVariance, SharedLogicKotlinKTypeProjectionCompanion, SharedLogicKotlinKTypeProjection, SharedLogicKotlinIllegalStateException, SharedLogicKotlinException, SharedLogicKotlinEnumCompanion, SharedLogicKotlinEnum<E>, SharedLogicKotlinCancellationException, SharedLogicKotlinByteIterator, SharedLogicKotlinByteArray, SharedLogicKotlinArray<T>, SharedLogicKotlinAbstractCoroutineContextKey<B, E>, SharedLogicKotlinAbstractCoroutineContextElement, SharedLogicJCBDetector, SharedLogicInt, SharedLogicHttpMethod, SharedLogicHttpClientFactory, SharedLogicGooglePayPaymentInput, SharedLogicGooglePayDemoViewModel, SharedLogicGooglePayDemoState, SharedLogicGooglePayConfiguration, SharedLogicGetPaymentTransactionUseCase, SharedLogicGetOrderConfigurationUseCase, SharedLogicFloat, SharedLogicFetchOrderStatusUseCase, SharedLogicFetchOrderStatusDemoViewModel, SharedLogicFetchOrderStatusDemoState, SharedLogicDouble, SharedLogicDiscoverDetector, SharedLogicDinersDetector, SharedLogicDetectCardBrandUseCase, SharedLogicCardType, SharedLogicCardPaymentInput, SharedLogicCardPaymentDemoViewModel, SharedLogicCardPaymentDemoState, SharedLogicCancelPaymentUseCase, SharedLogicCancelPaymentInput, SharedLogicCancelPaymentDemoViewModel, SharedLogicCancelPaymentDemoState, SharedLogicByte, SharedLogicBoolean, SharedLogicBase, SharedLogicApplePayPaymentInput, SharedLogicApplePayDemoViewModel, SharedLogicApplePayDemoState, SharedLogicApplePayConfiguration, SharedLogicAmexDetector, SharedLogicAddPaymentInfoResult, SharedLogicAddCardPaymentInfoUseCase, NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>;
+@class SharedLogic__SkieTypeExportsKt, SharedLogic__SkieSuspendWrappersKt, SharedLogicWalletPayloadNormalizerKt, SharedLogicVisaDetector, SharedLogicUnionPayDetector, SharedLogicUShort, SharedLogicULong, SharedLogicUInt, SharedLogicUByte, SharedLogicTokenizeGooglePayUseCase, SharedLogicTokenizeApplePayUseCase, SharedLogicSkie_SuspendResultSuccess, SharedLogicSkie_SuspendResultError, SharedLogicSkie_SuspendResultCanceled, SharedLogicSkie_SuspendResult, SharedLogicSkie_SuspendHandler, SharedLogicSkie_CancellationHandler, SharedLogicSkieKotlinStateFlow<T>, SharedLogicSkieKotlinSharedFlow<T>, SharedLogicSkieKotlinOptionalStateFlow<T>, SharedLogicSkieKotlinOptionalSharedFlow<T>, SharedLogicSkieKotlinOptionalMutableStateFlow<T>, SharedLogicSkieKotlinOptionalMutableSharedFlow<T>, SharedLogicSkieKotlinOptionalFlow<T>, SharedLogicSkieKotlinMutableStateFlow<T>, SharedLogicSkieKotlinMutableSharedFlow<T>, SharedLogicSkieKotlinFlow<T>, SharedLogicSkieColdFlowIterator<E>, SharedLogicSignatureGenerator, SharedLogicSignatureDebug, SharedLogicShort, SharedLogicSdkLoggerConfig, SharedLogicSdkLoggerCompanion, SharedLogicSdkFailureDelegateKt, SharedLogicSdkFailureDelegateConfig, SharedLogicSdkFailureDelegateCompanion, SharedLogicPrintSdkLogger, SharedLogicPaymentUseCasesFactoryCompanion, SharedLogicPaymentUseCasesFactory, SharedLogicPaymentUseCases, SharedLogicPaymentSheetSessionStore, SharedLogicPaymentSheetSessionState, SharedLogicPaymentSheetFailureMapperKt, SharedLogicPaymentSheetDemoComponentFactory, SharedLogicPaymentSheetDemoComponent, SharedLogicPaymentOrderRepository, SharedLogicPaymentOperationResultSuccess<T>, SharedLogicPaymentOperationResultFailure, SharedLogicPaymentFailureTransport, SharedLogicPaymentFailureSerialization, SharedLogicPaymentFailureHttp, SharedLogicPaymentApiConfig, SharedLogicOrderStatusResult, SharedLogicOrderConfigurationDemoViewModel, SharedLogicOrderConfigurationDemoState, SharedLogicOrderConfiguration, SharedLogicNumber, SharedLogicNoonPaymentService, SharedLogicNoOpSdkLogger, SharedLogicNoOpSdkFailureDelegate, SharedLogicNetworkResultSuccess<T>, SharedLogicNetworkResultFailure, SharedLogicNetworkRequest, SharedLogicNetworkRawResponse, SharedLogicNetworkErrorTransport, SharedLogicNetworkErrorSerialization, SharedLogicNetworkErrorHttp, SharedLogicNetworkClient, SharedLogicMutableSet<ObjectType>, SharedLogicMutableDictionary<KeyType, ObjectType>, SharedLogicMeezaDetector, SharedLogicMasterCardDetector, SharedLogicMaestroDetector, SharedLogicMadaDetector, SharedLogicLong, SharedLogicLogSanitizer, SharedLogicLogLevel, SharedLogicKtor_utilsWeekDayCompanion, SharedLogicKtor_utilsWeekDay, SharedLogicKtor_utilsTypeInfo, SharedLogicKtor_utilsStringValuesBuilderImpl, SharedLogicKtor_utilsPipelinePhase, SharedLogicKtor_utilsPipeline<TSubject, TContext>, SharedLogicKtor_utilsMonthCompanion, SharedLogicKtor_utilsMonth, SharedLogicKtor_utilsGMTDateCompanion, SharedLogicKtor_utilsGMTDate, SharedLogicKtor_utilsAttributeKey<T>, SharedLogicKtor_httpUrlCompanion, SharedLogicKtor_httpUrl, SharedLogicKtor_httpURLProtocolCompanion, SharedLogicKtor_httpURLProtocol, SharedLogicKtor_httpURLBuilderCompanion, SharedLogicKtor_httpURLBuilder, SharedLogicKtor_httpOutgoingContentWriteChannelContent, SharedLogicKtor_httpOutgoingContentReadChannelContent, SharedLogicKtor_httpOutgoingContentProtocolUpgrade, SharedLogicKtor_httpOutgoingContentNoContent, SharedLogicKtor_httpOutgoingContentContentWrapper, SharedLogicKtor_httpOutgoingContentByteArrayContent, SharedLogicKtor_httpOutgoingContent, SharedLogicKtor_httpHttpStatusCodeCompanion, SharedLogicKtor_httpHttpStatusCode, SharedLogicKtor_httpHttpProtocolVersionCompanion, SharedLogicKtor_httpHttpProtocolVersion, SharedLogicKtor_httpHttpMethodCompanion, SharedLogicKtor_httpHttpMethod, SharedLogicKtor_httpHeadersBuilder, SharedLogicKtor_httpHeaderValueWithParametersCompanion, SharedLogicKtor_httpHeaderValueWithParameters, SharedLogicKtor_httpHeaderValueParam, SharedLogicKtor_httpContentTypeCompanion, SharedLogicKtor_httpContentType, SharedLogicKtor_eventsEvents, SharedLogicKtor_eventsEventDefinition<T>, SharedLogicKtor_client_coreProxyConfig, SharedLogicKtor_client_coreHttpSendPipelinePhases, SharedLogicKtor_client_coreHttpSendPipeline, SharedLogicKtor_client_coreHttpResponsePipelinePhases, SharedLogicKtor_client_coreHttpResponsePipeline, SharedLogicKtor_client_coreHttpResponseData, SharedLogicKtor_client_coreHttpResponseContainer, SharedLogicKtor_client_coreHttpResponse, SharedLogicKtor_client_coreHttpRequestPipelinePhases, SharedLogicKtor_client_coreHttpRequestPipeline, SharedLogicKtor_client_coreHttpRequestData, SharedLogicKtor_client_coreHttpRequestBuilderCompanion, SharedLogicKtor_client_coreHttpRequestBuilder, SharedLogicKtor_client_coreHttpReceivePipelinePhases, SharedLogicKtor_client_coreHttpReceivePipeline, SharedLogicKtor_client_coreHttpClientEngineConfig, SharedLogicKtor_client_coreHttpClientConfig<T>, SharedLogicKtor_client_coreHttpClientCallCompanion, SharedLogicKtor_client_coreHttpClientCall, SharedLogicKtor_client_coreHttpClient, SharedLogicKtorNetworkTransport, SharedLogicKotlinx_serialization_jsonJsonPrimitiveCompanion, SharedLogicKotlinx_serialization_jsonJsonPrimitive, SharedLogicKotlinx_serialization_jsonJsonNull, SharedLogicKotlinx_serialization_jsonJsonElementCompanion, SharedLogicKotlinx_serialization_jsonJsonElement, SharedLogicKotlinx_serialization_jsonJsonDefault, SharedLogicKotlinx_serialization_jsonJsonConfiguration, SharedLogicKotlinx_serialization_jsonJson, SharedLogicKotlinx_serialization_jsonClassDiscriminatorMode, SharedLogicKotlinx_serialization_coreStructureKindOBJECT, SharedLogicKotlinx_serialization_coreStructureKindMAP, SharedLogicKotlinx_serialization_coreStructureKindLIST, SharedLogicKotlinx_serialization_coreStructureKindCLASS, SharedLogicKotlinx_serialization_coreStructureKind, SharedLogicKotlinx_serialization_coreSerializersModule, SharedLogicKotlinx_serialization_coreSerialKindENUM, SharedLogicKotlinx_serialization_coreSerialKindCONTEXTUAL, SharedLogicKotlinx_serialization_coreSerialKind, SharedLogicKotlinx_serialization_corePrimitiveKindSTRING, SharedLogicKotlinx_serialization_corePrimitiveKindSHORT, SharedLogicKotlinx_serialization_corePrimitiveKindLONG, SharedLogicKotlinx_serialization_corePrimitiveKindINT, SharedLogicKotlinx_serialization_corePrimitiveKindFLOAT, SharedLogicKotlinx_serialization_corePrimitiveKindDOUBLE, SharedLogicKotlinx_serialization_corePrimitiveKindCHAR, SharedLogicKotlinx_serialization_corePrimitiveKindBYTE, SharedLogicKotlinx_serialization_corePrimitiveKindBOOLEAN, SharedLogicKotlinx_serialization_corePrimitiveKind, SharedLogicKotlinx_serialization_corePolymorphicKindSEALED, SharedLogicKotlinx_serialization_corePolymorphicKindOPEN, SharedLogicKotlinx_serialization_corePolymorphicKind, SharedLogicKotlinx_io_coreBuffer, SharedLogicKotlinx_coroutines_coreCoroutineDispatcherKey, SharedLogicKotlinx_coroutines_coreCoroutineDispatcher, SharedLogicKotlinUnit, SharedLogicKotlinThrowable, SharedLogicKotlinRuntimeException, SharedLogicKotlinNothing, SharedLogicKotlinLongRangeCompanion, SharedLogicKotlinLongRange, SharedLogicKotlinLongProgressionCompanion, SharedLogicKotlinLongProgression, SharedLogicKotlinLongIterator, SharedLogicKotlinKVariance, SharedLogicKotlinKTypeProjectionCompanion, SharedLogicKotlinKTypeProjection, SharedLogicKotlinIllegalStateException, SharedLogicKotlinException, SharedLogicKotlinEnumCompanion, SharedLogicKotlinEnum<E>, SharedLogicKotlinCancellationException, SharedLogicKotlinByteIterator, SharedLogicKotlinByteArray, SharedLogicKotlinArray<T>, SharedLogicKotlinAbstractCoroutineContextKey<B, E>, SharedLogicKotlinAbstractCoroutineContextElement, SharedLogicJCBDetector, SharedLogicInt, SharedLogicHttpMethod, SharedLogicHttpClientFactory, SharedLogicGooglePayPaymentInput, SharedLogicGooglePayDemoViewModel, SharedLogicGooglePayDemoState, SharedLogicGooglePayConfiguration, SharedLogicGetOrderConfigurationUseCase, SharedLogicFloat, SharedLogicFetchOrderStatusUseCase, SharedLogicFetchOrderStatusDemoViewModel, SharedLogicFetchOrderStatusDemoState, SharedLogicDouble, SharedLogicDiscoverDetector, SharedLogicDinersDetector, SharedLogicDetectCardBrandUseCase, SharedLogicCardType, SharedLogicCardPaymentInput, SharedLogicCardPaymentDemoViewModel, SharedLogicCardPaymentDemoState, SharedLogicCancelPaymentUseCase, SharedLogicCancelPaymentInput, SharedLogicCancelPaymentDemoViewModel, SharedLogicCancelPaymentDemoState, SharedLogicByte, SharedLogicBoolean, SharedLogicBase, SharedLogicApplePayPaymentInput, SharedLogicApplePayDemoViewModel, SharedLogicApplePayDemoState, SharedLogicApplePayConfiguration, SharedLogicAmexDetector, SharedLogicAddPaymentInfoResult, SharedLogicAddCardPaymentInfoUseCase, NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>;
 
-@protocol SharedLogicSkie_DispatcherDelegate, SharedLogicSdkLogger, SharedLogicPaymentOperationResult, SharedLogicPaymentFailure, SharedLogicNetworkTransport, SharedLogicNetworkResult, SharedLogicNetworkError, SharedLogicKtor_utilsStringValuesBuilder, SharedLogicKtor_utilsStringValues, SharedLogicKtor_utilsAttributes, SharedLogicKtor_ioJvmSerializable, SharedLogicKtor_ioCloseable, SharedLogicKtor_ioByteWriteChannel, SharedLogicKtor_ioByteReadChannel, SharedLogicKtor_httpParametersBuilder, SharedLogicKtor_httpParameters, SharedLogicKtor_httpHttpMessageBuilder, SharedLogicKtor_httpHttpMessage, SharedLogicKtor_httpHeaders, SharedLogicKtor_client_coreHttpRequest, SharedLogicKtor_client_coreHttpClientPlugin, SharedLogicKtor_client_coreHttpClientEngineCapability, SharedLogicKtor_client_coreHttpClientEngine, SharedLogicKotlinx_serialization_jsonJsonNamingStrategy, SharedLogicKotlinx_serialization_coreStringFormat, SharedLogicKotlinx_serialization_coreSerializersModuleCollector, SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreSerialFormat, SharedLogicKotlinx_serialization_coreSerialDescriptor, SharedLogicKotlinx_serialization_coreKSerializer, SharedLogicKotlinx_serialization_coreEncoder, SharedLogicKotlinx_serialization_coreDeserializationStrategy, SharedLogicKotlinx_serialization_coreDecoder, SharedLogicKotlinx_serialization_coreCompositeEncoder, SharedLogicKotlinx_serialization_coreCompositeDecoder, SharedLogicKotlinx_io_coreSource, SharedLogicKotlinx_io_coreSink, SharedLogicKotlinx_io_coreRawSource, SharedLogicKotlinx_io_coreRawSink, SharedLogicKotlinx_coroutines_coreStateFlow, SharedLogicKotlinx_coroutines_coreSharedFlow, SharedLogicKotlinx_coroutines_coreSelectInstance, SharedLogicKotlinx_coroutines_coreSelectClause2, SharedLogicKotlinx_coroutines_coreSelectClause1, SharedLogicKotlinx_coroutines_coreSelectClause0, SharedLogicKotlinx_coroutines_coreSelectClause, SharedLogicKotlinx_coroutines_coreRunnable, SharedLogicKotlinx_coroutines_coreParentJob, SharedLogicKotlinx_coroutines_coreMutableStateFlow, SharedLogicKotlinx_coroutines_coreMutableSharedFlow, SharedLogicKotlinx_coroutines_coreJob, SharedLogicKotlinx_coroutines_coreFlowCollector, SharedLogicKotlinx_coroutines_coreFlow, SharedLogicKotlinx_coroutines_coreDisposableHandle, SharedLogicKotlinx_coroutines_coreCoroutineScope, SharedLogicKotlinx_coroutines_coreChildJob, SharedLogicKotlinx_coroutines_coreChildHandle, SharedLogicKotlinSuspendFunction2, SharedLogicKotlinSequence, SharedLogicKotlinOpenEndRange, SharedLogicKotlinMapEntry, SharedLogicKotlinKType, SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKClassifier, SharedLogicKotlinKClass, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinIterator, SharedLogicKotlinIterable, SharedLogicKotlinFunction, SharedLogicKotlinCoroutineContextKey, SharedLogicKotlinCoroutineContextElement, SharedLogicKotlinCoroutineContext, SharedLogicKotlinContinuationInterceptor, SharedLogicKotlinContinuation, SharedLogicKotlinComparable, SharedLogicKotlinClosedRange, SharedLogicKotlinAutoCloseable, SharedLogicKotlinAnnotation, SharedLogicIPaymentSheetRepository, SharedLogicIPaymentOrderRepository, SharedLogicEndpoint, SharedLogicCardBrandDetector, NSCopying;
+@protocol SharedLogicSkie_DispatcherDelegate, SharedLogicSdkLogger, SharedLogicSdkFailureDelegate, SharedLogicPaymentOperationResult, SharedLogicPaymentFailure, SharedLogicNetworkTransport, SharedLogicNetworkResult, SharedLogicNetworkError, SharedLogicKtor_utilsStringValuesBuilder, SharedLogicKtor_utilsStringValues, SharedLogicKtor_utilsAttributes, SharedLogicKtor_ioJvmSerializable, SharedLogicKtor_ioCloseable, SharedLogicKtor_ioByteWriteChannel, SharedLogicKtor_ioByteReadChannel, SharedLogicKtor_httpParametersBuilder, SharedLogicKtor_httpParameters, SharedLogicKtor_httpHttpMessageBuilder, SharedLogicKtor_httpHttpMessage, SharedLogicKtor_httpHeaders, SharedLogicKtor_client_coreHttpRequest, SharedLogicKtor_client_coreHttpClientPlugin, SharedLogicKtor_client_coreHttpClientEngineCapability, SharedLogicKtor_client_coreHttpClientEngine, SharedLogicKotlinx_serialization_jsonJsonNamingStrategy, SharedLogicKotlinx_serialization_coreStringFormat, SharedLogicKotlinx_serialization_coreSerializersModuleCollector, SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreSerialFormat, SharedLogicKotlinx_serialization_coreSerialDescriptor, SharedLogicKotlinx_serialization_coreKSerializer, SharedLogicKotlinx_serialization_coreEncoder, SharedLogicKotlinx_serialization_coreDeserializationStrategy, SharedLogicKotlinx_serialization_coreDecoder, SharedLogicKotlinx_serialization_coreCompositeEncoder, SharedLogicKotlinx_serialization_coreCompositeDecoder, SharedLogicKotlinx_io_coreSource, SharedLogicKotlinx_io_coreSink, SharedLogicKotlinx_io_coreRawSource, SharedLogicKotlinx_io_coreRawSink, SharedLogicKotlinx_coroutines_coreStateFlow, SharedLogicKotlinx_coroutines_coreSharedFlow, SharedLogicKotlinx_coroutines_coreSelectInstance, SharedLogicKotlinx_coroutines_coreSelectClause2, SharedLogicKotlinx_coroutines_coreSelectClause1, SharedLogicKotlinx_coroutines_coreSelectClause0, SharedLogicKotlinx_coroutines_coreSelectClause, SharedLogicKotlinx_coroutines_coreRunnable, SharedLogicKotlinx_coroutines_coreParentJob, SharedLogicKotlinx_coroutines_coreMutableStateFlow, SharedLogicKotlinx_coroutines_coreMutableSharedFlow, SharedLogicKotlinx_coroutines_coreJob, SharedLogicKotlinx_coroutines_coreFlowCollector, SharedLogicKotlinx_coroutines_coreFlow, SharedLogicKotlinx_coroutines_coreDisposableHandle, SharedLogicKotlinx_coroutines_coreCoroutineScope, SharedLogicKotlinx_coroutines_coreChildJob, SharedLogicKotlinx_coroutines_coreChildHandle, SharedLogicKotlinSuspendFunction2, SharedLogicKotlinSequence, SharedLogicKotlinOpenEndRange, SharedLogicKotlinMapEntry, SharedLogicKotlinKType, SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKClassifier, SharedLogicKotlinKClass, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinIterator, SharedLogicKotlinIterable, SharedLogicKotlinFunction, SharedLogicKotlinCoroutineContextKey, SharedLogicKotlinCoroutineContextElement, SharedLogicKotlinCoroutineContext, SharedLogicKotlinContinuationInterceptor, SharedLogicKotlinContinuation, SharedLogicKotlinComparable, SharedLogicKotlinClosedRange, SharedLogicKotlinAutoCloseable, SharedLogicKotlinAnnotation, SharedLogicIPaymentOrderRepository, SharedLogicEndpoint, SharedLogicCardBrandDetector, NSCopying;
 
 // Due to an Obj-C/Swift interop limitation, SKIE cannot generate Swift types with a lambda type argument.
 // Example of such type is: A<() -> Unit> where A<T> is a generic class.
@@ -30,7 +30,6 @@
 + (instancetype _Nonnull)new __attribute__((unavailable));
 @end
 
-typedef id<SharedLogicIPaymentSheetRepository> _Nonnull Skie__TypeDef__0__id_SharedLogicIPaymentSheetRepository_ __attribute__((__swift_private__));
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -582,6 +581,35 @@ __attribute__((swift_name("LogSanitizer")))
 
 
 /**
+ * Merchant-overridable failure callbacks emitted by the SDK for all known failure scenarios.
+ *
+ * This protocol is intentionally lightweight so host apps can configure it directly from the
+ * sheet entry point without any extra SDK initialization step.
+ */
+__attribute__((swift_name("SdkFailureDelegate")))
+@protocol SharedLogicSdkFailureDelegate
+@required
+- (void)onHttpFailureOperation:(NSString *)operation statusCode:(int32_t)statusCode orderId:(NSString *)orderId __attribute__((swift_name("onHttpFailure(operation:statusCode:orderId:)")));
+- (void)onSerializationFailureOperation:(NSString *)operation message:(NSString *)message orderId:(NSString *)orderId __attribute__((swift_name("onSerializationFailure(operation:message:orderId:)")));
+- (void)onTransportFailureOperation:(NSString *)operation throwableName:(NSString *)throwableName message:(NSString * _Nullable)message orderId:(NSString *)orderId __attribute__((swift_name("onTransportFailure(operation:throwableName:message:orderId:)")));
+- (void)onValidationFailureScreen:(NSString *)screen reason:(NSString *)reason orderId:(NSString *)orderId __attribute__((swift_name("onValidationFailure(screen:reason:orderId:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("NoOpSdkFailureDelegate")))
+@interface SharedLogicNoOpSdkFailureDelegate : SharedLogicBase <SharedLogicSdkFailureDelegate>
+@property (class, readonly, getter=shared) SharedLogicNoOpSdkFailureDelegate *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)noOpSdkFailureDelegate __attribute__((swift_name("init()")));
+- (void)onHttpFailureOperation:(NSString *)operation statusCode:(int32_t)statusCode orderId:(NSString *)orderId __attribute__((swift_name("onHttpFailure(operation:statusCode:orderId:)")));
+- (void)onSerializationFailureOperation:(NSString *)operation message:(NSString *)message orderId:(NSString *)orderId __attribute__((swift_name("onSerializationFailure(operation:message:orderId:)")));
+- (void)onTransportFailureOperation:(NSString *)operation throwableName:(NSString *)throwableName message:(NSString * _Nullable)message orderId:(NSString *)orderId __attribute__((swift_name("onTransportFailure(operation:throwableName:message:orderId:)")));
+- (void)onValidationFailureScreen:(NSString *)screen reason:(NSString *)reason orderId:(NSString *)orderId __attribute__((swift_name("onValidationFailure(screen:reason:orderId:)")));
+@end
+
+
+/**
  * Shared logging interface for the NP Mobile SDK.
  *
  * Default implementation is [NoOpSdkLogger] — the SDK is completely silent in release builds.
@@ -638,6 +666,26 @@ __attribute__((swift_name("PrintSdkLogger")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)printSdkLogger __attribute__((swift_name("init()")));
 - (void)logLevel:(SharedLogicLogLevel *)level tag:(NSString *)tag message:(NSString *)message orderId:(NSString *)orderId __attribute__((swift_name("log(level:tag:message:orderId:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SdkFailureDelegateCompanion")))
+@interface SharedLogicSdkFailureDelegateCompanion : SharedLogicBase
+@property (class, readonly, getter=shared) SharedLogicSdkFailureDelegateCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<SharedLogicSdkFailureDelegate>)default __attribute__((swift_name("default()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SdkFailureDelegateConfig")))
+@interface SharedLogicSdkFailureDelegateConfig : SharedLogicBase
+@property (class, readonly, getter=shared) SharedLogicSdkFailureDelegateConfig *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)sdkFailureDelegateConfig __attribute__((swift_name("init()")));
+- (void)configureDelegate:(id<SharedLogicSdkFailureDelegate>)delegate __attribute__((swift_name("configure(delegate:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -781,13 +829,13 @@ __attribute__((swift_name("KtorNetworkTransport")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NetworkClient")))
 @interface SharedLogicNetworkClient : SharedLogicBase
-- (instancetype)initWithTransport:(id<SharedLogicNetworkTransport>)transport json:(SharedLogicKotlinx_serialization_jsonJson *)json logger:(id<SharedLogicSdkLogger>)logger __attribute__((swift_name("init(transport:json:logger:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithTransport:(id<SharedLogicNetworkTransport>)transport json:(SharedLogicKotlinx_serialization_jsonJson *)json logger:(id<SharedLogicSdkLogger>)logger failureDelegate:(id<SharedLogicSdkFailureDelegate>)failureDelegate __attribute__((swift_name("init(transport:json:logger:failureDelegate:)"))) __attribute__((objc_designated_initializer));
 
 /**
  * Executes [endpoint] and returns a typed [NetworkResult].
  *
  * @param orderId Optional order identifier attached to every log line for traceability.
- *                Pass [PaymentApiConfig.orderId] at every call site.
+ *                Pass the active payment request order id at every call site.
  *                Defaults to "unknown" when not yet resolved (e.g. pre-3DS step).
  *
  * @note This method converts instances of CancellationException to errors.
@@ -1848,320 +1896,6 @@ __attribute__((swift_name("FetchOrderStatusDemoViewModel")))
 - (void)fetchOrderIdOverride:(NSString * _Nullable)orderIdOverride completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("fetch(orderIdOverride:completionHandler:)")));
 @end
 
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- *
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentTransactionDto")))
-@interface SharedLogicPaymentTransactionDto : SharedLogicBase
-@property (class, readonly, getter=companion) SharedLogicPaymentTransactionDtoCompanion *companion __attribute__((swift_name("companion")));
-@property (readonly) NSString *body __attribute__((swift_name("body")));
-@property (readonly) int32_t id __attribute__((swift_name("id")));
-@property (readonly) NSString *title __attribute__((swift_name("title")));
-@property (readonly) int32_t userId __attribute__((swift_name("userId")));
-- (instancetype)initWithId:(int32_t)id userId:(int32_t)userId title:(NSString *)title body:(NSString *)body __attribute__((swift_name("init(id:userId:title:body:)"))) __attribute__((objc_designated_initializer));
-- (SharedLogicPaymentTransactionDto *)doCopyId:(int32_t)id userId:(int32_t)userId title:(NSString *)title body:(NSString *)body __attribute__((swift_name("doCopy(id:userId:title:body:)")));
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-- (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="body")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="id")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="title")
-*/
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="userId")
-*/
-@end
-
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentTransactionDto.Companion")))
-@interface SharedLogicPaymentTransactionDtoCompanion : SharedLogicBase
-@property (class, readonly, getter=shared) SharedLogicPaymentTransactionDtoCompanion *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-
-/**
- * DTO for payment transaction response from the API.
- * Uses DummyJSON's Post model as a stand-in for a real payment response.
- */
-- (id<SharedLogicKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * Repository contract for payment operations.
- * Domain layer — no dependency on network or platform specifics.
- */
-__attribute__((swift_name("IPaymentSheetRepository")))
-@protocol SharedLogicIPaymentSheetRepository
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getPaymentByIdId:(int32_t)id completionHandler:(void (^)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getPaymentById(id:completionHandler:)")));
-@end
-
-
-/**
- * PaymentSheetRepository implementation.
- * Calls the service, maps DTOs to domain models, handles errors.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetRepository")))
-@interface SharedLogicPaymentSheetRepository : SharedLogicBase <SharedLogicIPaymentSheetRepository>
-- (instancetype)initWithService:(SharedLogicPaymentSheetService *)service __attribute__((swift_name("init(service:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)getPaymentByIdId:(int32_t)id completionHandler:(void (^)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getPaymentById(id:completionHandler:)")));
-@end
-
-
-/**
- * PaymentSheet feature endpoints live here.
- * Each feature/screen should follow the same pattern in its own package.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetEndpoints")))
-@interface SharedLogicPaymentSheetEndpoints : SharedLogicBase
-@property (class, readonly, getter=shared) SharedLogicPaymentSheetEndpoints *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-
-/**
- * PaymentSheet feature endpoints live here.
- * Each feature/screen should follow the same pattern in its own package.
- */
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)paymentSheetEndpoints __attribute__((swift_name("init()")));
-@end
-
-
-/**
- * Legacy placeholder for real Noon Payments API (when implemented).
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetEndpoints.GetPaymentStatus")))
-@interface SharedLogicPaymentSheetEndpointsGetPaymentStatus : SharedLogicBase <SharedLogicEndpoint>
-@property (readonly) NSString *baseUrl __attribute__((swift_name("baseUrl")));
-@property (readonly) NSDictionary<NSString *, NSString *> *commonHeaders __attribute__((swift_name("commonHeaders")));
-@property (readonly) NSDictionary<NSString *, NSString *> *headers __attribute__((swift_name("headers")));
-@property (readonly) SharedLogicHttpMethod *method __attribute__((swift_name("method")));
-@property (readonly) NSString *path __attribute__((swift_name("path")));
-- (instancetype)initWithPaymentId:(NSString *)paymentId authToken:(NSString *)authToken __attribute__((swift_name("init(paymentId:authToken:)"))) __attribute__((objc_designated_initializer));
-- (SharedLogicPaymentSheetEndpointsGetPaymentStatus *)doCopyPaymentId:(NSString *)paymentId authToken:(NSString *)authToken __attribute__((swift_name("doCopy(paymentId:authToken:)")));
-
-/**
- * Legacy placeholder for real Noon Payments API (when implemented).
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * Legacy placeholder for real Noon Payments API (when implemented).
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * Legacy placeholder for real Noon Payments API (when implemented).
- */
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-
-/**
- * Real endpoint using DummyJSON /posts as a mock payment transaction API.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetEndpoints.GetPaymentTransaction")))
-@interface SharedLogicPaymentSheetEndpointsGetPaymentTransaction : SharedLogicBase <SharedLogicEndpoint>
-@property (readonly) NSString *baseUrl __attribute__((swift_name("baseUrl")));
-@property (readonly) NSDictionary<NSString *, NSString *> *commonHeaders __attribute__((swift_name("commonHeaders")));
-@property (readonly) SharedLogicHttpMethod *method __attribute__((swift_name("method")));
-@property (readonly) NSString *path __attribute__((swift_name("path")));
-- (instancetype)initWithTransactionId:(int32_t)transactionId __attribute__((swift_name("init(transactionId:)"))) __attribute__((objc_designated_initializer));
-- (SharedLogicPaymentSheetEndpointsGetPaymentTransaction *)doCopyTransactionId:(int32_t)transactionId __attribute__((swift_name("doCopy(transactionId:)")));
-
-/**
- * Real endpoint using DummyJSON /posts as a mock payment transaction API.
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * Real endpoint using DummyJSON /posts as a mock payment transaction API.
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * Real endpoint using DummyJSON /posts as a mock payment transaction API.
- */
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-
-/**
- * PaymentSheetService handles all network calls for payment data.
- * Uses the generic NetworkClient for typed, error-safe requests.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetService")))
-@interface SharedLogicPaymentSheetService : SharedLogicBase
-- (instancetype)initWithNetworkClient:(SharedLogicNetworkClient *)networkClient __attribute__((swift_name("init(networkClient:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)fetchPaymentTransactionTransactionId:(int32_t)transactionId completionHandler:(void (^)(id<SharedLogicNetworkResult> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("fetchPaymentTransaction(transactionId:completionHandler:)")));
-@end
-
-
-/**
- * Domain model for a payment transaction.
- * Independent of the network/DTO layer.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentTransaction")))
-@interface SharedLogicPaymentTransaction : SharedLogicBase
-@property (readonly) NSString *details __attribute__((swift_name("details")));
-@property (readonly) int32_t id __attribute__((swift_name("id")));
-@property (readonly) NSString *title __attribute__((swift_name("title")));
-@property (readonly) int32_t userId __attribute__((swift_name("userId")));
-- (instancetype)initWithId:(int32_t)id userId:(int32_t)userId title:(NSString *)title details:(NSString *)details __attribute__((swift_name("init(id:userId:title:details:)"))) __attribute__((objc_designated_initializer));
-- (SharedLogicPaymentTransaction *)doCopyId:(int32_t)id userId:(int32_t)userId title:(NSString *)title details:(NSString *)details __attribute__((swift_name("doCopy(id:userId:title:details:)")));
-
-/**
- * Domain model for a payment transaction.
- * Independent of the network/DTO layer.
- */
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * Domain model for a payment transaction.
- * Independent of the network/DTO layer.
- */
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * Domain model for a payment transaction.
- * Independent of the network/DTO layer.
- */
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-
-/**
- * GetPaymentTransactionUseCase encapsulates the business logic for retrieving a payment.
- * Delegates to the repository; can add cross-cutting concerns here (auth checks, logging, etc.).
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("GetPaymentTransactionUseCase")))
-@interface SharedLogicGetPaymentTransactionUseCase : SharedLogicBase
-- (instancetype)initWithRepository:(id<SharedLogicIPaymentSheetRepository>)repository __attribute__((swift_name("init(repository:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)invokeTransactionId:(int32_t)transactionId completionHandler:(void (^)(SharedLogicPaymentTransaction * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(transactionId:completionHandler:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetState")))
-@interface SharedLogicPaymentSheetState : SharedLogicBase
-@property (readonly) NSString * _Nullable errorMessage __attribute__((swift_name("errorMessage")));
-@property (readonly) BOOL isLoading __attribute__((swift_name("isLoading")));
-@property (readonly) SharedLogicPaymentTransaction * _Nullable transaction __attribute__((swift_name("transaction")));
-- (instancetype)initWithIsLoading:(BOOL)isLoading transaction:(SharedLogicPaymentTransaction * _Nullable)transaction errorMessage:(NSString * _Nullable)errorMessage __attribute__((swift_name("init(isLoading:transaction:errorMessage:)"))) __attribute__((objc_designated_initializer));
-- (SharedLogicPaymentSheetState *)doCopyIsLoading:(BOOL)isLoading transaction:(SharedLogicPaymentTransaction * _Nullable)transaction errorMessage:(NSString * _Nullable)errorMessage __attribute__((swift_name("doCopy(isLoading:transaction:errorMessage:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@end
-
-
-/**
- * Shared ViewModel used by the native SDK sheets.
- * Manages payment transaction loading and UI state.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetViewModel")))
-@interface SharedLogicPaymentSheetViewModel : SharedLogicBase
-@property (readonly) id<SharedLogicKotlinx_coroutines_coreStateFlow> state __attribute__((swift_name("state")));
-- (instancetype)initWithGetPaymentTransactionUseCase:(SharedLogicGetPaymentTransactionUseCase * _Nullable)getPaymentTransactionUseCase __attribute__((swift_name("init(getPaymentTransactionUseCase:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)getMessage __attribute__((swift_name("getMessage()")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)loadPaymentTransactionTransactionId:(int32_t)transactionId completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("loadPaymentTransaction(transactionId:completionHandler:)")));
-@end
-
-
-/**
- * Factory for creating a fully-wired PaymentSheetViewModel.
- */
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PaymentSheetViewModelFactory")))
-@interface SharedLogicPaymentSheetViewModelFactory : SharedLogicBase
-@property (class, readonly, getter=shared) SharedLogicPaymentSheetViewModelFactory *shared __attribute__((swift_name("shared")));
-+ (instancetype)alloc __attribute__((unavailable));
-
-/**
- * Factory for creating a fully-wired PaymentSheetViewModel.
- */
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)paymentSheetViewModelFactory __attribute__((swift_name("init()")));
-- (SharedLogicPaymentSheetViewModel *)create __attribute__((swift_name("create()")));
-@end
-
 @interface SharedLogicOrderConfiguration (Extensions)
 - (SharedLogicApplePayConfiguration * _Nullable)applePayConfigurationOrNull __attribute__((swift_name("applePayConfigurationOrNull()")));
 - (SharedLogicGooglePayConfiguration * _Nullable)googlePayConfigurationOrNull __attribute__((swift_name("googlePayConfigurationOrNull()")));
@@ -2171,6 +1905,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PaymentSheetFailureMapperKt")))
 @interface SharedLogicPaymentSheetFailureMapperKt : SharedLogicBase
 + (NSString *)toDisplayMessage:(id<SharedLogicPaymentFailure>)receiver __attribute__((swift_name("toDisplayMessage(_:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SdkFailureDelegateKt")))
+@interface SharedLogicSdkFailureDelegateKt : SharedLogicBase
++ (void)reportSdkValidationFailureScreen:(NSString *)screen reason:(NSString *)reason orderId:(NSString * _Nullable)orderId __attribute__((swift_name("reportSdkValidationFailure(screen:reason:orderId:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2222,15 +1962,11 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__35__getOrderConfigurationDispatchReceiver:(SharedLogicNoonPaymentService *)dispatchReceiver config:(SharedLogicPaymentApiConfig *)config suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__35__getOrderConfiguration(dispatchReceiver:config:suspendHandler:)")));
 + (void)Skie_Suspend__36__tokenizeApplePayDispatchReceiver:(SharedLogicNoonPaymentService *)dispatchReceiver config:(SharedLogicPaymentApiConfig *)config input:(SharedLogicApplePayPaymentInput *)input suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__36__tokenizeApplePay(dispatchReceiver:config:input:suspendHandler:)")));
 + (void)Skie_Suspend__37__tokenizeGooglePayDispatchReceiver:(SharedLogicNoonPaymentService *)dispatchReceiver config:(SharedLogicPaymentApiConfig *)config input:(SharedLogicGooglePayPaymentInput *)input suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__37__tokenizeGooglePay(dispatchReceiver:config:input:suspendHandler:)")));
-+ (void)Skie_Suspend__38__loadPaymentTransactionDispatchReceiver:(SharedLogicPaymentSheetViewModel *)dispatchReceiver transactionId:(int32_t)transactionId suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__loadPaymentTransaction(dispatchReceiver:transactionId:suspendHandler:)")));
-+ (void)Skie_Suspend__39__invokeDispatchReceiver:(SharedLogicGetPaymentTransactionUseCase *)dispatchReceiver transactionId:(int32_t)transactionId suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__invoke(dispatchReceiver:transactionId:suspendHandler:)")));
++ (void)Skie_Suspend__38__upgradeDispatchReceiver:(SharedLogicKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<SharedLogicKtor_ioByteReadChannel>)input output:(id<SharedLogicKtor_ioByteWriteChannel>)output engineContext:(id<SharedLogicKotlinCoroutineContext>)engineContext userContext:(id<SharedLogicKotlinCoroutineContext>)userContext suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__38__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
++ (void)Skie_Suspend__39__flushDispatchReceiver:(id<SharedLogicKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__39__flush(dispatchReceiver:suspendHandler:)")));
 + (void)Skie_Suspend__3__joinDispatchReceiver:(id<SharedLogicKotlinx_coroutines_coreJob>)dispatchReceiver suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__3__join(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__40__getPaymentByIdDispatchReceiver:(id<SharedLogicIPaymentSheetRepository>)dispatchReceiver id:(int32_t)id suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__getPaymentById(dispatchReceiver:id:suspendHandler:)")));
-+ (void)Skie_Suspend__41__fetchPaymentTransactionDispatchReceiver:(SharedLogicPaymentSheetService *)dispatchReceiver transactionId:(int32_t)transactionId suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__fetchPaymentTransaction(dispatchReceiver:transactionId:suspendHandler:)")));
-+ (void)Skie_Suspend__42__upgradeDispatchReceiver:(SharedLogicKtor_httpOutgoingContentProtocolUpgrade *)dispatchReceiver input:(id<SharedLogicKtor_ioByteReadChannel>)input output:(id<SharedLogicKtor_ioByteWriteChannel>)output engineContext:(id<SharedLogicKotlinCoroutineContext>)engineContext userContext:(id<SharedLogicKotlinCoroutineContext>)userContext suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__42__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)")));
-+ (void)Skie_Suspend__43__flushDispatchReceiver:(id<SharedLogicKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__43__flush(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__44__flushAndCloseDispatchReceiver:(id<SharedLogicKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__44__flushAndClose(dispatchReceiver:suspendHandler:)")));
-+ (void)Skie_Suspend__45__writeToDispatchReceiver:(SharedLogicKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<SharedLogicKtor_ioByteWriteChannel>)channel suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__45__writeTo(dispatchReceiver:channel:suspendHandler:)")));
++ (void)Skie_Suspend__40__flushAndCloseDispatchReceiver:(id<SharedLogicKtor_ioByteWriteChannel>)dispatchReceiver suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__40__flushAndClose(dispatchReceiver:suspendHandler:)")));
++ (void)Skie_Suspend__41__writeToDispatchReceiver:(SharedLogicKtor_httpOutgoingContentWriteChannelContent *)dispatchReceiver channel:(id<SharedLogicKtor_ioByteWriteChannel>)channel suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__41__writeTo(dispatchReceiver:channel:suspendHandler:)")));
 + (void)Skie_Suspend__4__executeDispatchReceiver:(SharedLogicKtor_utilsPipeline<id, id> *)dispatchReceiver context:(id)context subject:(id)subject suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__4__execute(dispatchReceiver:context:subject:suspendHandler:)")));
 + (void)Skie_Suspend__5__invokeDispatchReceiver:(id<SharedLogicKotlinSuspendFunction2>)dispatchReceiver p1:(id _Nullable)p1 p2:(id _Nullable)p2 suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__5__invoke(dispatchReceiver:p1:p2:suspendHandler:)")));
 + (void)Skie_Suspend__6__bodyDispatchReceiver:(SharedLogicKtor_client_coreHttpClientCall *)dispatchReceiver info:(SharedLogicKtor_utilsTypeInfo *)info suspendHandler:(SharedLogicSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__6__body(dispatchReceiver:info:suspendHandler:)")));
@@ -2415,25 +2151,6 @@ __attribute__((swift_name("Kotlinx_serialization_jsonJson")))
 - (SharedLogicKotlinx_serialization_jsonJsonElement *)parseToJsonElementString:(NSString *)string __attribute__((swift_name("parseToJsonElement(string:)")));
 @end
 
-__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
-@protocol SharedLogicKotlinx_serialization_coreSerializationStrategy
-@required
-- (void)serializeEncoder:(id<SharedLogicKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
-@property (readonly) id<SharedLogicKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
-@protocol SharedLogicKotlinx_serialization_coreDeserializationStrategy
-@required
-- (id _Nullable)deserializeDecoder:(id<SharedLogicKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
-@property (readonly) id<SharedLogicKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
-@protocol SharedLogicKotlinx_serialization_coreKSerializer <SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreDeserializationStrategy>
-@required
-@end
-
 __attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
 @protocol SharedLogicKtor_client_coreHttpClientEngine <SharedLogicKotlinx_coroutines_coreCoroutineScope, SharedLogicKtor_ioCloseable>
 @required
@@ -2461,6 +2178,66 @@ __attribute__((swift_name("Ktor_client_coreHttpRequestData")))
 - (instancetype)initWithUrl:(SharedLogicKtor_httpUrl *)url method:(SharedLogicKtor_httpHttpMethod *)method headers:(id<SharedLogicKtor_httpHeaders>)headers body:(SharedLogicKtor_httpOutgoingContent *)body executionContext:(id<SharedLogicKotlinx_coroutines_coreJob>)executionContext attributes:(id<SharedLogicKtor_utilsAttributes>)attributes __attribute__((swift_name("init(url:method:headers:body:executionContext:attributes:)"))) __attribute__((objc_designated_initializer));
 - (id _Nullable)getCapabilityOrNullKey:(id<SharedLogicKtor_client_coreHttpClientEngineCapability>)key __attribute__((swift_name("getCapabilityOrNull(key:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("Ktor_httpOutgoingContent")))
+@interface SharedLogicKtor_httpOutgoingContent : SharedLogicBase
+@property (readonly) SharedLogicLong * _Nullable contentLength __attribute__((swift_name("contentLength")));
+@property (readonly) SharedLogicKtor_httpContentType * _Nullable contentType __attribute__((swift_name("contentType")));
+@property (readonly) id<SharedLogicKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@property (readonly) SharedLogicKtor_httpHttpStatusCode * _Nullable status __attribute__((swift_name("status")));
+- (id _Nullable)getPropertyKey:(SharedLogicKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getProperty(key:)")));
+- (void)setPropertyKey:(SharedLogicKtor_utilsAttributeKey<id> *)key value:(id _Nullable)value __attribute__((swift_name("setProperty(key:value:)")));
+- (id<SharedLogicKtor_httpHeaders> _Nullable)trailers __attribute__((swift_name("trailers()")));
+@end
+
+__attribute__((swift_name("Ktor_httpOutgoingContent.ProtocolUpgrade")))
+@interface SharedLogicKtor_httpOutgoingContentProtocolUpgrade : SharedLogicKtor_httpOutgoingContent
+@property (readonly) SharedLogicKtor_httpHttpStatusCode *status __attribute__((swift_name("status")));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)upgradeInput:(id<SharedLogicKtor_ioByteReadChannel>)input output:(id<SharedLogicKtor_ioByteWriteChannel>)output engineContext:(id<SharedLogicKotlinCoroutineContext>)engineContext userContext:(id<SharedLogicKotlinCoroutineContext>)userContext completionHandler:(void (^)(id<SharedLogicKotlinx_coroutines_coreJob> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("upgrade(input:output:engineContext:userContext:completionHandler:)")));
+@end
+
+__attribute__((swift_name("Ktor_ioByteReadChannel")))
+@protocol SharedLogicKtor_ioByteReadChannel
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)awaitContentMin:(int32_t)min completionHandler:(void (^)(SharedLogicBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("awaitContent(min:completionHandler:)")));
+- (void)cancelCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+@property (readonly) SharedLogicKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
+@property (readonly) BOOL isClosedForRead __attribute__((swift_name("isClosedForRead")));
+@property (readonly) id<SharedLogicKotlinx_io_coreSource> readBuffer __attribute__((swift_name("readBuffer")));
+@end
+
+__attribute__((swift_name("Ktor_ioByteWriteChannel")))
+@protocol SharedLogicKtor_ioByteWriteChannel
+@required
+- (void)cancelCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)flushWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("flush(completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)flushAndCloseWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("flushAndClose(completionHandler:)")));
+@property (readonly) SharedLogicKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
+@property (readonly) BOOL isClosedForWrite __attribute__((swift_name("isClosedForWrite")));
+@property (readonly) id<SharedLogicKotlinx_io_coreSink> writeBuffer __attribute__((swift_name("writeBuffer")));
 @end
 
 
@@ -2497,7 +2274,7 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  *   kotlinx.coroutines.InternalCoroutinesApi
 */
 - (id<SharedLogicKotlinx_coroutines_coreChildHandle>)attachChildChild:(id<SharedLogicKotlinx_coroutines_coreChildJob>)child __attribute__((swift_name("attachChild(child:)")));
-- (void)cancelCause:(SharedLogicKotlinCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+- (void)cancelCause_:(SharedLogicKotlinCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
 
 /**
  * @note annotations
@@ -2530,66 +2307,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  *   kotlinx.coroutines.ExperimentalCoroutinesApi
 */
 @property (readonly) id<SharedLogicKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
-@end
-
-__attribute__((swift_name("Ktor_httpOutgoingContent")))
-@interface SharedLogicKtor_httpOutgoingContent : SharedLogicBase
-@property (readonly) SharedLogicLong * _Nullable contentLength __attribute__((swift_name("contentLength")));
-@property (readonly) SharedLogicKtor_httpContentType * _Nullable contentType __attribute__((swift_name("contentType")));
-@property (readonly) id<SharedLogicKtor_httpHeaders> headers __attribute__((swift_name("headers")));
-@property (readonly) SharedLogicKtor_httpHttpStatusCode * _Nullable status __attribute__((swift_name("status")));
-- (id _Nullable)getPropertyKey:(SharedLogicKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getProperty(key:)")));
-- (void)setPropertyKey:(SharedLogicKtor_utilsAttributeKey<id> *)key value:(id _Nullable)value __attribute__((swift_name("setProperty(key:value:)")));
-- (id<SharedLogicKtor_httpHeaders> _Nullable)trailers __attribute__((swift_name("trailers()")));
-@end
-
-__attribute__((swift_name("Ktor_httpOutgoingContent.ProtocolUpgrade")))
-@interface SharedLogicKtor_httpOutgoingContentProtocolUpgrade : SharedLogicKtor_httpOutgoingContent
-@property (readonly) SharedLogicKtor_httpHttpStatusCode *status __attribute__((swift_name("status")));
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)upgradeInput:(id<SharedLogicKtor_ioByteReadChannel>)input output:(id<SharedLogicKtor_ioByteWriteChannel>)output engineContext:(id<SharedLogicKotlinCoroutineContext>)engineContext userContext:(id<SharedLogicKotlinCoroutineContext>)userContext completionHandler:(void (^)(id<SharedLogicKotlinx_coroutines_coreJob> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("upgrade(input:output:engineContext:userContext:completionHandler:)")));
-@end
-
-__attribute__((swift_name("Ktor_ioByteReadChannel")))
-@protocol SharedLogicKtor_ioByteReadChannel
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)awaitContentMin:(int32_t)min completionHandler:(void (^)(SharedLogicBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("awaitContent(min:completionHandler:)")));
-- (void)cancelCause_:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
-@property (readonly) SharedLogicKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
-@property (readonly) BOOL isClosedForRead __attribute__((swift_name("isClosedForRead")));
-@property (readonly) id<SharedLogicKotlinx_io_coreSource> readBuffer __attribute__((swift_name("readBuffer")));
-@end
-
-__attribute__((swift_name("Ktor_ioByteWriteChannel")))
-@protocol SharedLogicKtor_ioByteWriteChannel
-@required
-- (void)cancelCause_:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)flushWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("flush(completionHandler:)")));
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)flushAndCloseWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("flushAndClose(completionHandler:)")));
-@property (readonly) SharedLogicKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
-@property (readonly) BOOL isClosedForWrite __attribute__((swift_name("isClosedForWrite")));
-@property (readonly) id<SharedLogicKotlinx_io_coreSink> writeBuffer __attribute__((swift_name("writeBuffer")));
 @end
 
 __attribute__((swift_name("Ktor_httpOutgoingContent.WriteChannelContent")))
@@ -3074,6 +2791,20 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
 - (instancetype)initWithPhase:(SharedLogicKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<SharedLogicKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreDeserializationStrategy")))
+@protocol SharedLogicKotlinx_serialization_coreDeserializationStrategy
+@required
+- (id _Nullable)deserializeDecoder:(id<SharedLogicKotlinx_serialization_coreDecoder>)decoder __attribute__((swift_name("deserialize(decoder:)")));
+@property (readonly) id<SharedLogicKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
+@protocol SharedLogicKotlinx_serialization_coreSerializationStrategy
+@required
+- (void)serializeEncoder:(id<SharedLogicKotlinx_serialization_coreEncoder>)encoder value:(id _Nullable)value __attribute__((swift_name("serialize(encoder:value:)")));
+@property (readonly) id<SharedLogicKotlinx_serialization_coreSerialDescriptor> descriptor __attribute__((swift_name("descriptor")));
+@end
+
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
 @interface SharedLogicKotlinx_serialization_coreSerializersModule : SharedLogicBase
 
@@ -3162,102 +2893,6 @@ __attribute__((swift_name("Kotlinx_serialization_jsonJsonConfiguration")))
  * @note annotations
  *   kotlinx.serialization.ExperimentalSerializationApi
 */
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
-@protocol SharedLogicKotlinx_serialization_coreEncoder
-@required
-- (id<SharedLogicKotlinx_serialization_coreCompositeEncoder>)beginCollectionDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor collectionSize:(int32_t)collectionSize __attribute__((swift_name("beginCollection(descriptor:collectionSize:)")));
-- (id<SharedLogicKotlinx_serialization_coreCompositeEncoder>)beginStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
-- (void)encodeBooleanValue:(BOOL)value __attribute__((swift_name("encodeBoolean(value:)")));
-- (void)encodeByteValue:(int8_t)value __attribute__((swift_name("encodeByte(value:)")));
-- (void)encodeCharValue:(unichar)value __attribute__((swift_name("encodeChar(value:)")));
-- (void)encodeDoubleValue:(double)value __attribute__((swift_name("encodeDouble(value:)")));
-- (void)encodeEnumEnumDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)enumDescriptor index:(int32_t)index __attribute__((swift_name("encodeEnum(enumDescriptor:index:)")));
-- (void)encodeFloatValue:(float)value __attribute__((swift_name("encodeFloat(value:)")));
-- (id<SharedLogicKotlinx_serialization_coreEncoder>)encodeInlineDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("encodeInline(descriptor:)")));
-- (void)encodeIntValue:(int32_t)value __attribute__((swift_name("encodeInt(value:)")));
-- (void)encodeLongValue:(int64_t)value __attribute__((swift_name("encodeLong(value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNotNullMark __attribute__((swift_name("encodeNotNullMark()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNull __attribute__((swift_name("encodeNull()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNullableSerializableValueSerializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableValue(serializer:value:)")));
-- (void)encodeSerializableValueSerializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableValue(serializer:value:)")));
-- (void)encodeShortValue:(int16_t)value __attribute__((swift_name("encodeShort(value:)")));
-- (void)encodeStringValue:(NSString *)value __attribute__((swift_name("encodeString(value:)")));
-@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-
-/**
- * @note annotations
- *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/serialization/SealedSerializationApi)])
-*/
-__attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
-@protocol SharedLogicKotlinx_serialization_coreSerialDescriptor
-@required
-- (NSArray<id<SharedLogicKotlinAnnotation>> *)getElementAnnotationsIndex:(int32_t)index __attribute__((swift_name("getElementAnnotations(index:)")));
-- (id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)getElementDescriptorIndex:(int32_t)index __attribute__((swift_name("getElementDescriptor(index:)")));
-- (int32_t)getElementIndexName:(NSString *)name __attribute__((swift_name("getElementIndex(name:)")));
-- (NSString *)getElementNameIndex:(int32_t)index __attribute__((swift_name("getElementName(index:)")));
-- (BOOL)isElementOptionalIndex:(int32_t)index __attribute__((swift_name("isElementOptional(index:)")));
-@property (readonly) NSArray<id<SharedLogicKotlinAnnotation>> *annotations __attribute__((swift_name("annotations")));
-@property (readonly) int32_t elementsCount __attribute__((swift_name("elementsCount")));
-@property (readonly) BOOL isInline __attribute__((swift_name("isInline")));
-@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
-@property (readonly) SharedLogicKotlinx_serialization_coreSerialKind *kind __attribute__((swift_name("kind")));
-@property (readonly) NSString *serialName __attribute__((swift_name("serialName")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
-@protocol SharedLogicKotlinx_serialization_coreDecoder
-@required
-- (id<SharedLogicKotlinx_serialization_coreCompositeDecoder>)beginStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
-- (BOOL)decodeBoolean __attribute__((swift_name("decodeBoolean()")));
-- (int8_t)decodeByte __attribute__((swift_name("decodeByte()")));
-- (unichar)decodeChar __attribute__((swift_name("decodeChar()")));
-- (double)decodeDouble __attribute__((swift_name("decodeDouble()")));
-- (int32_t)decodeEnumEnumDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)enumDescriptor __attribute__((swift_name("decodeEnum(enumDescriptor:)")));
-- (float)decodeFloat __attribute__((swift_name("decodeFloat()")));
-- (id<SharedLogicKotlinx_serialization_coreDecoder>)decodeInlineDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeInline(descriptor:)")));
-- (int32_t)decodeInt __attribute__((swift_name("decodeInt()")));
-- (int64_t)decodeLong __attribute__((swift_name("decodeLong()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)decodeNotNullMark __attribute__((swift_name("decodeNotNullMark()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (SharedLogicKotlinNothing * _Nullable)decodeNull __attribute__((swift_name("decodeNull()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id _Nullable)decodeNullableSerializableValueDeserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeNullableSerializableValue(deserializer:)")));
-- (id _Nullable)decodeSerializableValueDeserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeSerializableValue(deserializer:)")));
-- (int16_t)decodeShort __attribute__((swift_name("decodeShort()")));
-- (NSString *)decodeString __attribute__((swift_name("decodeString()")));
-@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3387,66 +3022,6 @@ __attribute__((swift_name("Ktor_httpHeaders")))
 @required
 @end
 
-__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
-@protocol SharedLogicKotlinx_coroutines_coreDisposableHandle
-@required
-- (void)dispose __attribute__((swift_name("dispose()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
-@protocol SharedLogicKotlinx_coroutines_coreChildHandle <SharedLogicKotlinx_coroutines_coreDisposableHandle>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (BOOL)childCancelledCause:(SharedLogicKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-@property (readonly) id<SharedLogicKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
-@protocol SharedLogicKotlinx_coroutines_coreChildJob <SharedLogicKotlinx_coroutines_coreJob>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (void)parentCancelledParentJob:(id<SharedLogicKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
-@end
-
-__attribute__((swift_name("KotlinSequence")))
-@protocol SharedLogicKotlinSequence
-@required
-- (id<SharedLogicKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-@end
-
-__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
-@protocol SharedLogicKotlinx_coroutines_coreSelectClause0 <SharedLogicKotlinx_coroutines_coreSelectClause>
-@required
-@end
-
-__attribute__((swift_name("KotlinCoroutineContextKey")))
-@protocol SharedLogicKotlinCoroutineContextKey
-@required
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_utilsAttributeKey")))
 @interface SharedLogicKtor_utilsAttributeKey<T> : SharedLogicBase
@@ -3567,6 +3142,66 @@ __attribute__((swift_name("Kotlinx_io_coreSink")))
  *   kotlinx.io.InternalIoApi
 */
 @property (readonly) SharedLogicKotlinx_io_coreBuffer *buffer __attribute__((swift_name("buffer")));
+@end
+
+__attribute__((swift_name("KotlinCoroutineContextKey")))
+@protocol SharedLogicKotlinCoroutineContextKey
+@required
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
+@protocol SharedLogicKotlinx_coroutines_coreDisposableHandle
+@required
+- (void)dispose __attribute__((swift_name("dispose()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
+@protocol SharedLogicKotlinx_coroutines_coreChildHandle <SharedLogicKotlinx_coroutines_coreDisposableHandle>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (BOOL)childCancelledCause:(SharedLogicKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+@property (readonly) id<SharedLogicKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
+@protocol SharedLogicKotlinx_coroutines_coreChildJob <SharedLogicKotlinx_coroutines_coreJob>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (void)parentCancelledParentJob:(id<SharedLogicKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
+@end
+
+__attribute__((swift_name("KotlinSequence")))
+@protocol SharedLogicKotlinSequence
+@required
+- (id<SharedLogicKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
+@protocol SharedLogicKotlinx_coroutines_coreSelectClause0 <SharedLogicKotlinx_coroutines_coreSelectClause>
+@required
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3777,6 +3412,11 @@ __attribute__((swift_name("Kotlinx_serialization_jsonJsonPrimitive.Companion")))
 - (id<SharedLogicKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
+@protocol SharedLogicKotlinx_serialization_coreKSerializer <SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreDeserializationStrategy>
+@required
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_client_coreProxyConfig")))
 @interface SharedLogicKtor_client_coreProxyConfig : SharedLogicBase
@@ -3893,6 +3533,102 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline.Phases")))
 + (instancetype)phases __attribute__((swift_name("init()")));
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
+@protocol SharedLogicKotlinx_serialization_coreDecoder
+@required
+- (id<SharedLogicKotlinx_serialization_coreCompositeDecoder>)beginStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (BOOL)decodeBoolean __attribute__((swift_name("decodeBoolean()")));
+- (int8_t)decodeByte __attribute__((swift_name("decodeByte()")));
+- (unichar)decodeChar __attribute__((swift_name("decodeChar()")));
+- (double)decodeDouble __attribute__((swift_name("decodeDouble()")));
+- (int32_t)decodeEnumEnumDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)enumDescriptor __attribute__((swift_name("decodeEnum(enumDescriptor:)")));
+- (float)decodeFloat __attribute__((swift_name("decodeFloat()")));
+- (id<SharedLogicKotlinx_serialization_coreDecoder>)decodeInlineDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeInline(descriptor:)")));
+- (int32_t)decodeInt __attribute__((swift_name("decodeInt()")));
+- (int64_t)decodeLong __attribute__((swift_name("decodeLong()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeNotNullMark __attribute__((swift_name("decodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (SharedLogicKotlinNothing * _Nullable)decodeNull __attribute__((swift_name("decodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableValueDeserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeNullableSerializableValue(deserializer:)")));
+- (id _Nullable)decodeSerializableValueDeserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer __attribute__((swift_name("decodeSerializableValue(deserializer:)")));
+- (int16_t)decodeShort __attribute__((swift_name("decodeShort()")));
+- (NSString *)decodeString __attribute__((swift_name("decodeString()")));
+@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SubclassOptInRequired(markerClass=[NormalClass(value=kotlinx/serialization/SealedSerializationApi)])
+*/
+__attribute__((swift_name("Kotlinx_serialization_coreSerialDescriptor")))
+@protocol SharedLogicKotlinx_serialization_coreSerialDescriptor
+@required
+- (NSArray<id<SharedLogicKotlinAnnotation>> *)getElementAnnotationsIndex:(int32_t)index __attribute__((swift_name("getElementAnnotations(index:)")));
+- (id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)getElementDescriptorIndex:(int32_t)index __attribute__((swift_name("getElementDescriptor(index:)")));
+- (int32_t)getElementIndexName:(NSString *)name __attribute__((swift_name("getElementIndex(name:)")));
+- (NSString *)getElementNameIndex:(int32_t)index __attribute__((swift_name("getElementName(index:)")));
+- (BOOL)isElementOptionalIndex:(int32_t)index __attribute__((swift_name("isElementOptional(index:)")));
+@property (readonly) NSArray<id<SharedLogicKotlinAnnotation>> *annotations __attribute__((swift_name("annotations")));
+@property (readonly) int32_t elementsCount __attribute__((swift_name("elementsCount")));
+@property (readonly) BOOL isInline __attribute__((swift_name("isInline")));
+@property (readonly) BOOL isNullable __attribute__((swift_name("isNullable")));
+@property (readonly) SharedLogicKotlinx_serialization_coreSerialKind *kind __attribute__((swift_name("kind")));
+@property (readonly) NSString *serialName __attribute__((swift_name("serialName")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
+@protocol SharedLogicKotlinx_serialization_coreEncoder
+@required
+- (id<SharedLogicKotlinx_serialization_coreCompositeEncoder>)beginCollectionDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor collectionSize:(int32_t)collectionSize __attribute__((swift_name("beginCollection(descriptor:collectionSize:)")));
+- (id<SharedLogicKotlinx_serialization_coreCompositeEncoder>)beginStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("beginStructure(descriptor:)")));
+- (void)encodeBooleanValue:(BOOL)value __attribute__((swift_name("encodeBoolean(value:)")));
+- (void)encodeByteValue:(int8_t)value __attribute__((swift_name("encodeByte(value:)")));
+- (void)encodeCharValue:(unichar)value __attribute__((swift_name("encodeChar(value:)")));
+- (void)encodeDoubleValue:(double)value __attribute__((swift_name("encodeDouble(value:)")));
+- (void)encodeEnumEnumDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)enumDescriptor index:(int32_t)index __attribute__((swift_name("encodeEnum(enumDescriptor:index:)")));
+- (void)encodeFloatValue:(float)value __attribute__((swift_name("encodeFloat(value:)")));
+- (id<SharedLogicKotlinx_serialization_coreEncoder>)encodeInlineDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("encodeInline(descriptor:)")));
+- (void)encodeIntValue:(int32_t)value __attribute__((swift_name("encodeInt(value:)")));
+- (void)encodeLongValue:(int64_t)value __attribute__((swift_name("encodeLong(value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNotNullMark __attribute__((swift_name("encodeNotNullMark()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNull __attribute__((swift_name("encodeNull()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableValueSerializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableValue(serializer:value:)")));
+- (void)encodeSerializableValueSerializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableValue(serializer:value:)")));
+- (void)encodeShortValue:(int16_t)value __attribute__((swift_name("encodeShort(value:)")));
+- (void)encodeStringValue:(NSString *)value __attribute__((swift_name("encodeString(value:)")));
+@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
 
 /**
  * @note annotations
@@ -3931,78 +3667,6 @@ __attribute__((swift_name("Kotlinx_serialization_jsonJsonNamingStrategy")))
 @protocol SharedLogicKotlinx_serialization_jsonJsonNamingStrategy
 @required
 - (NSString *)serialNameForJsonDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor elementIndex:(int32_t)elementIndex serialName:(NSString *)serialName __attribute__((swift_name("serialNameForJson(descriptor:elementIndex:serialName:)")));
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
-@protocol SharedLogicKotlinx_serialization_coreCompositeEncoder
-@required
-- (void)encodeBooleanElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(BOOL)value __attribute__((swift_name("encodeBooleanElement(descriptor:index:value:)")));
-- (void)encodeByteElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int8_t)value __attribute__((swift_name("encodeByteElement(descriptor:index:value:)")));
-- (void)encodeCharElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(unichar)value __attribute__((swift_name("encodeCharElement(descriptor:index:value:)")));
-- (void)encodeDoubleElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(double)value __attribute__((swift_name("encodeDoubleElement(descriptor:index:value:)")));
-- (void)encodeFloatElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(float)value __attribute__((swift_name("encodeFloatElement(descriptor:index:value:)")));
-- (id<SharedLogicKotlinx_serialization_coreEncoder>)encodeInlineElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("encodeInlineElement(descriptor:index:)")));
-- (void)encodeIntElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int32_t)value __attribute__((swift_name("encodeIntElement(descriptor:index:value:)")));
-- (void)encodeLongElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int64_t)value __attribute__((swift_name("encodeLongElement(descriptor:index:value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)encodeNullableSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableElement(descriptor:index:serializer:value:)")));
-- (void)encodeSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableElement(descriptor:index:serializer:value:)")));
-- (void)encodeShortElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int16_t)value __attribute__((swift_name("encodeShortElement(descriptor:index:value:)")));
-- (void)encodeStringElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(NSString *)value __attribute__((swift_name("encodeStringElement(descriptor:index:value:)")));
-- (void)endStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)shouldEncodeElementDefaultDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("shouldEncodeElementDefault(descriptor:index:)")));
-@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-__attribute__((swift_name("KotlinAnnotation")))
-@protocol SharedLogicKotlinAnnotation
-@required
-@end
-
-__attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
-@protocol SharedLogicKotlinx_serialization_coreCompositeDecoder
-@required
-- (BOOL)decodeBooleanElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeBooleanElement(descriptor:index:)")));
-- (int8_t)decodeByteElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeByteElement(descriptor:index:)")));
-- (unichar)decodeCharElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeCharElement(descriptor:index:)")));
-- (int32_t)decodeCollectionSizeDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeCollectionSize(descriptor:)")));
-- (double)decodeDoubleElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeDoubleElement(descriptor:index:)")));
-- (int32_t)decodeElementIndexDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeElementIndex(descriptor:)")));
-- (float)decodeFloatElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeFloatElement(descriptor:index:)")));
-- (id<SharedLogicKotlinx_serialization_coreDecoder>)decodeInlineElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeInlineElement(descriptor:index:)")));
-- (int32_t)decodeIntElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeIntElement(descriptor:index:)")));
-- (int64_t)decodeLongElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeLongElement(descriptor:index:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id _Nullable)decodeNullableSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (BOOL)decodeSequentially __attribute__((swift_name("decodeSequentially()")));
-- (id _Nullable)decodeSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeSerializableElement(descriptor:index:deserializer:previousValue:)")));
-- (int16_t)decodeShortElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeShortElement(descriptor:index:)")));
-- (NSString *)decodeStringElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeStringElement(descriptor:index:)")));
-- (void)endStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
-@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinNothing")))
-@interface SharedLogicKotlinNothing : SharedLogicBase
 @end
 
 
@@ -4136,22 +3800,6 @@ __attribute__((swift_name("KotlinMapEntry")))
 @required
 @property (readonly) id _Nullable key __attribute__((swift_name("key")));
 @property (readonly) id _Nullable value __attribute__((swift_name("value")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
-@protocol SharedLogicKotlinx_coroutines_coreParentJob <SharedLogicKotlinx_coroutines_coreJob>
-@required
-
-/**
- * @note annotations
- *   kotlinx.coroutines.InternalCoroutinesApi
-*/
-- (SharedLogicKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -4300,6 +3948,22 @@ __attribute__((swift_name("Kotlinx_io_coreBuffer")))
  * @note annotations
  *   kotlinx.io.InternalIoApi
 */
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
+@protocol SharedLogicKotlinx_coroutines_coreParentJob <SharedLogicKotlinx_coroutines_coreJob>
+@required
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.InternalCoroutinesApi
+*/
+- (SharedLogicKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
 @end
 
 
@@ -4469,6 +4133,78 @@ __attribute__((swift_name("Ktor_httpURLBuilder")))
 - (SharedLogicKtor_httpUrl *)build __attribute__((swift_name("build()")));
 - (NSString *)buildString __attribute__((swift_name("buildString()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeDecoder")))
+@protocol SharedLogicKotlinx_serialization_coreCompositeDecoder
+@required
+- (BOOL)decodeBooleanElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeBooleanElement(descriptor:index:)")));
+- (int8_t)decodeByteElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeByteElement(descriptor:index:)")));
+- (unichar)decodeCharElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeCharElement(descriptor:index:)")));
+- (int32_t)decodeCollectionSizeDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeCollectionSize(descriptor:)")));
+- (double)decodeDoubleElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeDoubleElement(descriptor:index:)")));
+- (int32_t)decodeElementIndexDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("decodeElementIndex(descriptor:)")));
+- (float)decodeFloatElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeFloatElement(descriptor:index:)")));
+- (id<SharedLogicKotlinx_serialization_coreDecoder>)decodeInlineElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeInlineElement(descriptor:index:)")));
+- (int32_t)decodeIntElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeIntElement(descriptor:index:)")));
+- (int64_t)decodeLongElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeLongElement(descriptor:index:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id _Nullable)decodeNullableSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeNullableSerializableElement(descriptor:index:deserializer:previousValue:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)decodeSequentially __attribute__((swift_name("decodeSequentially()")));
+- (id _Nullable)decodeSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index deserializer:(id<SharedLogicKotlinx_serialization_coreDeserializationStrategy>)deserializer previousValue:(id _Nullable)previousValue __attribute__((swift_name("decodeSerializableElement(descriptor:index:deserializer:previousValue:)")));
+- (int16_t)decodeShortElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeShortElement(descriptor:index:)")));
+- (NSString *)decodeStringElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("decodeStringElement(descriptor:index:)")));
+- (void)endStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinNothing")))
+@interface SharedLogicKotlinNothing : SharedLogicBase
+@end
+
+__attribute__((swift_name("KotlinAnnotation")))
+@protocol SharedLogicKotlinAnnotation
+@required
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
+@protocol SharedLogicKotlinx_serialization_coreCompositeEncoder
+@required
+- (void)encodeBooleanElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(BOOL)value __attribute__((swift_name("encodeBooleanElement(descriptor:index:value:)")));
+- (void)encodeByteElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int8_t)value __attribute__((swift_name("encodeByteElement(descriptor:index:value:)")));
+- (void)encodeCharElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(unichar)value __attribute__((swift_name("encodeCharElement(descriptor:index:value:)")));
+- (void)encodeDoubleElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(double)value __attribute__((swift_name("encodeDoubleElement(descriptor:index:value:)")));
+- (void)encodeFloatElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(float)value __attribute__((swift_name("encodeFloatElement(descriptor:index:value:)")));
+- (id<SharedLogicKotlinx_serialization_coreEncoder>)encodeInlineElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("encodeInlineElement(descriptor:index:)")));
+- (void)encodeIntElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int32_t)value __attribute__((swift_name("encodeIntElement(descriptor:index:value:)")));
+- (void)encodeLongElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int64_t)value __attribute__((swift_name("encodeLongElement(descriptor:index:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)encodeNullableSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeNullableSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeSerializableElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index serializer:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeSerializableElement(descriptor:index:serializer:value:)")));
+- (void)encodeShortElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(int16_t)value __attribute__((swift_name("encodeShortElement(descriptor:index:value:)")));
+- (void)encodeStringElementDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index value:(NSString *)value __attribute__((swift_name("encodeStringElement(descriptor:index:value:)")));
+- (void)endStructureDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor __attribute__((swift_name("endStructure(descriptor:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (BOOL)shouldEncodeElementDefaultDescriptor:(id<SharedLogicKotlinx_serialization_coreSerialDescriptor>)descriptor index:(int32_t)index __attribute__((swift_name("shouldEncodeElementDefault(descriptor:index:)")));
+@property (readonly) SharedLogicKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
 __attribute__((objc_subclassing_restricted))
