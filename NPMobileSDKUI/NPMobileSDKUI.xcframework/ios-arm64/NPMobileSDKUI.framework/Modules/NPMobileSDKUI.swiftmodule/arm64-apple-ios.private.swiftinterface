@@ -1,0 +1,485 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name NPMobileSDKUI -package-name ios
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+import Combine
+import CoreText
+import DeveloperToolsSupport
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import PassKit
+import SharedLogic
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _PassKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
+@_Concurrency.MainActor @preconcurrency public struct PrimaryCTAButton : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let title: Swift.String
+  @_Concurrency.MainActor @preconcurrency public let isEnabled: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public let action: () -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String = "Pay", isEnabled: Swift.Bool = true, action: @escaping () -> Swift.Void = {
+             
+        })
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI16PrimaryCTAButtonV4bodyQrvp", 0) __
+}
+public typealias CTAButton = NPMobileSDKUI.PrimaryCTAButton
+
+
+@_Concurrency.MainActor @preconcurrency public struct PaymentContainerView<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(alignment: SwiftUICore.HorizontalAlignment = .leading, spacing: CoreFoundation.CGFloat = 20, accessibilityIdentifier: Swift.String? = nil, @SwiftUICore.ViewBuilder content: @escaping () -> Content)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI20PaymentContainerViewV4bodyQrvp", 0) __<Content>
+}
+@_Concurrency.MainActor @preconcurrency public struct ShimmerBlock : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let width: CoreFoundation.CGFloat?
+  @_Concurrency.MainActor @preconcurrency public let height: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public let cornerRadius: CoreFoundation.CGFloat?
+  @_Concurrency.MainActor @preconcurrency public let color: SwiftUICore.Color?
+  @_Concurrency.MainActor @preconcurrency public let accessibilityId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat, cornerRadius: CoreFoundation.CGFloat? = nil, color: SwiftUICore.Color? = nil, accessibilityId: Swift.String? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI12ShimmerBlockV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct SomethingWentWrongCard : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let title: Swift.String
+  @_Concurrency.MainActor @preconcurrency public let message: Swift.String
+  @_Concurrency.MainActor @preconcurrency public init(title: Swift.String = "Something went wrong!", message: Swift.String = "Please try again")
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI22SomethingWentWrongCardV4bodyQrvp", 0) __
+}
+
+
+public struct NPMobileSDKPaymentRequest {
+  public let orderId: Swift.String
+  public let authHeader: Swift.String
+  public let url: Swift.String
+  public let threeDsCallbackUrlPrefix: Swift.String?
+  public let threeDsCallbackPath: Swift.String?
+  public let excludedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod>
+  public let paymentMethodsOrder: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(orderId: Swift.String, authHeader: Swift.String, url: Swift.String, threeDsCallbackUrlPrefix: Swift.String? = nil, threeDsCallbackPath: Swift.String? = nil, excludedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod> = [], paymentMethodsOrder: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder] = [])
+  #endif
+}
+public struct NPMobileSDKStyleConfiguration {
+  public let sheetTitle: Swift.String
+  public let layoutMode: NPMobileSDKUI.NPMobileSDKLayoutMode
+  public let includedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod>
+  public let excludedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod>
+  public let paymentMethodsOrder: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder]
+  public init(sheetTitle: Swift.String = "NoonPayments SDK", layoutMode: NPMobileSDKUI.NPMobileSDKLayoutMode = .radio, includedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod> = [], excludedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod> = [], paymentMethodsOrder: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder] = [])
+}
+public enum NPMobileSDKLayoutMode {
+  case radio
+  case checkmark
+  case floatingButtons
+  public static func == (a: NPMobileSDKUI.NPMobileSDKLayoutMode, b: NPMobileSDKUI.NPMobileSDKLayoutMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NPMobileSDKPaymentMethod : Swift.String, Swift.Hashable, Swift.CaseIterable {
+  case card
+  case applePay
+  case googlePay
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [NPMobileSDKUI.NPMobileSDKPaymentMethod]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [NPMobileSDKUI.NPMobileSDKPaymentMethod] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum NPMobileSDKPaymentMethodOrder : Swift.Hashable, Swift.CaseIterable {
+  case savedCard
+  case newCard
+  case wallet
+  public static func == (a: NPMobileSDKUI.NPMobileSDKPaymentMethodOrder, b: NPMobileSDKUI.NPMobileSDKPaymentMethodOrder) -> Swift.Bool
+  public typealias AllCases = [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder]
+  nonisolated public static var allCases: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NPMobileSDKOrderStatus {
+  case success
+  case failed
+  case cancelled
+  public static func == (a: NPMobileSDKUI.NPMobileSDKOrderStatus, b: NPMobileSDKUI.NPMobileSDKOrderStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NPMobileSDKPaymentResponse {
+  public let orderId: Swift.String
+  public let orderStatus: NPMobileSDKUI.NPMobileSDKOrderStatus
+  public let errorMessage: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(orderId: Swift.String, orderStatus: NPMobileSDKUI.NPMobileSDKOrderStatus, errorMessage: Swift.String? = nil)
+  #endif
+}
+public struct NPAppearance {
+  public enum NPColorMode {
+    case system
+    case light
+    case dark
+    public static func == (a: NPMobileSDKUI.NPAppearance.NPColorMode, b: NPMobileSDKUI.NPAppearance.NPColorMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum NPLanguageMode {
+    case english
+    case arabic
+    public static func == (a: NPMobileSDKUI.NPAppearance.NPLanguageMode, b: NPMobileSDKUI.NPAppearance.NPLanguageMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var sheetTitle: Swift.String?
+  public var layoutMode: NPMobileSDKUI.NPMobileSDKLayoutMode?
+  public var colorMode: NPMobileSDKUI.NPAppearance.NPColorMode
+  public var language: NPMobileSDKUI.NPAppearance.NPLanguageMode
+  public struct NPColorPalette {
+    public var backgroundPrimary: SwiftUICore.Color?
+    public var surfaceSecondary: SwiftUICore.Color?
+    public var border: SwiftUICore.Color?
+    public var textPrimaryDissabled: SwiftUICore.Color?
+    public var linkPrimary: SwiftUICore.Color?
+    public var textPrimary: SwiftUICore.Color?
+    public var backgroundInverse: SwiftUICore.Color?
+    public var surfaceAccentWarm: SwiftUICore.Color?
+    public var primaryActionHover: SwiftUICore.Color?
+    public var surfaceSecondaryDark: SwiftUICore.Color?
+    public var backgroundPrimaryDark: SwiftUICore.Color?
+    public var borderSubtleDark: SwiftUICore.Color?
+    public var borderDark: SwiftUICore.Color?
+    public var surfaceTertiary: SwiftUICore.Color?
+    public var statusWarning: SwiftUICore.Color?
+    public var statusError: SwiftUICore.Color?
+    public var surfaceTertiaryLight: SwiftUICore.Color?
+    public var surfaceSecondaryLight: SwiftUICore.Color?
+    public var textSecondary: SwiftUICore.Color?
+    public var primaryActionDark: SwiftUICore.Color?
+    public var primaryActionActiveDark: SwiftUICore.Color?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var background: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var primary: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var componentPlaceholderText: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var componentText: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var componentBorder: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var componentDivider: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var componentBackground: SwiftUICore.Color? {
+      get
+      set
+    }
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(backgroundPrimary: SwiftUICore.Color? = nil, surfaceSecondary: SwiftUICore.Color? = nil, border: SwiftUICore.Color? = nil, textPrimaryDissabled: SwiftUICore.Color? = nil, linkPrimary: SwiftUICore.Color? = nil, textPrimary: SwiftUICore.Color? = nil, backgroundInverse: SwiftUICore.Color? = nil, surfaceAccentWarm: SwiftUICore.Color? = nil, primaryActionHover: SwiftUICore.Color? = nil, surfaceSecondaryDark: SwiftUICore.Color? = nil, backgroundPrimaryDark: SwiftUICore.Color? = nil, borderSubtleDark: SwiftUICore.Color? = nil, borderDark: SwiftUICore.Color? = nil, surfaceTertiary: SwiftUICore.Color? = nil, statusWarning: SwiftUICore.Color? = nil, statusError: SwiftUICore.Color? = nil, surfaceTertiaryLight: SwiftUICore.Color? = nil, surfaceSecondaryLight: SwiftUICore.Color? = nil, textSecondary: SwiftUICore.Color? = nil, primaryActionDark: SwiftUICore.Color? = nil, primaryActionActiveDark: SwiftUICore.Color? = nil)
+    #endif
+  }
+  public struct NPColorTheme {
+    public var light: NPMobileSDKUI.NPAppearance.NPColorPalette
+    public var dark: NPMobileSDKUI.NPAppearance.NPColorPalette
+    public init(light: NPMobileSDKUI.NPAppearance.NPColorPalette = NPColorPalette(), dark: NPMobileSDKUI.NPAppearance.NPColorPalette = NPColorPalette())
+  }
+  public struct NPLocaleFonts {
+    public var title: SwiftUICore.Font?
+    public var primary: SwiftUICore.Font?
+    public var secondary: SwiftUICore.Font?
+    public var tertiary: SwiftUICore.Font?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(title: SwiftUICore.Font? = nil, primary: SwiftUICore.Font? = nil, secondary: SwiftUICore.Font? = nil, tertiary: SwiftUICore.Font? = nil)
+    #endif
+  }
+  public struct NPFont {
+    public var english: NPMobileSDKUI.NPAppearance.NPLocaleFonts
+    public var arabic: NPMobileSDKUI.NPAppearance.NPLocaleFonts
+    public var scaleFactor: CoreFoundation.CGFloat
+    public init(english: NPMobileSDKUI.NPAppearance.NPLocaleFonts = NPLocaleFonts(), arabic: NPMobileSDKUI.NPAppearance.NPLocaleFonts = NPLocaleFonts(), scaleFactor: CoreFoundation.CGFloat = 1.0)
+  }
+  public struct NPPadding {
+    public var inputPadding: CoreFoundation.CGFloat?
+    public var ctaPadding: CoreFoundation.CGFloat?
+    public var separatorPadding: CoreFoundation.CGFloat?
+    public var verticalPadding: CoreFoundation.CGFloat?
+    public var floatingSpace: CoreFoundation.CGFloat?
+    public var cardPaddingTop: CoreFoundation.CGFloat?
+    public var cardPaddingBottom: CoreFoundation.CGFloat?
+    public var cardPadding: CoreFoundation.CGFloat?
+    public var componentPadding: CoreFoundation.CGFloat?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(inputPadding: CoreFoundation.CGFloat? = nil, ctaPadding: CoreFoundation.CGFloat? = nil, separatorPadding: CoreFoundation.CGFloat? = nil, verticalPadding: CoreFoundation.CGFloat? = nil, floatingSpace: CoreFoundation.CGFloat? = nil, cardPaddingTop: CoreFoundation.CGFloat? = nil, cardPaddingBottom: CoreFoundation.CGFloat? = nil, cardPadding: CoreFoundation.CGFloat? = nil, componentPadding: CoreFoundation.CGFloat? = nil)
+    #endif
+  }
+  public struct NPRadius {
+    public var bottomSheetCornerRadius: CoreFoundation.CGFloat?
+    public var inputCornerRadius: CoreFoundation.CGFloat?
+    public var ctaCornerRadius: CoreFoundation.CGFloat?
+    public var floatingCardCornerRadius: CoreFoundation.CGFloat?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(bottomSheetCornerRadius: CoreFoundation.CGFloat? = nil, inputCornerRadius: CoreFoundation.CGFloat? = nil, ctaCornerRadius: CoreFoundation.CGFloat? = nil, floatingCardCornerRadius: CoreFoundation.CGFloat? = nil)
+    #endif
+  }
+  public var color: NPMobileSDKUI.NPAppearance.NPColorTheme
+  public var font: NPMobileSDKUI.NPAppearance.NPFont
+  public var padding: NPMobileSDKUI.NPAppearance.NPPadding
+  public var radius: NPMobileSDKUI.NPAppearance.NPRadius
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(sheetTitle: Swift.String? = nil, layoutMode: NPMobileSDKUI.NPMobileSDKLayoutMode? = nil, colorMode: NPMobileSDKUI.NPAppearance.NPColorMode = .system, language: NPMobileSDKUI.NPAppearance.NPLanguageMode = .english, color: NPMobileSDKUI.NPAppearance.NPColorTheme = NPColorTheme(), font: NPMobileSDKUI.NPAppearance.NPFont = NPFont(), padding: NPMobileSDKUI.NPAppearance.NPPadding = NPPadding(), radius: NPMobileSDKUI.NPAppearance.NPRadius = NPRadius())
+  #endif
+}
+public struct NPMobileSDKColorOverrides {
+  public let light: [Swift.String : Swift.String]
+  public let dark: [Swift.String : Swift.String]
+  public init(light: [Swift.String : Swift.String] = [:], dark: [Swift.String : Swift.String] = [:])
+}
+public enum NPMobileSDKThreeDsDefaults {
+  public static var callbackPath: Swift.String
+}
+@_Concurrency.MainActor @preconcurrency public struct NPMobileSDKPaymentView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isPresented: SwiftUICore.Binding<Swift.Bool>, request: NPMobileSDKUI.NPMobileSDKPaymentRequest, style: NPMobileSDKUI.NPMobileSDKStyleConfiguration = NPMobileSDKStyleConfiguration(), appearance: NPMobileSDKUI.NPAppearance = NPAppearance(), onPaymentResult: @escaping (NPMobileSDKUI.NPMobileSDKPaymentResponse) -> Swift.Void = { _ in
+             
+        })
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI0A14SDKPaymentViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct NPMobileSDKEmbeddedPaymentView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(request: NPMobileSDKUI.NPMobileSDKPaymentRequest, style: NPMobileSDKUI.NPMobileSDKStyleConfiguration = NPMobileSDKStyleConfiguration(), appearance: NPMobileSDKUI.NPAppearance = NPAppearance(), onPaymentResult: @escaping (NPMobileSDKUI.NPMobileSDKPaymentResponse) -> Swift.Void = { _ in
+             
+        }, onHeightChanged: @escaping (CoreFoundation.CGFloat) -> Swift.Void = { _ in
+             
+        }, onPaymentMethodsLoaded: @escaping (NPMobileSDKUI.NPMobileSDKPaymentResponse) -> Swift.Void = { _ in
+             
+        })
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI0A22SDKEmbeddedPaymentViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct NPMobileSDKPayButton : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(orderId: Swift.String, title: Swift.String = "Pay")
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI0A12SDKPayButtonV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor final public class PaymentMethodPayCoordinator : Foundation.ObservableObject {
+  @_Concurrency.MainActor final public let orderId: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Combine.Published @_projectedValueProperty($selectedId) @_Concurrency.MainActor final public var selectedId: Swift.String? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var $selectedId: Combine.Published<Swift.String?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  #endif
+  @Combine.Published @_projectedValueProperty($drivenState) @_Concurrency.MainActor final public var drivenState: SharedLogic.PaymentMethodDemoState {
+    get
+  }
+  @_Concurrency.MainActor final public var $drivenState: Combine.Published<SharedLogic.PaymentMethodDemoState>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public let viewModel: SharedLogic.PaymentMethodDemoViewModel
+  @_Concurrency.MainActor final public var onPayClick: (Swift.String?) -> Swift.Void
+  @_Concurrency.MainActor final public var onApplePayOpen3DS: (Swift.String) -> Swift.Void
+  @_Concurrency.MainActor final public var onApplePayCompletedWithout3DS: (Swift.String?) -> Swift.Void
+  @_Concurrency.MainActor final public var onApplePayFailed: (Swift.String) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public init(viewModel: SharedLogic.PaymentMethodDemoViewModel, orderId: Swift.String, initialSelectedId: Swift.String? = "add_new_card", onPayClick: @escaping (Swift.String?) -> Swift.Void = { _ in
+             
+        }, onApplePayOpen3DS: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        }, onApplePayCompletedWithout3DS: @escaping (Swift.String?) -> Swift.Void = { _ in
+             
+        }, onApplePayFailed: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        })
+  #endif
+  @_Concurrency.MainActor final public var isPayEnabled: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public func refreshState()
+  @_Concurrency.MainActor final public func select(_ id: Swift.String)
+  @_Concurrency.MainActor final public func adjustSelectionIfNeeded(items: [NPMobileSDKUI.PaymentMethodItem])
+  @_Concurrency.MainActor final public func pay()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension NPMobileSDKUI.PaymentMethodPayCoordinator {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor convenience public init(request: NPMobileSDKUI.NPMobileSDKPaymentRequest, initialSelectedId: Swift.String? = "add_new_card", onPayClick: @escaping (Swift.String?) -> Swift.Void = { _ in
+             
+        }, onApplePayOpen3DS: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        }, onApplePayCompletedWithout3DS: @escaping (Swift.String?) -> Swift.Void = { _ in
+             
+        }, onApplePayFailed: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        })
+  #endif
+}
+@_Concurrency.MainActor @preconcurrency public struct PaymentMethodSkeletonView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public let rowCount: Swift.Int
+  @_Concurrency.MainActor @preconcurrency public let title: Swift.String
+  @_Concurrency.MainActor @preconcurrency public init(rowCount: Swift.Int = 3, title: Swift.String = "Payment methods")
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI25PaymentMethodSkeletonViewV4bodyQrvp", 0) __
+}
+public enum PaymentMethodItemType : Swift.String, Swift.CaseIterable, Swift.Identifiable {
+  case applePay
+  case googlePay
+  case savedCard
+  case addNewCard
+  public var id: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [NPMobileSDKUI.PaymentMethodItemType]
+  public typealias ID = Swift.String
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [NPMobileSDKUI.PaymentMethodItemType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PaymentMethodItem : Swift.Identifiable, Swift.Equatable {
+  public let id: Swift.String
+  public let type: NPMobileSDKUI.PaymentMethodItemType
+  public let title: Swift.String
+  public let cardNumber: Swift.String?
+  public let expiryDate: Swift.String?
+  public let brand: Swift.String?
+  public let cardArtUrl: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.String, type: NPMobileSDKUI.PaymentMethodItemType, title: Swift.String, cardNumber: Swift.String? = nil, expiryDate: Swift.String? = nil, brand: Swift.String? = nil, cardArtUrl: Swift.String? = nil)
+  #endif
+  public static func == (a: NPMobileSDKUI.PaymentMethodItem, b: NPMobileSDKUI.PaymentMethodItem) -> Swift.Bool
+  public typealias ID = Swift.String
+}
+@_Concurrency.MainActor @preconcurrency public struct PaymentMethodView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var onViewMoreClick: (Swift.String) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public var onPayClick: (Swift.String?) -> Swift.Void {
+    get
+    nonmutating set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(coordinator: NPMobileSDKUI.PaymentMethodPayCoordinator, layoutMode: NPMobileSDKUI.NPMobileSDKLayoutMode = .radio, excludedPaymentMethods: Swift.Set<NPMobileSDKUI.NPMobileSDKPaymentMethod> = [], paymentMethodsOrder: [NPMobileSDKUI.NPMobileSDKPaymentMethodOrder] = [], showsPayButton: Swift.Bool = true, onViewMoreClick: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        }, onApplePayOpen3DS: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        }, onApplePayCompletedWithout3DS: @escaping (Swift.String?) -> Swift.Void = { _ in
+             
+        }, onApplePayFailed: @escaping (Swift.String) -> Swift.Void = { _ in
+             
+        }, onPaymentMethodsLoaded: @escaping (SharedLogic.PaymentMethodLoadPhase, Swift.String?) -> Swift.Void = { _, _ in
+             
+        })
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13NPMobileSDKUI17PaymentMethodViewV4bodyQrvp", 0) __
+}
+extension NPMobileSDKUI.PrimaryCTAButton : Swift.Sendable {}
+extension NPMobileSDKUI.PaymentContainerView : Swift.Sendable {}
+extension NPMobileSDKUI.ShimmerBlock : Swift.Sendable {}
+extension NPMobileSDKUI.SomethingWentWrongCard : Swift.Sendable {}
+extension NPMobileSDKUI.NPMobileSDKLayoutMode : Swift.Equatable {}
+extension NPMobileSDKUI.NPMobileSDKLayoutMode : Swift.Hashable {}
+extension NPMobileSDKUI.NPMobileSDKPaymentMethod : Swift.RawRepresentable {}
+extension NPMobileSDKUI.NPMobileSDKOrderStatus : Swift.Equatable {}
+extension NPMobileSDKUI.NPMobileSDKOrderStatus : Swift.Hashable {}
+extension NPMobileSDKUI.NPAppearance.NPColorMode : Swift.Equatable {}
+extension NPMobileSDKUI.NPAppearance.NPColorMode : Swift.Hashable {}
+extension NPMobileSDKUI.NPAppearance.NPLanguageMode : Swift.Equatable {}
+extension NPMobileSDKUI.NPAppearance.NPLanguageMode : Swift.Hashable {}
+extension NPMobileSDKUI.NPMobileSDKPaymentView : Swift.Sendable {}
+extension NPMobileSDKUI.NPMobileSDKEmbeddedPaymentView : Swift.Sendable {}
+extension NPMobileSDKUI.NPMobileSDKPayButton : Swift.Sendable {}
+extension NPMobileSDKUI.PaymentMethodPayCoordinator : Swift.Sendable {}
+extension NPMobileSDKUI.PaymentMethodSkeletonView : Swift.Sendable {}
+extension NPMobileSDKUI.PaymentMethodItemType : Swift.Equatable {}
+extension NPMobileSDKUI.PaymentMethodItemType : Swift.Hashable {}
+extension NPMobileSDKUI.PaymentMethodItemType : Swift.RawRepresentable {}
+extension NPMobileSDKUI.PaymentMethodView : Swift.Sendable {}

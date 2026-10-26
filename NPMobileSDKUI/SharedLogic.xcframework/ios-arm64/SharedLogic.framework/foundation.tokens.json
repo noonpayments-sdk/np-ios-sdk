@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "spacing": {
+    "0": 0,
+    "2XS": 2,
+    "XS": 4,
+    "S": 8,
+    "M": 12,
+    "L": 16,
+    "XL": 24,
+    "2XL": 32,
+    "3XL": 40,
+    "4XL": 48,
+    "5XL": 56,
+    "6XL": 64,
+    "7XL": 72,
+    "8XL": 80,
+    "9XL": 88,
+    "10XL": 94,
+    "11XL": 102,
+    "12XL": 110
+  },
+  "borderRadius": {
+    "0": 0,
+    "XS": 4,
+    "S": 8,
+    "M": 12,
+    "L": 16,
+    "Circle": 50,
+    "Pill": 999
+  },
+  "borderWidth": {
+    "0": 0,
+    "XS": 0.5,
+    "S": 1,
+    "M": 1.5,
+    "L": 2,
+    "XL": 4
+  },
+  "typography": {
+    "fontFamily": {
+      "name": "Poppins"
+    },
+    "fontSize": {
+      "h1": 32,
+      "h2": 24,
+      "h3": 20,
+      "subtitle": 18,
+      "bodyLarge": 16,
+      "bodyRegular": 14,
+      "caption": 12,
+      "smallCaption": 12,
+      "tiny": 10,
+      "npSdkDefaultTitleText": 52
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semiBold": 600,
+      "bold": 700
+    },
+    "lineHeight": {
+      "h1": 40,
+      "h2": 32,
+      "h3": 28,
+      "subtitle": 24,
+      "bodyLarge": 24,
+      "bodyRegular": 20,
+      "caption": 16,
+      "smallCaption": 16,
+      "tiny": 14
+    }
+  }
+}

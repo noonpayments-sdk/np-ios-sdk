@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "colors": {
+    "light": {
+      "BackgroundPrimary": "#FFFFFF",
+      "SurfaceSecondary": "#E8E8E9",
+      "Border": "#D9D9D9",
+      "TextPrimaryDissabled": "#898E94",
+      "LinkPrimary": "#1C7BFF",
+      "TextPrimary": "#1C1B1F",
+      "BackgroundInverse": "#000000",
+      "SurfaceAccentWarm": "#3D3030",
+      "PrimaryActionHover": "#24197B",
+      "SurfaceSecondaryDark": "#112D4F",
+      "BackgroundPrimaryDark": "#172F56",
+      "BorderSubtleDark": "#C7D9FF",
+      "BorderDark": "#404553",
+      "SurfaceTertiary": "#29292C",
+      "StatusWarning": "#F16B46",
+      "StatusError": "#AD310E",
+      "SurfaceTertiaryLight": "#E8E8E9",
+      "SurfaceSecondaryLight": "#ECECEE",
+      "TextSecondary": "#7F828A",
+      "PrimaryActionDark": "#5674B6",
+      "PrimaryActionActiveDark": "#2C4977"
+    },
+    "dark": {
+      "BackgroundPrimary": "#172F56",
+      "SurfaceSecondary": "#C7D9FF",
+      "Border": "#D9D9D9",
+      "TextPrimaryDissabled": "#898E94",
+      "LinkPrimary": "#C7D9FF",
+      "TextPrimary": "#5674B6",
+      "BackgroundInverse": "#FFFFFF",
+      "SurfaceAccentWarm": "#E8D8D8",
+      "PrimaryActionHover": "#7D9BFF",
+      "SurfaceSecondaryDark": "#1E293B",
+      "BackgroundPrimaryDark": "#0F172A",
+      "BorderSubtleDark": "#1E293B",
+      "BorderDark": "#334155",
+      "SurfaceTertiary": "#18181B",
+      "StatusWarning": "#FB923C",
+      "StatusError": "#F87171",
+      "SurfaceTertiaryLight": "#27272A",
+      "SurfaceSecondaryLight": "#1E1E24",
+      "TextSecondary": "#94A3B8",
+      "PrimaryActionDark": "#60A5FA",
+      "PrimaryActionActiveDark": "#3B82F6"
+    }
+  },
+  "typography": {
+    "english": {
+      "title": {
+        "family": "Poppins-SemiBold",
+        "fontSize": 20,
+        "fontWeight": 600,
+        "lineHeight": 28
+      },
+      "primary": {
+        "family": "Poppins-Regular",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 24
+      },
+      "secondary": {
+        "family": "Poppins-Regular",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "lineHeight": 16
+      },
+      "tertiary": {
+        "family": "Poppins-Regular",
+        "fontSize": 10,
+        "fontWeight": 400,
+        "lineHeight": 14
+      }
+    },
+    "arabic": {
+      "title": {
+        "family": "Poppins-SemiBold",
+        "fontSize": 200,
+        "fontWeight": 600,
+        "lineHeight": 28
+      },
+      "primary": {
+        "family": "PuppiesPlay-Regular",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 24
+      },
+      "secondary": {
+        "family": "PuppiesPlay-Regular",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "lineHeight": 16
+      },
+      "tertiary": {
+        "family": "PuppiesPlay-Regular",
+        "fontSize": 10,
+        "fontWeight": 400,
+        "lineHeight": 14
+      }
+    }
+  },
+  "padding": {
+    "inputPadding": 12,
+    "CTAPadding": 18,
+    "SeparatorPadding": 20,
+    "VerticalPadding": 12,
+    "FloatingSpace": 12,
+    "CardPaddingTop": 35,
+    "CardPaddingBottom": 35,
+    "CardPadding": 12,
+    "ComponentPadding": 16
+  },
+  "radius": {
+    "BottomSheetCornerRadius": 4,
+    "InputCornerRadius": 4,
+    "CTACornerRadius": 4,
+    "FloatingCardCornerRadius": 4
+  }
+}

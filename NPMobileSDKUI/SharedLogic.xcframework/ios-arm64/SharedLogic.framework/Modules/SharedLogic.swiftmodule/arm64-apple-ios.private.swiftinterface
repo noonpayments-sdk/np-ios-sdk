@@ -103,11 +103,13 @@ public enum Skie {
   }
   public typealias io_ktor__ktor_utils = SharedLogic.Skie.KtorUtils
   public enum com_noonpayments__sharedLogic {
+    public enum PaymentOperationResult {
+    }
+    public enum RemoteTokenResult {
+    }
     public enum NetworkResult {
     }
     public enum NetworkError {
-    }
-    public enum PaymentOperationResult {
     }
     public enum PaymentFailure {
     }
@@ -494,6 +496,40 @@ extension SharedLogic.Kotlinx_coroutines_coreFlowCollector {
   public func emit(value: Any?) async throws
   #endif
 }
+extension SharedLogic.PaymentMethodDemoViewModel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func load() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitApplePay(paymentToken: Swift.String) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func submitGooglePay(paymentMethodDataJson: Swift.String, apiVersion: Swift.Int32, apiVersionMinor: Swift.Int32, payerConsentForToken: Swift.Bool) async throws
+}
+extension SharedLogic.TokenizeGooglePayUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(config: SharedLogic.PaymentApiConfig, input: SharedLogic.GooglePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+}
+extension SharedLogic.IPaymentOrderRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addCardPaymentInfo(config: SharedLogic.PaymentApiConfig, input: SharedLogic.CardPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func cancelPayment(config: SharedLogic.PaymentApiConfig, input: SharedLogic.CancelPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func fetchOrderStatus(config: SharedLogic.PaymentApiConfig, orderId: Swift.String) async throws -> any SharedLogic.PaymentOperationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getOrderConfiguration(config: SharedLogic.PaymentApiConfig) async throws -> any SharedLogic.PaymentOperationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func tokenizeApplePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.ApplePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func tokenizeGooglePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.GooglePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+}
+extension SharedLogic.TokenizeApplePayUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(config: SharedLogic.PaymentApiConfig, input: SharedLogic.ApplePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
+}
+extension SharedLogic.GetOrderConfigurationUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(config: SharedLogic.PaymentApiConfig) async throws -> any SharedLogic.PaymentOperationResult
+}
 extension SharedLogic.Kotlinx_coroutines_coreJob {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func join() async throws
@@ -547,24 +583,6 @@ extension SharedLogic.ApplePayDemoViewModel {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func submit(paymentToken: Swift.String) async throws
 }
-extension SharedLogic.TokenizeApplePayUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(config: SharedLogic.PaymentApiConfig, input: SharedLogic.ApplePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-}
-extension SharedLogic.IPaymentOrderRepository {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func addCardPaymentInfo(config: SharedLogic.PaymentApiConfig, input: SharedLogic.CardPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func cancelPayment(config: SharedLogic.PaymentApiConfig, input: SharedLogic.CancelPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func fetchOrderStatus(config: SharedLogic.PaymentApiConfig, orderId: Swift.String) async throws -> any SharedLogic.PaymentOperationResult
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getOrderConfiguration(config: SharedLogic.PaymentApiConfig) async throws -> any SharedLogic.PaymentOperationResult
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func tokenizeApplePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.ApplePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func tokenizeGooglePay(config: SharedLogic.PaymentApiConfig, input: SharedLogic.GooglePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-}
 extension SharedLogic.CancelPaymentDemoViewModel {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func cancel(reason: Swift.String) async throws
@@ -588,14 +606,6 @@ extension SharedLogic.AddCardPaymentInfoUseCase {
 extension SharedLogic.FetchOrderStatusUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke(config: SharedLogic.PaymentApiConfig, orderId: Swift.String) async throws -> any SharedLogic.PaymentOperationResult
-}
-extension SharedLogic.TokenizeGooglePayUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(config: SharedLogic.PaymentApiConfig, input: SharedLogic.GooglePayPaymentInput) async throws -> any SharedLogic.PaymentOperationResult
-}
-extension SharedLogic.GetOrderConfigurationUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(config: SharedLogic.PaymentApiConfig) async throws -> any SharedLogic.PaymentOperationResult
 }
 extension SharedLogic.OrderConfigurationDemoViewModel {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -989,6 +999,309 @@ extension SharedLogic.KotlinKVariance {
 extension SharedLogic.__KotlinKVariance {
   public func toSwiftEnum() -> SharedLogic.KotlinKVariance
 }
+@frozen public enum PaymentMethodLoadPhase : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case loading
+  case succeeded
+  case failed
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__PaymentMethodLoadPhase, result: inout SharedLogic.PaymentMethodLoadPhase?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__PaymentMethodLoadPhase, result: inout SharedLogic.PaymentMethodLoadPhase?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__PaymentMethodLoadPhase?) -> SharedLogic.PaymentMethodLoadPhase
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__PaymentMethodLoadPhase
+  public typealias _ObjectiveCType = SharedLogic.__PaymentMethodLoadPhase
+  public static func == (a: SharedLogic.PaymentMethodLoadPhase, b: SharedLogic.PaymentMethodLoadPhase) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.PaymentMethodLoadPhase]
+  nonisolated public static var allCases: [SharedLogic.PaymentMethodLoadPhase] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.PaymentMethodLoadPhase {
+  public func toKotlinEnum() -> SharedLogic.__PaymentMethodLoadPhase
+}
+extension SharedLogic.__PaymentMethodLoadPhase {
+  public func toSwiftEnum() -> SharedLogic.PaymentMethodLoadPhase
+}
+@frozen public enum ColorToken : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case backgroundPrimary
+  case surfaceSecondary
+  case border
+  case textPrimaryDissabled
+  case linkPrimary
+  case textPrimary
+  case backgroundInverse
+  case surfaceAccentWarm
+  case primaryActionHover
+  case surfaceSecondaryDark
+  case backgroundPrimaryDark
+  case borderSubtleDark
+  case borderDark
+  case surfaceTertiary
+  case statusWarning
+  case statusError
+  case surfaceTertiaryLight
+  case surfaceSecondaryLight
+  case textSecondary
+  case primaryActionDark
+  case primaryActionActiveDark
+  public var id: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__ColorToken, result: inout SharedLogic.ColorToken?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__ColorToken, result: inout SharedLogic.ColorToken?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__ColorToken?) -> SharedLogic.ColorToken
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__ColorToken
+  public typealias _ObjectiveCType = SharedLogic.__ColorToken
+  public static func == (a: SharedLogic.ColorToken, b: SharedLogic.ColorToken) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.ColorToken]
+  nonisolated public static var allCases: [SharedLogic.ColorToken] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.ColorToken {
+  public func toKotlinEnum() -> SharedLogic.__ColorToken
+}
+extension SharedLogic.__ColorToken {
+  public func toSwiftEnum() -> SharedLogic.ColorToken
+}
+@frozen public enum FontFamilyToken : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case name
+  public var id: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__FontFamilyToken, result: inout SharedLogic.FontFamilyToken?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontFamilyToken, result: inout SharedLogic.FontFamilyToken?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontFamilyToken?) -> SharedLogic.FontFamilyToken
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__FontFamilyToken
+  public typealias _ObjectiveCType = SharedLogic.__FontFamilyToken
+  public static func == (a: SharedLogic.FontFamilyToken, b: SharedLogic.FontFamilyToken) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.FontFamilyToken]
+  nonisolated public static var allCases: [SharedLogic.FontFamilyToken] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.FontFamilyToken {
+  public func toKotlinEnum() -> SharedLogic.__FontFamilyToken
+}
+extension SharedLogic.__FontFamilyToken {
+  public func toSwiftEnum() -> SharedLogic.FontFamilyToken
+}
+@frozen public enum FontSizeToken : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case h1
+  case h2
+  case h3
+  case subtitle
+  case bodyLarge
+  case bodyRegular
+  case caption
+  case smallCaption
+  case tiny
+  case npSdkDefaultTitleText
+  public var id: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__FontSizeToken, result: inout SharedLogic.FontSizeToken?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontSizeToken, result: inout SharedLogic.FontSizeToken?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontSizeToken?) -> SharedLogic.FontSizeToken
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__FontSizeToken
+  public typealias _ObjectiveCType = SharedLogic.__FontSizeToken
+  public static func == (a: SharedLogic.FontSizeToken, b: SharedLogic.FontSizeToken) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.FontSizeToken]
+  nonisolated public static var allCases: [SharedLogic.FontSizeToken] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.FontSizeToken {
+  public func toKotlinEnum() -> SharedLogic.__FontSizeToken
+}
+extension SharedLogic.__FontSizeToken {
+  public func toSwiftEnum() -> SharedLogic.FontSizeToken
+}
+@frozen public enum FontWeightToken : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case regular
+  case medium
+  case semiBold
+  case bold
+  public var id: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__FontWeightToken, result: inout SharedLogic.FontWeightToken?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontWeightToken, result: inout SharedLogic.FontWeightToken?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__FontWeightToken?) -> SharedLogic.FontWeightToken
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__FontWeightToken
+  public typealias _ObjectiveCType = SharedLogic.__FontWeightToken
+  public static func == (a: SharedLogic.FontWeightToken, b: SharedLogic.FontWeightToken) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.FontWeightToken]
+  nonisolated public static var allCases: [SharedLogic.FontWeightToken] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.FontWeightToken {
+  public func toKotlinEnum() -> SharedLogic.__FontWeightToken
+}
+extension SharedLogic.__FontWeightToken {
+  public func toSwiftEnum() -> SharedLogic.FontWeightToken
+}
+@frozen public enum LineHeightToken : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case h1
+  case h2
+  case h3
+  case subtitle
+  case bodyLarge
+  case bodyRegular
+  case caption
+  case smallCaption
+  case tiny
+  public var id: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__LineHeightToken, result: inout SharedLogic.LineHeightToken?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__LineHeightToken, result: inout SharedLogic.LineHeightToken?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__LineHeightToken?) -> SharedLogic.LineHeightToken
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__LineHeightToken
+  public typealias _ObjectiveCType = SharedLogic.__LineHeightToken
+  public static func == (a: SharedLogic.LineHeightToken, b: SharedLogic.LineHeightToken) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.LineHeightToken]
+  nonisolated public static var allCases: [SharedLogic.LineHeightToken] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.LineHeightToken {
+  public func toKotlinEnum() -> SharedLogic.__LineHeightToken
+}
+extension SharedLogic.__LineHeightToken {
+  public func toSwiftEnum() -> SharedLogic.LineHeightToken
+}
+@frozen public enum ThemeMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case light
+  case dark
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: SharedLogic.__ThemeMode, result: inout SharedLogic.ThemeMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: SharedLogic.__ThemeMode, result: inout SharedLogic.ThemeMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: SharedLogic.__ThemeMode?) -> SharedLogic.ThemeMode
+  #endif
+  public func _bridgeToObjectiveC() -> SharedLogic.__ThemeMode
+  public typealias _ObjectiveCType = SharedLogic.__ThemeMode
+  public static func == (a: SharedLogic.ThemeMode, b: SharedLogic.ThemeMode) -> Swift.Bool
+  public typealias AllCases = [SharedLogic.ThemeMode]
+  nonisolated public static var allCases: [SharedLogic.ThemeMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension SharedLogic.ThemeMode {
+  public func toKotlinEnum() -> SharedLogic.__ThemeMode
+}
+extension SharedLogic.__ThemeMode {
+  public func toSwiftEnum() -> SharedLogic.ThemeMode
+}
 @frozen public enum LogLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case debug
   case info
@@ -1329,6 +1642,36 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.KotlinxCor
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : SharedLogic.Kotlinx_coroutines_coreSelectClause2
 #endif
+extension SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case failure(SharedLogic.PaymentOperationResultFailure)
+    case success(SharedLogic.PaymentOperationResultSuccess<Swift.AnyObject>)
+    public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed where __Sealed : SharedLogic.PaymentOperationResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed? where __Sealed : SharedLogic.PaymentOperationResult
+#endif
+extension SharedLogic.Skie.com_noonpayments__sharedLogic.RemoteTokenResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case applied(SharedLogic.RemoteTokenResultApplied)
+    case fallback(SharedLogic.RemoteTokenResultFallback)
+    public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.RemoteTokenResult.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.RemoteTokenResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.RemoteTokenResult.__Sealed where __Sealed : SharedLogic.RemoteTokenResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.RemoteTokenResult.__Sealed? where __Sealed : SharedLogic.RemoteTokenResult
+#endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkResult {
   @frozen public enum __Sealed : Swift.Hashable {
     case failure(SharedLogic.NetworkResultFailure)
@@ -1359,21 +1702,6 @@ extension SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError {
 public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed where __Sealed : SharedLogic.NetworkError
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.NetworkError.__Sealed? where __Sealed : SharedLogic.NetworkError
-#endif
-extension SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case failure(SharedLogic.PaymentOperationResultFailure)
-    case success(SharedLogic.PaymentOperationResultSuccess<Swift.AnyObject>)
-    public static func == (a: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed, b: SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed where __Sealed : SharedLogic.PaymentOperationResult
-#if compiler(>=5.3) && $NonescapableTypes
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentOperationResult.__Sealed? where __Sealed : SharedLogic.PaymentOperationResult
 #endif
 extension SharedLogic.Skie.com_noonpayments__sharedLogic.PaymentFailure {
   @frozen public enum __Sealed : Swift.Hashable {
@@ -1581,6 +1909,20 @@ public func normalizeApplePayTokenForTransport(token: Swift.String) -> Swift.Str
 public func normalizeGooglePayPaymentMethodDataForTransport(paymentMethodDataJson: Swift.String) -> Swift.String
 extension SharedLogic.KotlinKVariance : Swift.Sendable {}
 extension SharedLogic.KotlinKVariance : Swift.BitwiseCopyable {}
+extension SharedLogic.PaymentMethodLoadPhase : Swift.Sendable {}
+extension SharedLogic.PaymentMethodLoadPhase : Swift.BitwiseCopyable {}
+extension SharedLogic.ColorToken : Swift.Sendable {}
+extension SharedLogic.ColorToken : Swift.BitwiseCopyable {}
+extension SharedLogic.FontFamilyToken : Swift.Sendable {}
+extension SharedLogic.FontFamilyToken : Swift.BitwiseCopyable {}
+extension SharedLogic.FontSizeToken : Swift.Sendable {}
+extension SharedLogic.FontSizeToken : Swift.BitwiseCopyable {}
+extension SharedLogic.FontWeightToken : Swift.Sendable {}
+extension SharedLogic.FontWeightToken : Swift.BitwiseCopyable {}
+extension SharedLogic.LineHeightToken : Swift.Sendable {}
+extension SharedLogic.LineHeightToken : Swift.BitwiseCopyable {}
+extension SharedLogic.ThemeMode : Swift.Sendable {}
+extension SharedLogic.ThemeMode : Swift.BitwiseCopyable {}
 extension SharedLogic.LogLevel : Swift.Sendable {}
 extension SharedLogic.LogLevel : Swift.BitwiseCopyable {}
 extension SharedLogic.HttpMethod : Swift.Sendable {}

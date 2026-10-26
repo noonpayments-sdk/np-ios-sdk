@@ -1171,6 +1171,3193 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(baseKey:safeCast:)"
     Availability: "nonswift"
+- Name: "SharedLogicPaymentMethodLoadPhase"
+  SwiftBridge: "PaymentMethodLoadPhase"
+  SwiftName: "__PaymentMethodLoadPhase"
+  SwiftPrivate: true
+  Properties:
+  - Name: "loading"
+    PropertyKind: "Class"
+    SwiftName: "loading"
+    Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+  - Name: "succeeded"
+    PropertyKind: "Class"
+    SwiftName: "succeeded"
+    Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+  - Name: "failed"
+    PropertyKind: "Class"
+    SwiftName: "failed"
+    Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicPaymentMethodDemoState"
+  SwiftName: "PaymentMethodDemoState"
+  Properties:
+  - Name: "applePayConfig"
+    PropertyKind: "Instance"
+    SwiftName: "applePayConfig"
+    Type: "SharedLogicApplePayConfiguration * _Nullable"
+  - Name: "applePayErrorMessage"
+    PropertyKind: "Instance"
+    SwiftName: "applePayErrorMessage"
+    Type: "NSString * _Nullable"
+  - Name: "applePayIsSubmitting"
+    PropertyKind: "Instance"
+    SwiftName: "applePayIsSubmitting"
+    Type: "BOOL"
+  - Name: "applePayPostUrl"
+    PropertyKind: "Instance"
+    SwiftName: "applePayPostUrl"
+    Type: "NSString * _Nullable"
+  - Name: "applePayResolvedOrderId"
+    PropertyKind: "Instance"
+    SwiftName: "applePayResolvedOrderId"
+    Type: "NSString * _Nullable"
+  - Name: "applePayResultCode"
+    PropertyKind: "Instance"
+    SwiftName: "applePayResultCode"
+    Type: "NSString * _Nullable"
+  - Name: "errorMessage"
+    PropertyKind: "Instance"
+    SwiftName: "errorMessage"
+    Type: "NSString * _Nullable"
+  - Name: "googlePayConfig"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayConfig"
+    Type: "SharedLogicGooglePayConfiguration * _Nullable"
+  - Name: "googlePayErrorMessage"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayErrorMessage"
+    Type: "NSString * _Nullable"
+  - Name: "googlePayIsSubmitting"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayIsSubmitting"
+    Type: "BOOL"
+  - Name: "googlePayPostUrl"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayPostUrl"
+    Type: "NSString * _Nullable"
+  - Name: "googlePayResolvedOrderId"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayResolvedOrderId"
+    Type: "NSString * _Nullable"
+  - Name: "googlePayResultCode"
+    PropertyKind: "Instance"
+    SwiftName: "googlePayResultCode"
+    Type: "NSString * _Nullable"
+  - Name: "paymentOptionsJson"
+    PropertyKind: "Instance"
+    SwiftName: "paymentOptionsJson"
+    Type: "NSString * _Nullable"
+  - Name: "paymentTokensJson"
+    PropertyKind: "Instance"
+    SwiftName: "paymentTokensJson"
+    Type: "NSString * _Nullable"
+  - Name: "phase"
+    PropertyKind: "Instance"
+    SwiftName: "phase"
+    Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+  - Name: "resultCode"
+    PropertyKind: "Instance"
+    SwiftName: "resultCode"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithPhase:resultCode:paymentOptionsJson:paymentTokensJson:errorMessage:applePayConfig:applePayIsSubmitting:applePayResultCode:applePayPostUrl:applePayResolvedOrderId:applePayErrorMessage:googlePayConfig:googlePayIsSubmitting:googlePayResultCode:googlePayPostUrl:googlePayResolvedOrderId:googlePayErrorMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(phase:resultCode:paymentOptionsJson:paymentTokensJson:errorMessage:applePayConfig:applePayIsSubmitting:applePayResultCode:applePayPostUrl:applePayResolvedOrderId:applePayErrorMessage:googlePayConfig:googlePayIsSubmitting:googlePayResultCode:googlePayPostUrl:googlePayResolvedOrderId:googlePayErrorMessage:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "SharedLogicApplePayConfiguration * _Nullable"
+    - Position: 6
+      Type: "BOOL"
+    - Position: 7
+      Type: "NSString * _Nullable"
+    - Position: 8
+      Type: "NSString * _Nullable"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "SharedLogicGooglePayConfiguration * _Nullable"
+    - Position: 12
+      Type: "BOOL"
+    - Position: 13
+      Type: "NSString * _Nullable"
+    - Position: 14
+      Type: "NSString * _Nullable"
+    - Position: 15
+      Type: "NSString * _Nullable"
+    - Position: 16
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyPhase:resultCode:paymentOptionsJson:paymentTokensJson:errorMessage:applePayConfig:applePayIsSubmitting:applePayResultCode:applePayPostUrl:applePayResolvedOrderId:applePayErrorMessage:googlePayConfig:googlePayIsSubmitting:googlePayResultCode:googlePayPostUrl:googlePayResolvedOrderId:googlePayErrorMessage:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(phase:resultCode:paymentOptionsJson:paymentTokensJson:errorMessage:applePayConfig:applePayIsSubmitting:applePayResultCode:applePayPostUrl:applePayResolvedOrderId:applePayErrorMessage:googlePayConfig:googlePayIsSubmitting:googlePayResultCode:googlePayPostUrl:googlePayResolvedOrderId:googlePayErrorMessage:)"
+    ResultType: "SharedLogicPaymentMethodDemoState * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentMethodLoadPhase * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "SharedLogicApplePayConfiguration * _Nullable"
+    - Position: 6
+      Type: "BOOL"
+    - Position: 7
+      Type: "NSString * _Nullable"
+    - Position: 8
+      Type: "NSString * _Nullable"
+    - Position: 9
+      Type: "NSString * _Nullable"
+    - Position: 10
+      Type: "NSString * _Nullable"
+    - Position: 11
+      Type: "SharedLogicGooglePayConfiguration * _Nullable"
+    - Position: 12
+      Type: "BOOL"
+    - Position: 13
+      Type: "NSString * _Nullable"
+    - Position: 14
+      Type: "NSString * _Nullable"
+    - Position: 15
+      Type: "NSString * _Nullable"
+    - Position: 16
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicGooglePayConfiguration"
+  SwiftName: "GooglePayConfiguration"
+  Properties:
+  - Name: "apiVersion"
+    PropertyKind: "Instance"
+    SwiftName: "apiVersion"
+    Type: "int32_t"
+  - Name: "apiVersionMinor"
+    PropertyKind: "Instance"
+    SwiftName: "apiVersionMinor"
+    Type: "int32_t"
+  - Name: "environment"
+    PropertyKind: "Instance"
+    SwiftName: "environment"
+    Type: "NSString * _Nonnull"
+  - Name: "requestJson"
+    PropertyKind: "Instance"
+    SwiftName: "requestJson"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithApiVersion:apiVersionMinor:environment:requestJson:"
+    MethodKind: "Instance"
+    SwiftName: "init(apiVersion:apiVersionMinor:environment:requestJson:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyApiVersion:apiVersionMinor:environment:requestJson:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(apiVersion:apiVersionMinor:environment:requestJson:)"
+    ResultType: "SharedLogicGooglePayConfiguration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicApplePayConfiguration"
+  SwiftName: "ApplePayConfiguration"
+  Properties:
+  - Name: "countryCode"
+    PropertyKind: "Instance"
+    SwiftName: "countryCode"
+    Type: "NSString * _Nonnull"
+  - Name: "currencyCode"
+    PropertyKind: "Instance"
+    SwiftName: "currencyCode"
+    Type: "NSString * _Nonnull"
+  - Name: "merchantIdentifier"
+    PropertyKind: "Instance"
+    SwiftName: "merchantIdentifier"
+    Type: "NSString * _Nonnull"
+  - Name: "summaryAmount"
+    PropertyKind: "Instance"
+    SwiftName: "summaryAmount"
+    Type: "NSString * _Nonnull"
+  - Name: "summaryLabel"
+    PropertyKind: "Instance"
+    SwiftName: "summaryLabel"
+    Type: "NSString * _Nonnull"
+  - Name: "supportedNetworks"
+    PropertyKind: "Instance"
+    SwiftName: "supportedNetworks"
+    Type: "NSArray<NSString *> * _Nonnull"
+  Methods:
+  - Selector: "initWithMerchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:"
+    MethodKind: "Instance"
+    SwiftName: "init(merchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSArray<NSString *> * _Nonnull"
+  - Selector: "doCopyMerchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(merchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:)"
+    ResultType: "SharedLogicApplePayConfiguration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+    - Position: 5
+      Type: "NSArray<NSString *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicPaymentMethodDemoViewModel"
+  SwiftName: "PaymentMethodDemoViewModel"
+  Properties:
+  - Name: "state"
+    PropertyKind: "Instance"
+    SwiftName: "state"
+    Type: "SharedLogicSkieKotlinStateFlow<SharedLogicPaymentMethodDemoState *> * _Nonnull"
+  Methods:
+  - Selector: "initWithApiConfig:getOrderConfigurationUseCase:tokenizeApplePayUseCase:tokenizeGooglePayUseCase:sessionStore:"
+    MethodKind: "Instance"
+    SwiftName: "init(apiConfig:getOrderConfigurationUseCase:tokenizeApplePayUseCase:tokenizeGooglePayUseCase:sessionStore:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicGetOrderConfigurationUseCase * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicTokenizeApplePayUseCase * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicTokenizeGooglePayUseCase * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicPaymentSheetSessionStore * _Nonnull"
+  - Selector: "clearApplePayError"
+    MethodKind: "Instance"
+    SwiftName: "clearApplePayError()"
+    ResultType: "void"
+  - Selector: "clearGooglePayError"
+    MethodKind: "Instance"
+    SwiftName: "clearGooglePayError()"
+    ResultType: "void"
+  - Selector: "loadWithCompletionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__load(completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "reportApplePayFailureMessage:"
+    MethodKind: "Instance"
+    SwiftName: "reportApplePayFailure(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "reportGooglePayFailureMessage:"
+    MethodKind: "Instance"
+    SwiftName: "reportGooglePayFailure(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "submitApplePayPaymentToken:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__submitApplePay(paymentToken:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+  - Selector: "submitGooglePayPaymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__submitGooglePay(paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "BOOL"
+    - Position: 4
+      Type: "void (^ _Nonnull)(NSError * _Nullable)"
+- Name: "SharedLogicPaymentSheetSessionStore"
+  SwiftName: "PaymentSheetSessionStore"
+  Properties:
+  - Name: "state"
+    PropertyKind: "Instance"
+    SwiftName: "state"
+    Type: "SharedLogicSkieKotlinStateFlow<SharedLogicPaymentSheetSessionState *> * _Nonnull"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "saveAddPaymentInfoResultValue:"
+    MethodKind: "Instance"
+    SwiftName: "saveAddPaymentInfoResult(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicAddPaymentInfoResult * _Nonnull"
+  - Selector: "saveErrorMessage:"
+    MethodKind: "Instance"
+    SwiftName: "saveError(message:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "saveOrderConfigurationValue:"
+    MethodKind: "Instance"
+    SwiftName: "saveOrderConfiguration(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicOrderConfiguration * _Nonnull"
+  - Selector: "saveOrderStatusResultValue:"
+    MethodKind: "Instance"
+    SwiftName: "saveOrderStatusResult(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicOrderStatusResult * _Nonnull"
+- Name: "SharedLogicOrderStatusResult"
+  SwiftName: "OrderStatusResult"
+  Properties:
+  - Name: "orderStatus"
+    PropertyKind: "Instance"
+    SwiftName: "orderStatus"
+    Type: "NSString * _Nullable"
+  - Name: "paymentDetails"
+    PropertyKind: "Instance"
+    SwiftName: "paymentDetails"
+    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Name: "resultCode"
+    PropertyKind: "Instance"
+    SwiftName: "resultCode"
+    Type: "NSString * _Nullable"
+  - Name: "transactionStatus"
+    PropertyKind: "Instance"
+    SwiftName: "transactionStatus"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithResultCode:orderStatus:transactionStatus:paymentDetails:"
+    MethodKind: "Instance"
+    SwiftName: "init(resultCode:orderStatus:transactionStatus:paymentDetails:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Selector: "doCopyResultCode:orderStatus:transactionStatus:paymentDetails:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(resultCode:orderStatus:transactionStatus:paymentDetails:)"
+    ResultType: "SharedLogicOrderStatusResult * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicOrderConfiguration"
+  SwiftName: "OrderConfiguration"
+  Properties:
+  - Name: "currency"
+    PropertyKind: "Instance"
+    SwiftName: "currency"
+    Type: "NSString * _Nullable"
+  - Name: "encryptionKey"
+    PropertyKind: "Instance"
+    SwiftName: "encryptionKey"
+    Type: "NSString * _Nullable"
+  - Name: "order"
+    PropertyKind: "Instance"
+    SwiftName: "order"
+    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Name: "orderCategory"
+    PropertyKind: "Instance"
+    SwiftName: "orderCategory"
+    Type: "NSString * _Nullable"
+  - Name: "orderChannel"
+    PropertyKind: "Instance"
+    SwiftName: "orderChannel"
+    Type: "NSString * _Nullable"
+  - Name: "paymentOptions"
+    PropertyKind: "Instance"
+    SwiftName: "paymentOptions"
+    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Name: "paymentTokens"
+    PropertyKind: "Instance"
+    SwiftName: "paymentTokens"
+    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+  - Name: "resultCode"
+    PropertyKind: "Instance"
+    SwiftName: "resultCode"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithResultCode:order:paymentOptions:paymentTokens:orderCategory:currency:orderChannel:encryptionKey:"
+    MethodKind: "Instance"
+    SwiftName: "init(resultCode:order:paymentOptions:paymentTokens:orderCategory:currency:orderChannel:encryptionKey:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 2
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 3
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyResultCode:order:paymentOptions:paymentTokens:orderCategory:currency:orderChannel:encryptionKey:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(resultCode:order:paymentOptions:paymentTokens:orderCategory:currency:orderChannel:encryptionKey:)"
+    ResultType: "SharedLogicOrderConfiguration * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 2
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 3
+      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "NSString * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "applePayConfigurationOrNull"
+    MethodKind: "Instance"
+    SwiftName: "applePayConfigurationOrNull()"
+    ResultType: "SharedLogicApplePayConfiguration * _Nullable"
+  - Selector: "googlePayConfigurationOrNull"
+    MethodKind: "Instance"
+    SwiftName: "googlePayConfigurationOrNull()"
+    ResultType: "SharedLogicGooglePayConfiguration * _Nullable"
+- Name: "SharedLogicAddPaymentInfoResult"
+  SwiftName: "AddPaymentInfoResult"
+  Properties:
+  - Name: "orderId"
+    PropertyKind: "Instance"
+    SwiftName: "orderId"
+    Type: "NSString * _Nullable"
+  - Name: "postUrl"
+    PropertyKind: "Instance"
+    SwiftName: "postUrl"
+    Type: "NSString * _Nullable"
+  - Name: "resultCode"
+    PropertyKind: "Instance"
+    SwiftName: "resultCode"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithResultCode:postUrl:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "init(resultCode:postUrl:orderId:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyResultCode:postUrl:orderId:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(resultCode:postUrl:orderId:)"
+    ResultType: "SharedLogicAddPaymentInfoResult * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicTokenizeGooglePayUseCase"
+  SwiftName: "TokenizeGooglePayUseCase"
+  Methods:
+  - Selector: "initWithRepository:"
+    MethodKind: "Instance"
+    SwiftName: "init(repository:)"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
+  - Selector: "invokeConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__invoke(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+- Name: "SharedLogicPaymentOperationResultSuccess"
+  SwiftName: "PaymentOperationResultSuccess"
+  Properties:
+  - Name: "value"
+    PropertyKind: "Instance"
+    SwiftName: "value"
+    Type: "T _Nullable"
+  Methods:
+  - Selector: "initWithValue:"
+    MethodKind: "Instance"
+    SwiftName: "init(value:)"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+  - Selector: "doCopyValue:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(value:)"
+    ResultType: "SharedLogicPaymentOperationResultSuccess<T> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "T _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicPaymentOperationResultFailure"
+  SwiftName: "PaymentOperationResultFailure"
+  Properties:
+  - Name: "failure"
+    PropertyKind: "Instance"
+    SwiftName: "failure"
+    Type: "id<SharedLogicPaymentFailure> _Nonnull"
+  Methods:
+  - Selector: "initWithFailure:"
+    MethodKind: "Instance"
+    SwiftName: "init(failure:)"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicPaymentFailure> _Nonnull"
+  - Selector: "doCopyFailure:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(failure:)"
+    ResultType: "SharedLogicPaymentOperationResultFailure * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicPaymentFailure> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicGooglePayPaymentInput"
+  SwiftName: "GooglePayPaymentInput"
+  Properties:
+  - Name: "apiVersion"
+    PropertyKind: "Instance"
+    SwiftName: "apiVersion"
+    Type: "int32_t"
+  - Name: "apiVersionMinor"
+    PropertyKind: "Instance"
+    SwiftName: "apiVersionMinor"
+    Type: "int32_t"
+  - Name: "payerConsentForToken"
+    PropertyKind: "Instance"
+    SwiftName: "payerConsentForToken"
+    Type: "BOOL"
+  - Name: "paymentMethodDataJson"
+    PropertyKind: "Instance"
+    SwiftName: "paymentMethodDataJson"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithPaymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:"
+    MethodKind: "Instance"
+    SwiftName: "init(paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "BOOL"
+  - Selector: "doCopyPaymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:)"
+    ResultType: "SharedLogicGooglePayPaymentInput * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicPaymentApiConfig"
+  SwiftName: "PaymentApiConfig"
+  Properties:
+  - Name: "authHeader"
+    PropertyKind: "Instance"
+    SwiftName: "authHeader"
+    Type: "NSString * _Nonnull"
+  - Name: "baseUrl"
+    PropertyKind: "Instance"
+    SwiftName: "baseUrl"
+    Type: "NSString * _Nonnull"
+  - Name: "orderId"
+    PropertyKind: "Instance"
+    SwiftName: "orderId"
+    Type: "NSString * _Nonnull"
+  - Name: "sdkVersion"
+    PropertyKind: "Instance"
+    SwiftName: "sdkVersion"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithBaseUrl:orderId:authHeader:sdkVersion:"
+    MethodKind: "Instance"
+    SwiftName: "init(baseUrl:orderId:authHeader:sdkVersion:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyBaseUrl:orderId:authHeader:sdkVersion:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(baseUrl:orderId:authHeader:sdkVersion:)"
+    ResultType: "SharedLogicPaymentApiConfig * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nonnull"
+    - Position: 3
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicApplePayPaymentInput"
+  SwiftName: "ApplePayPaymentInput"
+  Properties:
+  - Name: "paymentToken"
+    PropertyKind: "Instance"
+    SwiftName: "paymentToken"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithPaymentToken:"
+    MethodKind: "Instance"
+    SwiftName: "init(paymentToken:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyPaymentToken:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(paymentToken:)"
+    ResultType: "SharedLogicApplePayPaymentInput * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicCancelPaymentInput"
+  SwiftName: "CancelPaymentInput"
+  Properties:
+  - Name: "reason"
+    PropertyKind: "Instance"
+    SwiftName: "reason"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithReason:"
+    MethodKind: "Instance"
+    SwiftName: "init(reason:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyReason:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(reason:)"
+    ResultType: "SharedLogicCancelPaymentInput * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicCardPaymentInput"
+  SwiftName: "CardPaymentInput"
+  Properties:
+  - Name: "cvv"
+    PropertyKind: "Instance"
+    SwiftName: "cvv"
+    Type: "NSString * _Nonnull"
+  - Name: "expiryMonth"
+    PropertyKind: "Instance"
+    SwiftName: "expiryMonth"
+    Type: "NSString * _Nullable"
+  - Name: "expiryYear"
+    PropertyKind: "Instance"
+    SwiftName: "expiryYear"
+    Type: "NSString * _Nullable"
+  - Name: "nameOnCard"
+    PropertyKind: "Instance"
+    SwiftName: "nameOnCard"
+    Type: "NSString * _Nullable"
+  - Name: "numberEncrypted"
+    PropertyKind: "Instance"
+    SwiftName: "numberEncrypted"
+    Type: "NSString * _Nullable"
+  - Name: "payerConsentForToken"
+    PropertyKind: "Instance"
+    SwiftName: "payerConsentForToken"
+    Type: "SharedLogicBoolean * _Nullable"
+  - Name: "sdkSignature"
+    PropertyKind: "Instance"
+    SwiftName: "sdkSignature"
+    Type: "NSString * _Nullable"
+  - Name: "tokenIdentifier"
+    PropertyKind: "Instance"
+    SwiftName: "tokenIdentifier"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithCvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:"
+    MethodKind: "Instance"
+    SwiftName: "init(cvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "SharedLogicBoolean * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "doCopyCvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(cvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:)"
+    ResultType: "SharedLogicCardPaymentInput * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nullable"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "NSString * _Nullable"
+    - Position: 4
+      Type: "NSString * _Nullable"
+    - Position: 5
+      Type: "NSString * _Nullable"
+    - Position: 6
+      Type: "SharedLogicBoolean * _Nullable"
+    - Position: 7
+      Type: "NSString * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicTokenizeApplePayUseCase"
+  SwiftName: "TokenizeApplePayUseCase"
+  Methods:
+  - Selector: "initWithRepository:"
+    MethodKind: "Instance"
+    SwiftName: "init(repository:)"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
+  - Selector: "invokeConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__invoke(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+- Name: "SharedLogicGetOrderConfigurationUseCase"
+  SwiftName: "GetOrderConfigurationUseCase"
+  Methods:
+  - Selector: "initWithRepository:"
+    MethodKind: "Instance"
+    SwiftName: "init(repository:)"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
+  - Selector: "invokeConfig:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__invoke(config:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+- Name: "SharedLogicColorToken"
+  SwiftBridge: "ColorToken"
+  SwiftName: "__ColorToken"
+  SwiftPrivate: true
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "backgroundPrimary"
+    PropertyKind: "Class"
+    SwiftName: "backgroundPrimary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceSecondary"
+    PropertyKind: "Class"
+    SwiftName: "surfaceSecondary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "border"
+    PropertyKind: "Class"
+    SwiftName: "border"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "textPrimaryDissabled"
+    PropertyKind: "Class"
+    SwiftName: "textPrimaryDissabled"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "linkPrimary"
+    PropertyKind: "Class"
+    SwiftName: "linkPrimary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "textPrimary"
+    PropertyKind: "Class"
+    SwiftName: "textPrimary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "backgroundInverse"
+    PropertyKind: "Class"
+    SwiftName: "backgroundInverse"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceAccentWarm"
+    PropertyKind: "Class"
+    SwiftName: "surfaceAccentWarm"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "primaryActionHover"
+    PropertyKind: "Class"
+    SwiftName: "primaryActionHover"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceSecondaryDark"
+    PropertyKind: "Class"
+    SwiftName: "surfaceSecondaryDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "backgroundPrimaryDark"
+    PropertyKind: "Class"
+    SwiftName: "backgroundPrimaryDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "borderSubtleDark"
+    PropertyKind: "Class"
+    SwiftName: "borderSubtleDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "borderDark"
+    PropertyKind: "Class"
+    SwiftName: "borderDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceTertiary"
+    PropertyKind: "Class"
+    SwiftName: "surfaceTertiary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "statusWarning"
+    PropertyKind: "Class"
+    SwiftName: "statusWarning"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "statusError"
+    PropertyKind: "Class"
+    SwiftName: "statusError"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceTertiaryLight"
+    PropertyKind: "Class"
+    SwiftName: "surfaceTertiaryLight"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "surfaceSecondaryLight"
+    PropertyKind: "Class"
+    SwiftName: "surfaceSecondaryLight"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "textSecondary"
+    PropertyKind: "Class"
+    SwiftName: "textSecondary"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "primaryActionDark"
+    PropertyKind: "Class"
+    SwiftName: "primaryActionDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  - Name: "primaryActionActiveDark"
+    PropertyKind: "Class"
+    SwiftName: "primaryActionActiveDark"
+    Type: "SharedLogicColorToken * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicFontFamilyToken"
+  SwiftBridge: "FontFamilyToken"
+  SwiftName: "__FontFamilyToken"
+  SwiftPrivate: true
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "name"
+    PropertyKind: "Class"
+    SwiftName: "name"
+    Type: "SharedLogicFontFamilyToken * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicFontSizeToken"
+  SwiftBridge: "FontSizeToken"
+  SwiftName: "__FontSizeToken"
+  SwiftPrivate: true
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "h1"
+    PropertyKind: "Class"
+    SwiftName: "h1"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "h2"
+    PropertyKind: "Class"
+    SwiftName: "h2"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "h3"
+    PropertyKind: "Class"
+    SwiftName: "h3"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "subtitle"
+    PropertyKind: "Class"
+    SwiftName: "subtitle"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "bodyLarge"
+    PropertyKind: "Class"
+    SwiftName: "bodyLarge"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "bodyRegular"
+    PropertyKind: "Class"
+    SwiftName: "bodyRegular"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "caption"
+    PropertyKind: "Class"
+    SwiftName: "caption"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "smallCaption"
+    PropertyKind: "Class"
+    SwiftName: "smallCaption"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "tiny"
+    PropertyKind: "Class"
+    SwiftName: "tiny"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Name: "npSdkDefaultTitleText"
+    PropertyKind: "Class"
+    SwiftName: "npSdkDefaultTitleText"
+    Type: "SharedLogicFontSizeToken * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicFontWeightToken"
+  SwiftBridge: "FontWeightToken"
+  SwiftName: "__FontWeightToken"
+  SwiftPrivate: true
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "regular"
+    PropertyKind: "Class"
+    SwiftName: "regular"
+    Type: "SharedLogicFontWeightToken * _Nonnull"
+  - Name: "medium"
+    PropertyKind: "Class"
+    SwiftName: "medium"
+    Type: "SharedLogicFontWeightToken * _Nonnull"
+  - Name: "semiBold"
+    PropertyKind: "Class"
+    SwiftName: "semiBold"
+    Type: "SharedLogicFontWeightToken * _Nonnull"
+  - Name: "bold"
+    PropertyKind: "Class"
+    SwiftName: "bold"
+    Type: "SharedLogicFontWeightToken * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicLineHeightToken"
+  SwiftBridge: "LineHeightToken"
+  SwiftName: "__LineHeightToken"
+  SwiftPrivate: true
+  Properties:
+  - Name: "id"
+    PropertyKind: "Instance"
+    SwiftName: "id"
+    Type: "NSString * _Nonnull"
+  - Name: "h1"
+    PropertyKind: "Class"
+    SwiftName: "h1"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "h2"
+    PropertyKind: "Class"
+    SwiftName: "h2"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "h3"
+    PropertyKind: "Class"
+    SwiftName: "h3"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "subtitle"
+    PropertyKind: "Class"
+    SwiftName: "subtitle"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "bodyLarge"
+    PropertyKind: "Class"
+    SwiftName: "bodyLarge"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "bodyRegular"
+    PropertyKind: "Class"
+    SwiftName: "bodyRegular"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "caption"
+    PropertyKind: "Class"
+    SwiftName: "caption"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "smallCaption"
+    PropertyKind: "Class"
+    SwiftName: "smallCaption"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Name: "tiny"
+    PropertyKind: "Class"
+    SwiftName: "tiny"
+    Type: "SharedLogicLineHeightToken * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicRemoteTokenResultApplied"
+  SwiftName: "RemoteTokenResultApplied"
+  Methods:
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicRemoteTokenResultFallback"
+  SwiftName: "RemoteTokenResultFallback"
+  Properties:
+  - Name: "reason"
+    PropertyKind: "Instance"
+    SwiftName: "reason"
+    Type: "NSString * _Nonnull"
+  Methods:
+  - Selector: "initWithReason:"
+    MethodKind: "Instance"
+    SwiftName: "init(reason:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyReason:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(reason:)"
+    ResultType: "SharedLogicRemoteTokenResultFallback * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicThemeTokenCatalog"
+  SwiftName: "ThemeTokenCatalog"
+  Properties:
+  - Name: "colors"
+    PropertyKind: "Instance"
+    SwiftName: "colors"
+    Type: "NSDictionary<NSString *, SharedLogicModeAwareColorToken *> * _Nonnull"
+  - Name: "customization"
+    PropertyKind: "Instance"
+    SwiftName: "customization"
+    Type: "SharedLogicCustomizationTokens * _Nonnull"
+  - Name: "foundation"
+    PropertyKind: "Instance"
+    SwiftName: "foundation"
+    Type: "SharedLogicFoundationTokens * _Nonnull"
+  - Name: "schemaVersion"
+    PropertyKind: "Instance"
+    SwiftName: "schemaVersion"
+    Type: "NSString * _Nonnull"
+  - Name: "semanticTypography"
+    PropertyKind: "Instance"
+    SwiftName: "semanticTypography"
+    Type: "SharedLogicSemanticTypographyTokens * _Nonnull"
+  - Name: "typography"
+    PropertyKind: "Instance"
+    SwiftName: "typography"
+    Type: "SharedLogicTypographyTokens * _Nonnull"
+  Methods:
+  - Selector: "initWithSchemaVersion:colors:typography:semanticTypography:foundation:customization:"
+    MethodKind: "Instance"
+    SwiftName: "init(schemaVersion:colors:typography:semanticTypography:foundation:customization:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicModeAwareColorToken *> * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicTypographyTokens * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticTypographyTokens * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicFoundationTokens * _Nonnull"
+    - Position: 5
+      Type: "SharedLogicCustomizationTokens * _Nonnull"
+  - Selector: "doCopySchemaVersion:colors:typography:semanticTypography:foundation:customization:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(schemaVersion:colors:typography:semanticTypography:foundation:customization:)"
+    ResultType: "SharedLogicThemeTokenCatalog * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicModeAwareColorToken *> * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicTypographyTokens * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticTypographyTokens * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicFoundationTokens * _Nonnull"
+    - Position: 5
+      Type: "SharedLogicCustomizationTokens * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicCustomizationTokens"
+  SwiftName: "CustomizationTokens"
+  Properties:
+  - Name: "padding"
+    PropertyKind: "Instance"
+    SwiftName: "padding"
+    Type: "SharedLogicPaddingTokens * _Nonnull"
+  - Name: "radius"
+    PropertyKind: "Instance"
+    SwiftName: "radius"
+    Type: "SharedLogicRadiusTokens * _Nonnull"
+  Methods:
+  - Selector: "initWithPadding:radius:"
+    MethodKind: "Instance"
+    SwiftName: "init(padding:radius:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaddingTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicRadiusTokens * _Nonnull"
+  - Selector: "doCopyPadding:radius:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(padding:radius:)"
+    ResultType: "SharedLogicCustomizationTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaddingTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicRadiusTokens * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicRadiusTokens"
+  SwiftName: "RadiusTokens"
+  Properties:
+  - Name: "bottomSheetCornerRadius"
+    PropertyKind: "Instance"
+    SwiftName: "bottomSheetCornerRadius"
+    Type: "float"
+  - Name: "ctaCornerRadius"
+    PropertyKind: "Instance"
+    SwiftName: "ctaCornerRadius"
+    Type: "float"
+  - Name: "floatingCardCornerRadius"
+    PropertyKind: "Instance"
+    SwiftName: "floatingCardCornerRadius"
+    Type: "float"
+  - Name: "inputCornerRadius"
+    PropertyKind: "Instance"
+    SwiftName: "inputCornerRadius"
+    Type: "float"
+  Methods:
+  - Selector: "initWithBottomSheetCornerRadius:inputCornerRadius:ctaCornerRadius:floatingCardCornerRadius:"
+    MethodKind: "Instance"
+    SwiftName: "init(bottomSheetCornerRadius:inputCornerRadius:ctaCornerRadius:floatingCardCornerRadius:)"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+  - Selector: "doCopyBottomSheetCornerRadius:inputCornerRadius:ctaCornerRadius:floatingCardCornerRadius:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(bottomSheetCornerRadius:inputCornerRadius:ctaCornerRadius:floatingCardCornerRadius:)"
+    ResultType: "SharedLogicRadiusTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicPaddingTokens"
+  SwiftName: "PaddingTokens"
+  Properties:
+  - Name: "cardPadding"
+    PropertyKind: "Instance"
+    SwiftName: "cardPadding"
+    Type: "float"
+  - Name: "cardPaddingBottom"
+    PropertyKind: "Instance"
+    SwiftName: "cardPaddingBottom"
+    Type: "float"
+  - Name: "cardPaddingTop"
+    PropertyKind: "Instance"
+    SwiftName: "cardPaddingTop"
+    Type: "float"
+  - Name: "componentPadding"
+    PropertyKind: "Instance"
+    SwiftName: "componentPadding"
+    Type: "float"
+  - Name: "ctaPadding"
+    PropertyKind: "Instance"
+    SwiftName: "ctaPadding"
+    Type: "float"
+  - Name: "floatingSpace"
+    PropertyKind: "Instance"
+    SwiftName: "floatingSpace"
+    Type: "float"
+  - Name: "inputPadding"
+    PropertyKind: "Instance"
+    SwiftName: "inputPadding"
+    Type: "float"
+  - Name: "separatorPadding"
+    PropertyKind: "Instance"
+    SwiftName: "separatorPadding"
+    Type: "float"
+  - Name: "verticalPadding"
+    PropertyKind: "Instance"
+    SwiftName: "verticalPadding"
+    Type: "float"
+  Methods:
+  - Selector: "initWithInputPadding:ctaPadding:separatorPadding:verticalPadding:floatingSpace:cardPaddingTop:cardPaddingBottom:cardPadding:componentPadding:"
+    MethodKind: "Instance"
+    SwiftName: "init(inputPadding:ctaPadding:separatorPadding:verticalPadding:floatingSpace:cardPaddingTop:cardPaddingBottom:cardPadding:componentPadding:)"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+    - Position: 7
+      Type: "float"
+    - Position: 8
+      Type: "float"
+  - Selector: "doCopyInputPadding:ctaPadding:separatorPadding:verticalPadding:floatingSpace:cardPaddingTop:cardPaddingBottom:cardPadding:componentPadding:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(inputPadding:ctaPadding:separatorPadding:verticalPadding:floatingSpace:cardPaddingTop:cardPaddingBottom:cardPadding:componentPadding:)"
+    ResultType: "SharedLogicPaddingTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+    - Position: 7
+      Type: "float"
+    - Position: 8
+      Type: "float"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicFoundationTokens"
+  SwiftName: "FoundationTokens"
+  Properties:
+  - Name: "borderRadius"
+    PropertyKind: "Instance"
+    SwiftName: "borderRadius"
+    Type: "SharedLogicBorderRadiusScale * _Nonnull"
+  - Name: "borderWidth"
+    PropertyKind: "Instance"
+    SwiftName: "borderWidth"
+    Type: "SharedLogicBorderWidthScale * _Nonnull"
+  - Name: "spacing"
+    PropertyKind: "Instance"
+    SwiftName: "spacing"
+    Type: "SharedLogicSpacingScale * _Nonnull"
+  Methods:
+  - Selector: "initWithSpacing:borderRadius:borderWidth:"
+    MethodKind: "Instance"
+    SwiftName: "init(spacing:borderRadius:borderWidth:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSpacingScale * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicBorderRadiusScale * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicBorderWidthScale * _Nonnull"
+  - Selector: "doCopySpacing:borderRadius:borderWidth:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(spacing:borderRadius:borderWidth:)"
+    ResultType: "SharedLogicFoundationTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSpacingScale * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicBorderRadiusScale * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicBorderWidthScale * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicBorderWidthScale"
+  SwiftName: "BorderWidthScale"
+  Properties:
+  - Name: "l"
+    PropertyKind: "Instance"
+    SwiftName: "l"
+    Type: "float"
+  - Name: "m"
+    PropertyKind: "Instance"
+    SwiftName: "m"
+    Type: "float"
+  - Name: "none"
+    PropertyKind: "Instance"
+    SwiftName: "none"
+    Type: "float"
+  - Name: "s"
+    PropertyKind: "Instance"
+    SwiftName: "s"
+    Type: "float"
+  - Name: "xl"
+    PropertyKind: "Instance"
+    SwiftName: "xl"
+    Type: "float"
+  - Name: "xs"
+    PropertyKind: "Instance"
+    SwiftName: "xs"
+    Type: "float"
+  Methods:
+  - Selector: "initWithNone:xs:s:m:l:xl:"
+    MethodKind: "Instance"
+    SwiftName: "init(none:xs:s:m:l:xl:)"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+  - Selector: "doCopyNone:xs:s:m:l:xl:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(none:xs:s:m:l:xl:)"
+    ResultType: "SharedLogicBorderWidthScale * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicBorderRadiusScale"
+  SwiftName: "BorderRadiusScale"
+  Properties:
+  - Name: "circle"
+    PropertyKind: "Instance"
+    SwiftName: "circle"
+    Type: "float"
+  - Name: "l"
+    PropertyKind: "Instance"
+    SwiftName: "l"
+    Type: "float"
+  - Name: "m"
+    PropertyKind: "Instance"
+    SwiftName: "m"
+    Type: "float"
+  - Name: "none"
+    PropertyKind: "Instance"
+    SwiftName: "none"
+    Type: "float"
+  - Name: "pill"
+    PropertyKind: "Instance"
+    SwiftName: "pill"
+    Type: "float"
+  - Name: "s"
+    PropertyKind: "Instance"
+    SwiftName: "s"
+    Type: "float"
+  - Name: "xs"
+    PropertyKind: "Instance"
+    SwiftName: "xs"
+    Type: "float"
+  Methods:
+  - Selector: "initWithNone:xs:s:m:l:circle:pill:"
+    MethodKind: "Instance"
+    SwiftName: "init(none:xs:s:m:l:circle:pill:)"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+  - Selector: "doCopyNone:xs:s:m:l:circle:pill:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(none:xs:s:m:l:circle:pill:)"
+    ResultType: "SharedLogicBorderRadiusScale * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSpacingScale"
+  SwiftName: "SpacingScale"
+  Properties:
+  - Name: "l"
+    PropertyKind: "Instance"
+    SwiftName: "l"
+    Type: "float"
+  - Name: "m"
+    PropertyKind: "Instance"
+    SwiftName: "m"
+    Type: "float"
+  - Name: "none"
+    PropertyKind: "Instance"
+    SwiftName: "none"
+    Type: "float"
+  - Name: "s"
+    PropertyKind: "Instance"
+    SwiftName: "s"
+    Type: "float"
+  - Name: "xl"
+    PropertyKind: "Instance"
+    SwiftName: "xl"
+    Type: "float"
+  - Name: "xl10"
+    PropertyKind: "Instance"
+    SwiftName: "xl10"
+    Type: "float"
+  - Name: "xl11"
+    PropertyKind: "Instance"
+    SwiftName: "xl11"
+    Type: "float"
+  - Name: "xl12"
+    PropertyKind: "Instance"
+    SwiftName: "xl12"
+    Type: "float"
+  - Name: "xl2"
+    PropertyKind: "Instance"
+    SwiftName: "xl2"
+    Type: "float"
+  - Name: "xl3"
+    PropertyKind: "Instance"
+    SwiftName: "xl3"
+    Type: "float"
+  - Name: "xl4"
+    PropertyKind: "Instance"
+    SwiftName: "xl4"
+    Type: "float"
+  - Name: "xl5"
+    PropertyKind: "Instance"
+    SwiftName: "xl5"
+    Type: "float"
+  - Name: "xl6"
+    PropertyKind: "Instance"
+    SwiftName: "xl6"
+    Type: "float"
+  - Name: "xl7"
+    PropertyKind: "Instance"
+    SwiftName: "xl7"
+    Type: "float"
+  - Name: "xl8"
+    PropertyKind: "Instance"
+    SwiftName: "xl8"
+    Type: "float"
+  - Name: "xl9"
+    PropertyKind: "Instance"
+    SwiftName: "xl9"
+    Type: "float"
+  - Name: "xs"
+    PropertyKind: "Instance"
+    SwiftName: "xs"
+    Type: "float"
+  - Name: "xs2"
+    PropertyKind: "Instance"
+    SwiftName: "xs2"
+    Type: "float"
+  Methods:
+  - Selector: "initWithNone:xs2:xs:s:m:l:xl:xl2:xl3:xl4:xl5:xl6:xl7:xl8:xl9:xl10:xl11:xl12:"
+    MethodKind: "Instance"
+    SwiftName: "init(none:xs2:xs:s:m:l:xl:xl2:xl3:xl4:xl5:xl6:xl7:xl8:xl9:xl10:xl11:xl12:)"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+    - Position: 7
+      Type: "float"
+    - Position: 8
+      Type: "float"
+    - Position: 9
+      Type: "float"
+    - Position: 10
+      Type: "float"
+    - Position: 11
+      Type: "float"
+    - Position: 12
+      Type: "float"
+    - Position: 13
+      Type: "float"
+    - Position: 14
+      Type: "float"
+    - Position: 15
+      Type: "float"
+    - Position: 16
+      Type: "float"
+    - Position: 17
+      Type: "float"
+  - Selector: "doCopyNone:xs2:xs:s:m:l:xl:xl2:xl3:xl4:xl5:xl6:xl7:xl8:xl9:xl10:xl11:xl12:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(none:xs2:xs:s:m:l:xl:xl2:xl3:xl4:xl5:xl6:xl7:xl8:xl9:xl10:xl11:xl12:)"
+    ResultType: "SharedLogicSpacingScale * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "float"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "float"
+    - Position: 5
+      Type: "float"
+    - Position: 6
+      Type: "float"
+    - Position: 7
+      Type: "float"
+    - Position: 8
+      Type: "float"
+    - Position: 9
+      Type: "float"
+    - Position: 10
+      Type: "float"
+    - Position: 11
+      Type: "float"
+    - Position: 12
+      Type: "float"
+    - Position: 13
+      Type: "float"
+    - Position: 14
+      Type: "float"
+    - Position: 15
+      Type: "float"
+    - Position: 16
+      Type: "float"
+    - Position: 17
+      Type: "float"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSemanticTypographyTokens"
+  SwiftName: "SemanticTypographyTokens"
+  Properties:
+  - Name: "arabic"
+    PropertyKind: "Instance"
+    SwiftName: "arabic"
+    Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+  - Name: "english"
+    PropertyKind: "Instance"
+    SwiftName: "english"
+    Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+  Methods:
+  - Selector: "initWithEnglish:arabic:"
+    MethodKind: "Instance"
+    SwiftName: "init(english:arabic:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+  - Selector: "doCopyEnglish:arabic:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(english:arabic:)"
+    ResultType: "SharedLogicSemanticTypographyTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSemanticLocaleTypographyTokens"
+  SwiftName: "SemanticLocaleTypographyTokens"
+  Properties:
+  - Name: "primary"
+    PropertyKind: "Instance"
+    SwiftName: "primary"
+    Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  - Name: "secondary"
+    PropertyKind: "Instance"
+    SwiftName: "secondary"
+    Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  - Name: "tertiary"
+    PropertyKind: "Instance"
+    SwiftName: "tertiary"
+    Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  - Name: "title"
+    PropertyKind: "Instance"
+    SwiftName: "title"
+    Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  Methods:
+  - Selector: "initWithTitle:primary:secondary:tertiary:"
+    MethodKind: "Instance"
+    SwiftName: "init(title:primary:secondary:tertiary:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  - Selector: "doCopyTitle:primary:secondary:tertiary:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(title:primary:secondary:tertiary:)"
+    ResultType: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticFontTokens * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSemanticFontTokens"
+  SwiftName: "SemanticFontTokens"
+  Properties:
+  - Name: "category"
+    PropertyKind: "Instance"
+    SwiftName: "category"
+    Type: "NSString * _Nonnull"
+  - Name: "family"
+    PropertyKind: "Instance"
+    SwiftName: "family"
+    Type: "NSString * _Nonnull"
+  - Name: "fontSize"
+    PropertyKind: "Instance"
+    SwiftName: "fontSize"
+    Type: "float"
+  - Name: "fontWeight"
+    PropertyKind: "Instance"
+    SwiftName: "fontWeight"
+    Type: "int32_t"
+  - Name: "lineHeight"
+    PropertyKind: "Instance"
+    SwiftName: "lineHeight"
+    Type: "float"
+  Methods:
+  - Selector: "initWithFamily:fontSize:fontWeight:lineHeight:category:"
+    MethodKind: "Instance"
+    SwiftName: "init(family:fontSize:fontWeight:lineHeight:category:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyFamily:fontSize:fontWeight:lineHeight:category:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(family:fontSize:fontWeight:lineHeight:category:)"
+    ResultType: "SharedLogicSemanticFontTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "float"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "float"
+    - Position: 4
+      Type: "NSString * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicTypographyTokens"
+  SwiftName: "TypographyTokens"
+  Properties:
+  - Name: "fontFamily"
+    PropertyKind: "Instance"
+    SwiftName: "fontFamily"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Name: "fontSize"
+    PropertyKind: "Instance"
+    SwiftName: "fontSize"
+    Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  - Name: "fontWeight"
+    PropertyKind: "Instance"
+    SwiftName: "fontWeight"
+    Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+  - Name: "lineHeight"
+    PropertyKind: "Instance"
+    SwiftName: "lineHeight"
+    Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  Methods:
+  - Selector: "initWithFontFamily:fontSize:fontWeight:lineHeight:"
+    MethodKind: "Instance"
+    SwiftName: "init(fontFamily:fontSize:fontWeight:lineHeight:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  - Selector: "doCopyFontFamily:fontSize:fontWeight:lineHeight:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fontFamily:fontSize:fontWeight:lineHeight:)"
+    ResultType: "SharedLogicTypographyTokens * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicModeAwareColorToken"
+  SwiftName: "ModeAwareColorToken"
+  Properties:
+  - Name: "dark"
+    PropertyKind: "Instance"
+    SwiftName: "dark"
+    Type: "SharedLogicSdkColor * _Nonnull"
+  - Name: "light"
+    PropertyKind: "Instance"
+    SwiftName: "light"
+    Type: "SharedLogicSdkColor * _Nonnull"
+  Methods:
+  - Selector: "initWithLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "init(light:dark:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSdkColor * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSdkColor * _Nonnull"
+  - Selector: "doCopyLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(light:dark:)"
+    ResultType: "SharedLogicModeAwareColorToken * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSdkColor * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSdkColor * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSdkColor"
+  SwiftName: "SdkColor"
+  Properties:
+  - Name: "alpha"
+    PropertyKind: "Instance"
+    SwiftName: "alpha"
+    Type: "int32_t"
+  - Name: "blue"
+    PropertyKind: "Instance"
+    SwiftName: "blue"
+    Type: "int32_t"
+  - Name: "green"
+    PropertyKind: "Instance"
+    SwiftName: "green"
+    Type: "int32_t"
+  - Name: "red"
+    PropertyKind: "Instance"
+    SwiftName: "red"
+    Type: "int32_t"
+  Methods:
+  - Selector: "initWithRed:green:blue:alpha:"
+    MethodKind: "Instance"
+    SwiftName: "init(red:green:blue:alpha:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+  - Selector: "doCopyRed:green:blue:alpha:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(red:green:blue:alpha:)"
+    ResultType: "SharedLogicSdkColor * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "toArgbInt"
+    MethodKind: "Instance"
+    SwiftName: "toArgbInt()"
+    ResultType: "int32_t"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSdkColorCompanion"
+  SwiftName: "SdkColor.Companion"
+  Methods:
+  - Selector: "fromHexRawHex:"
+    MethodKind: "Instance"
+    SwiftName: "fromHex(rawHex:)"
+    ResultType: "SharedLogicSdkColor * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+- Name: "SharedLogicLocalThemeTokenService"
+  SwiftName: "LocalThemeTokenService"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "getTokens"
+    MethodKind: "Instance"
+    SwiftName: "getTokens()"
+    ResultType: "SharedLogicThemeTokenCatalog * _Nonnull"
+- Name: "SharedLogicRemoteThemeTokenService"
+  SwiftName: "RemoteThemeTokenService"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "getTokensCustomizableJson:foundationJson:"
+    MethodKind: "Instance"
+    SwiftName: "getTokens(customizableJson:foundationJson:)"
+    ResultType: "SharedLogicThemeTokenCatalog * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+- Name: "SharedLogicThemeMode"
+  SwiftBridge: "ThemeMode"
+  SwiftName: "__ThemeMode"
+  SwiftPrivate: true
+  Properties:
+  - Name: "light"
+    PropertyKind: "Class"
+    SwiftName: "light"
+    Type: "SharedLogicThemeMode * _Nonnull"
+  - Name: "dark"
+    PropertyKind: "Class"
+    SwiftName: "dark"
+    Type: "SharedLogicThemeMode * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SharedLogicCustomizableTokensJson"
+  SwiftName: "CustomizableTokensJson"
+  Properties:
+  - Name: "colors"
+    PropertyKind: "Instance"
+    SwiftName: "colors"
+    Type: "SharedLogicColorModesJson * _Nonnull"
+  - Name: "padding"
+    PropertyKind: "Instance"
+    SwiftName: "padding"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "radius"
+    PropertyKind: "Instance"
+    SwiftName: "radius"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "schemaVersion"
+    PropertyKind: "Instance"
+    SwiftName: "schemaVersion"
+    Type: "NSString * _Nonnull"
+  - Name: "typography"
+    PropertyKind: "Instance"
+    SwiftName: "typography"
+    Type: "SharedLogicTypographyJson * _Nonnull"
+  Methods:
+  - Selector: "initWithSchemaVersion:colors:typography:padding:radius:"
+    MethodKind: "Instance"
+    SwiftName: "init(schemaVersion:colors:typography:padding:radius:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicColorModesJson * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicTypographyJson * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Selector: "doCopySchemaVersion:colors:typography:padding:radius:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(schemaVersion:colors:typography:padding:radius:)"
+    ResultType: "SharedLogicCustomizableTokensJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicColorModesJson * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicTypographyJson * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicCustomizableTokensJsonCompanion"
+  SwiftName: "CustomizableTokensJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicTypographyJson"
+  SwiftName: "TypographyJson"
+  Properties:
+  - Name: "arabic"
+    PropertyKind: "Instance"
+    SwiftName: "arabic"
+    Type: "SharedLogicLocaleTypographyJson * _Nullable"
+  - Name: "english"
+    PropertyKind: "Instance"
+    SwiftName: "english"
+    Type: "SharedLogicLocaleTypographyJson * _Nullable"
+  - Name: "fontFamily"
+    PropertyKind: "Instance"
+    SwiftName: "fontFamily"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Name: "fontSize"
+    PropertyKind: "Instance"
+    SwiftName: "fontSize"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "fontWeight"
+    PropertyKind: "Instance"
+    SwiftName: "fontWeight"
+    Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+  - Name: "latin"
+    PropertyKind: "Instance"
+    SwiftName: "latin"
+    Type: "SharedLogicLocaleTypographyJson * _Nullable"
+  - Name: "lineHeight"
+    PropertyKind: "Instance"
+    SwiftName: "lineHeight"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  Methods:
+  - Selector: "initWithFontFamily:fontSize:fontWeight:lineHeight:english:arabic:latin:"
+    MethodKind: "Instance"
+    SwiftName: "init(fontFamily:fontSize:fontWeight:lineHeight:english:arabic:latin:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+    - Position: 5
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+    - Position: 6
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+  - Selector: "doCopyFontFamily:fontSize:fontWeight:lineHeight:english:arabic:latin:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(fontFamily:fontSize:fontWeight:lineHeight:english:arabic:latin:)"
+    ResultType: "SharedLogicTypographyJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicInt *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+    - Position: 5
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+    - Position: 6
+      Type: "SharedLogicLocaleTypographyJson * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicTypographyJsonCompanion"
+  SwiftName: "TypographyJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicLocaleTypographyJson"
+  SwiftName: "LocaleTypographyJson"
+  Properties:
+  - Name: "primary"
+    PropertyKind: "Instance"
+    SwiftName: "primary"
+    Type: "SharedLogicSemanticFontJson * _Nonnull"
+  - Name: "secondary"
+    PropertyKind: "Instance"
+    SwiftName: "secondary"
+    Type: "SharedLogicSemanticFontJson * _Nonnull"
+  - Name: "tertiary"
+    PropertyKind: "Instance"
+    SwiftName: "tertiary"
+    Type: "SharedLogicSemanticFontJson * _Nonnull"
+  - Name: "title"
+    PropertyKind: "Instance"
+    SwiftName: "title"
+    Type: "SharedLogicSemanticFontJson * _Nonnull"
+  Methods:
+  - Selector: "initWithTitle:primary:secondary:tertiary:"
+    MethodKind: "Instance"
+    SwiftName: "init(title:primary:secondary:tertiary:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+  - Selector: "doCopyTitle:primary:secondary:tertiary:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(title:primary:secondary:tertiary:)"
+    ResultType: "SharedLogicLocaleTypographyJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSemanticFontJson * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicLocaleTypographyJsonCompanion"
+  SwiftName: "LocaleTypographyJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicSemanticFontJson"
+  SwiftName: "SemanticFontJson"
+  Properties:
+  - Name: "family"
+    PropertyKind: "Instance"
+    SwiftName: "family"
+    Type: "NSString * _Nullable"
+  - Name: "fontSize"
+    PropertyKind: "Instance"
+    SwiftName: "fontSize"
+    Type: "SharedLogicDouble * _Nullable"
+  - Name: "fontWeight"
+    PropertyKind: "Instance"
+    SwiftName: "fontWeight"
+    Type: "SharedLogicInt * _Nullable"
+  - Name: "lineHeight"
+    PropertyKind: "Instance"
+    SwiftName: "lineHeight"
+    Type: "SharedLogicDouble * _Nullable"
+  Methods:
+  - Selector: "initWithFamily:fontSize:fontWeight:lineHeight:"
+    MethodKind: "Instance"
+    SwiftName: "init(family:fontSize:fontWeight:lineHeight:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "SharedLogicDouble * _Nullable"
+    - Position: 2
+      Type: "SharedLogicInt * _Nullable"
+    - Position: 3
+      Type: "SharedLogicDouble * _Nullable"
+  - Selector: "doCopyFamily:fontSize:fontWeight:lineHeight:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(family:fontSize:fontWeight:lineHeight:)"
+    ResultType: "SharedLogicSemanticFontJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nullable"
+    - Position: 1
+      Type: "SharedLogicDouble * _Nullable"
+    - Position: 2
+      Type: "SharedLogicInt * _Nullable"
+    - Position: 3
+      Type: "SharedLogicDouble * _Nullable"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicSemanticFontJsonCompanion"
+  SwiftName: "SemanticFontJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicColorModesJson"
+  SwiftName: "ColorModesJson"
+  Properties:
+  - Name: "dark"
+    PropertyKind: "Instance"
+    SwiftName: "dark"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Name: "light"
+    PropertyKind: "Instance"
+    SwiftName: "light"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  Methods:
+  - Selector: "initWithLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "init(light:dark:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "doCopyLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(light:dark:)"
+    ResultType: "SharedLogicColorModesJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicColorModesJsonCompanion"
+  SwiftName: "ColorModesJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicFoundationTokensJson"
+  SwiftName: "FoundationTokensJson"
+  Properties:
+  - Name: "borderRadius"
+    PropertyKind: "Instance"
+    SwiftName: "borderRadius"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "borderWidth"
+    PropertyKind: "Instance"
+    SwiftName: "borderWidth"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "schemaVersion"
+    PropertyKind: "Instance"
+    SwiftName: "schemaVersion"
+    Type: "NSString * _Nonnull"
+  - Name: "spacing"
+    PropertyKind: "Instance"
+    SwiftName: "spacing"
+    Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+  - Name: "typography"
+    PropertyKind: "Instance"
+    SwiftName: "typography"
+    Type: "SharedLogicTypographyJson * _Nonnull"
+  Methods:
+  - Selector: "initWithSchemaVersion:spacing:borderRadius:borderWidth:typography:"
+    MethodKind: "Instance"
+    SwiftName: "init(schemaVersion:spacing:borderRadius:borderWidth:typography:)"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicTypographyJson * _Nonnull"
+  - Selector: "doCopySchemaVersion:spacing:borderRadius:borderWidth:typography:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(schemaVersion:spacing:borderRadius:borderWidth:typography:)"
+    ResultType: "SharedLogicFoundationTokensJson * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 2
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 3
+      Type: "NSDictionary<NSString *, SharedLogicDouble *> * _Nonnull"
+    - Position: 4
+      Type: "SharedLogicTypographyJson * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicFoundationTokensJsonCompanion"
+  SwiftName: "FoundationTokensJson.Companion"
+  Methods:
+  - Selector: "serializer"
+    MethodKind: "Instance"
+    SwiftName: "serializer()"
+    ResultType: "id<SharedLogicKotlinx_serialization_coreKSerializer> _Nonnull"
+- Name: "SharedLogicThemeTokenManager"
+  SwiftName: "ThemeTokenManager"
+  Properties:
+  - Name: "customization"
+    PropertyKind: "Instance"
+    SwiftName: "customization"
+    Type: "SharedLogicCustomizationTokens * _Nonnull"
+  - Name: "fonts"
+    PropertyKind: "Instance"
+    SwiftName: "fonts"
+    Type: "SharedLogicSemanticLocaleTypographyTokens * _Nonnull"
+  - Name: "foundation"
+    PropertyKind: "Instance"
+    SwiftName: "foundation"
+    Type: "SharedLogicFoundationTokens * _Nonnull"
+  - Name: "isRemoteActive"
+    PropertyKind: "Instance"
+    SwiftName: "isRemoteActive"
+    Type: "BOOL"
+  - Name: "mode"
+    PropertyKind: "Instance"
+    SwiftName: "mode"
+    Type: "SharedLogicSkieKotlinStateFlow<SharedLogicThemeMode *> * _Nonnull"
+  Methods:
+  - Selector: "initWithInitialMode:"
+    MethodKind: "Instance"
+    SwiftName: "init(initialMode:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicThemeMode * _Nonnull"
+  - Selector: "initWithCatalog:initialMode:"
+    MethodKind: "Instance"
+    SwiftName: "init(catalog:initialMode:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicThemeTokenCatalog * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicThemeMode * _Nonnull"
+  - Selector: "initWithRepository:initialMode:"
+    MethodKind: "Instance"
+    SwiftName: "init(repository:initialMode:)"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicIThemeTokenRepository> _Nonnull"
+    - Position: 1
+      Type: "SharedLogicThemeMode * _Nonnull"
+  - Selector: "applyRemoteTokensCustomizableJson:foundationJson:"
+    MethodKind: "Instance"
+    SwiftName: "applyRemoteTokens(customizableJson:foundationJson:)"
+    ResultType: "id<SharedLogicRemoteTokenResult> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "colorTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "color(tokenId:)"
+    ResultType: "SharedLogicSdkColor * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "colorToken:"
+    MethodKind: "Instance"
+    SwiftName: "color(token:)"
+    ResultType: "SharedLogicSdkColor * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicColorToken * _Nonnull"
+  - Selector: "fontFamilyTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "fontFamily(tokenId:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "fontFamilyToken:"
+    MethodKind: "Instance"
+    SwiftName: "fontFamily(token:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicFontFamilyToken * _Nonnull"
+  - Selector: "fontSizeTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "fontSize(tokenId:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "fontSizeToken:"
+    MethodKind: "Instance"
+    SwiftName: "fontSize(token:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicFontSizeToken * _Nonnull"
+  - Selector: "fontWeightTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "fontWeight(tokenId:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "fontWeightToken:"
+    MethodKind: "Instance"
+    SwiftName: "fontWeight(token:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicFontWeightToken * _Nonnull"
+  - Selector: "lineHeightTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "lineHeight(tokenId:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "lineHeightToken:"
+    MethodKind: "Instance"
+    SwiftName: "lineHeight(token:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicLineHeightToken * _Nonnull"
+  - Selector: "resetToLocal"
+    MethodKind: "Instance"
+    SwiftName: "resetToLocal()"
+    ResultType: "void"
+  - Selector: "setModeMode:"
+    MethodKind: "Instance"
+    SwiftName: "setMode(mode:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicThemeMode * _Nonnull"
+- Name: "SharedLogicThemeTokenBootstrap"
+  SwiftName: "ThemeTokenBootstrap"
+  Methods:
+  - Selector: "fromJsonCustomizableJson:foundationJson:initialMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromJson(customizableJson:foundationJson:initialMode:)"
+    ResultType: "SharedLogicThemeTokenManager * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicThemeMode * _Nonnull"
+- Name: "SharedLogicThemeTokenColorOverrides"
+  SwiftName: "ThemeTokenColorOverrides"
+  Properties:
+  - Name: "dark"
+    PropertyKind: "Instance"
+    SwiftName: "dark"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Name: "light"
+    PropertyKind: "Instance"
+    SwiftName: "light"
+    Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  Methods:
+  - Selector: "initWithLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "init(light:dark:)"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "doCopyLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(light:dark:)"
+    ResultType: "SharedLogicThemeTokenColorOverrides * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SharedLogicThemeTokenParser"
+  SwiftName: "ThemeTokenParser"
+  Methods:
+  - Selector: "parseCustomizableJson:foundationJson:colorOverrides:"
+    MethodKind: "Instance"
+    SwiftName: "parse(customizableJson:foundationJson:colorOverrides:)"
+    ResultType: "SharedLogicThemeTokenCatalog * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicThemeTokenColorOverrides * _Nonnull"
+- Name: "SharedLogicThemeTokenRepository"
+  SwiftName: "ThemeTokenRepository"
+  Properties:
+  - Name: "catalog"
+    PropertyKind: "Instance"
+    SwiftName: "catalog"
+    Type: "SharedLogicThemeTokenCatalog * _Nonnull"
+  - Name: "isRemoteActive"
+    PropertyKind: "Instance"
+    SwiftName: "isRemoteActive"
+    Type: "BOOL"
+  Methods:
+  - Selector: "initWithLocalService:remoteService:localCatalogOverride:"
+    MethodKind: "Instance"
+    SwiftName: "init(localService:remoteService:localCatalogOverride:)"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicLocalThemeTokenService * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicRemoteThemeTokenService * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicThemeTokenCatalog * _Nullable"
+  - Selector: "applyRemoteTokensCustomizableJson:foundationJson:"
+    MethodKind: "Instance"
+    SwiftName: "applyRemoteTokens(customizableJson:foundationJson:)"
+    ResultType: "id<SharedLogicRemoteTokenResult> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "resetToLocal"
+    MethodKind: "Instance"
+    SwiftName: "resetToLocal()"
+    ResultType: "void"
+- Name: "SharedLogicThemeTokenRuntimeOverrides"
+  SwiftName: "ThemeTokenRuntimeOverrides"
+  Methods:
+  - Selector: "clearColorOverrides"
+    MethodKind: "Instance"
+    SwiftName: "clearColorOverrides()"
+    ResultType: "void"
+  - Selector: "clearPaddingOverrides"
+    MethodKind: "Instance"
+    SwiftName: "clearPaddingOverrides()"
+    ResultType: "void"
+  - Selector: "clearRadiusOverrides"
+    MethodKind: "Instance"
+    SwiftName: "clearRadiusOverrides()"
+    ResultType: "void"
+  - Selector: "currentColorOverrides"
+    MethodKind: "Instance"
+    SwiftName: "currentColorOverrides()"
+    ResultType: "SharedLogicThemeTokenColorOverrides * _Nonnull"
+  - Selector: "currentFontScaleFactor"
+    MethodKind: "Instance"
+    SwiftName: "currentFontScaleFactor()"
+    ResultType: "float"
+  - Selector: "currentLanguageTokenId"
+    MethodKind: "Instance"
+    SwiftName: "currentLanguageTokenId()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "currentPaddingOverrideTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "currentPaddingOverride(tokenId:)"
+    ResultType: "SharedLogicFloat * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "currentRadiusOverrideTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "currentRadiusOverride(tokenId:)"
+    ResultType: "SharedLogicFloat * _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "currentThemeMode"
+    MethodKind: "Instance"
+    SwiftName: "currentThemeMode()"
+    ResultType: "SharedLogicThemeMode * _Nonnull"
+  - Selector: "setColorOverridesLight:dark:"
+    MethodKind: "Instance"
+    SwiftName: "setColorOverrides(light:dark:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+    - Position: 1
+      Type: "NSDictionary<NSString *, NSString *> * _Nonnull"
+  - Selector: "setFontScaleFactorValue:"
+    MethodKind: "Instance"
+    SwiftName: "setFontScaleFactor(value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "float"
+  - Selector: "setLanguageTokenId:"
+    MethodKind: "Instance"
+    SwiftName: "setLanguage(tokenId:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "setPaddingOverridesOverrides:"
+    MethodKind: "Instance"
+    SwiftName: "setPaddingOverrides(overrides:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  - Selector: "setRadiusOverridesOverrides:"
+    MethodKind: "Instance"
+    SwiftName: "setRadiusOverrides(overrides:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "NSDictionary<NSString *, SharedLogicFloat *> * _Nonnull"
+  - Selector: "setThemeModeMode:"
+    MethodKind: "Instance"
+    SwiftName: "setThemeMode(mode:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicThemeMode * _Nonnull"
 - Name: "SharedLogicLogSanitizer"
   SwiftName: "LogSanitizer"
   Methods:
@@ -1815,626 +5002,6 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 1
       Type: "void (^ _Nonnull)(NSError * _Nullable)"
-- Name: "SharedLogicPaymentSheetSessionStore"
-  SwiftName: "PaymentSheetSessionStore"
-  Properties:
-  - Name: "state"
-    PropertyKind: "Instance"
-    SwiftName: "state"
-    Type: "SharedLogicSkieKotlinStateFlow<SharedLogicPaymentSheetSessionState *> * _Nonnull"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "saveAddPaymentInfoResultValue:"
-    MethodKind: "Instance"
-    SwiftName: "saveAddPaymentInfoResult(value:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicAddPaymentInfoResult * _Nonnull"
-  - Selector: "saveErrorMessage:"
-    MethodKind: "Instance"
-    SwiftName: "saveError(message:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "saveOrderConfigurationValue:"
-    MethodKind: "Instance"
-    SwiftName: "saveOrderConfiguration(value:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicOrderConfiguration * _Nonnull"
-  - Selector: "saveOrderStatusResultValue:"
-    MethodKind: "Instance"
-    SwiftName: "saveOrderStatusResult(value:)"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicOrderStatusResult * _Nonnull"
-- Name: "SharedLogicOrderStatusResult"
-  SwiftName: "OrderStatusResult"
-  Properties:
-  - Name: "orderStatus"
-    PropertyKind: "Instance"
-    SwiftName: "orderStatus"
-    Type: "NSString * _Nullable"
-  - Name: "paymentDetails"
-    PropertyKind: "Instance"
-    SwiftName: "paymentDetails"
-    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-  - Name: "resultCode"
-    PropertyKind: "Instance"
-    SwiftName: "resultCode"
-    Type: "NSString * _Nullable"
-  - Name: "transactionStatus"
-    PropertyKind: "Instance"
-    SwiftName: "transactionStatus"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithResultCode:orderStatus:transactionStatus:paymentDetails:"
-    MethodKind: "Instance"
-    SwiftName: "init(resultCode:orderStatus:transactionStatus:paymentDetails:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-  - Selector: "doCopyResultCode:orderStatus:transactionStatus:paymentDetails:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(resultCode:orderStatus:transactionStatus:paymentDetails:)"
-    ResultType: "SharedLogicOrderStatusResult * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicOrderConfiguration"
-  SwiftName: "OrderConfiguration"
-  Properties:
-  - Name: "currency"
-    PropertyKind: "Instance"
-    SwiftName: "currency"
-    Type: "NSString * _Nullable"
-  - Name: "encryptionKey"
-    PropertyKind: "Instance"
-    SwiftName: "encryptionKey"
-    Type: "NSString * _Nullable"
-  - Name: "order"
-    PropertyKind: "Instance"
-    SwiftName: "order"
-    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-  - Name: "orderCategory"
-    PropertyKind: "Instance"
-    SwiftName: "orderCategory"
-    Type: "NSString * _Nullable"
-  - Name: "orderChannel"
-    PropertyKind: "Instance"
-    SwiftName: "orderChannel"
-    Type: "NSString * _Nullable"
-  - Name: "paymentOptions"
-    PropertyKind: "Instance"
-    SwiftName: "paymentOptions"
-    Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-  - Name: "resultCode"
-    PropertyKind: "Instance"
-    SwiftName: "resultCode"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithResultCode:order:paymentOptions:orderCategory:currency:orderChannel:encryptionKey:"
-    MethodKind: "Instance"
-    SwiftName: "init(resultCode:order:paymentOptions:orderCategory:currency:orderChannel:encryptionKey:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-    - Position: 2
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyResultCode:order:paymentOptions:orderCategory:currency:orderChannel:encryptionKey:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(resultCode:order:paymentOptions:orderCategory:currency:orderChannel:encryptionKey:)"
-    ResultType: "SharedLogicOrderConfiguration * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-    - Position: 2
-      Type: "SharedLogicKotlinx_serialization_jsonJsonElement * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "applePayConfigurationOrNull"
-    MethodKind: "Instance"
-    SwiftName: "applePayConfigurationOrNull()"
-    ResultType: "SharedLogicApplePayConfiguration * _Nullable"
-  - Selector: "googlePayConfigurationOrNull"
-    MethodKind: "Instance"
-    SwiftName: "googlePayConfigurationOrNull()"
-    ResultType: "SharedLogicGooglePayConfiguration * _Nullable"
-- Name: "SharedLogicAddPaymentInfoResult"
-  SwiftName: "AddPaymentInfoResult"
-  Properties:
-  - Name: "orderId"
-    PropertyKind: "Instance"
-    SwiftName: "orderId"
-    Type: "NSString * _Nullable"
-  - Name: "postUrl"
-    PropertyKind: "Instance"
-    SwiftName: "postUrl"
-    Type: "NSString * _Nullable"
-  - Name: "resultCode"
-    PropertyKind: "Instance"
-    SwiftName: "resultCode"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithResultCode:postUrl:orderId:"
-    MethodKind: "Instance"
-    SwiftName: "init(resultCode:postUrl:orderId:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyResultCode:postUrl:orderId:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(resultCode:postUrl:orderId:)"
-    ResultType: "SharedLogicAddPaymentInfoResult * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicTokenizeApplePayUseCase"
-  SwiftName: "TokenizeApplePayUseCase"
-  Methods:
-  - Selector: "initWithRepository:"
-    MethodKind: "Instance"
-    SwiftName: "init(repository:)"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
-  - Selector: "invokeConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__invoke(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-- Name: "SharedLogicPaymentOperationResultSuccess"
-  SwiftName: "PaymentOperationResultSuccess"
-  Properties:
-  - Name: "value"
-    PropertyKind: "Instance"
-    SwiftName: "value"
-    Type: "T _Nullable"
-  Methods:
-  - Selector: "initWithValue:"
-    MethodKind: "Instance"
-    SwiftName: "init(value:)"
-    Parameters:
-    - Position: 0
-      Type: "T _Nullable"
-  - Selector: "doCopyValue:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(value:)"
-    ResultType: "SharedLogicPaymentOperationResultSuccess<T> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "T _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentOperationResultFailure"
-  SwiftName: "PaymentOperationResultFailure"
-  Properties:
-  - Name: "failure"
-    PropertyKind: "Instance"
-    SwiftName: "failure"
-    Type: "id<SharedLogicPaymentFailure> _Nonnull"
-  Methods:
-  - Selector: "initWithFailure:"
-    MethodKind: "Instance"
-    SwiftName: "init(failure:)"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicPaymentFailure> _Nonnull"
-  - Selector: "doCopyFailure:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(failure:)"
-    ResultType: "SharedLogicPaymentOperationResultFailure * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicPaymentFailure> _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicApplePayPaymentInput"
-  SwiftName: "ApplePayPaymentInput"
-  Properties:
-  - Name: "paymentToken"
-    PropertyKind: "Instance"
-    SwiftName: "paymentToken"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithPaymentToken:"
-    MethodKind: "Instance"
-    SwiftName: "init(paymentToken:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyPaymentToken:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(paymentToken:)"
-    ResultType: "SharedLogicApplePayPaymentInput * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicPaymentApiConfig"
-  SwiftName: "PaymentApiConfig"
-  Properties:
-  - Name: "authHeader"
-    PropertyKind: "Instance"
-    SwiftName: "authHeader"
-    Type: "NSString * _Nonnull"
-  - Name: "baseUrl"
-    PropertyKind: "Instance"
-    SwiftName: "baseUrl"
-    Type: "NSString * _Nonnull"
-  - Name: "orderId"
-    PropertyKind: "Instance"
-    SwiftName: "orderId"
-    Type: "NSString * _Nonnull"
-  - Name: "sdkVersion"
-    PropertyKind: "Instance"
-    SwiftName: "sdkVersion"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithBaseUrl:orderId:authHeader:sdkVersion:"
-    MethodKind: "Instance"
-    SwiftName: "init(baseUrl:orderId:authHeader:sdkVersion:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyBaseUrl:orderId:authHeader:sdkVersion:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(baseUrl:orderId:authHeader:sdkVersion:)"
-    ResultType: "SharedLogicPaymentApiConfig * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicGooglePayPaymentInput"
-  SwiftName: "GooglePayPaymentInput"
-  Properties:
-  - Name: "apiVersion"
-    PropertyKind: "Instance"
-    SwiftName: "apiVersion"
-    Type: "int32_t"
-  - Name: "apiVersionMinor"
-    PropertyKind: "Instance"
-    SwiftName: "apiVersionMinor"
-    Type: "int32_t"
-  - Name: "payerConsentForToken"
-    PropertyKind: "Instance"
-    SwiftName: "payerConsentForToken"
-    Type: "BOOL"
-  - Name: "paymentMethodDataJson"
-    PropertyKind: "Instance"
-    SwiftName: "paymentMethodDataJson"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithPaymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:"
-    MethodKind: "Instance"
-    SwiftName: "init(paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "BOOL"
-  - Selector: "doCopyPaymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:)"
-    ResultType: "SharedLogicGooglePayPaymentInput * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "BOOL"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicCancelPaymentInput"
-  SwiftName: "CancelPaymentInput"
-  Properties:
-  - Name: "reason"
-    PropertyKind: "Instance"
-    SwiftName: "reason"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithReason:"
-    MethodKind: "Instance"
-    SwiftName: "init(reason:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyReason:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(reason:)"
-    ResultType: "SharedLogicCancelPaymentInput * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicCardPaymentInput"
-  SwiftName: "CardPaymentInput"
-  Properties:
-  - Name: "cvv"
-    PropertyKind: "Instance"
-    SwiftName: "cvv"
-    Type: "NSString * _Nonnull"
-  - Name: "expiryMonth"
-    PropertyKind: "Instance"
-    SwiftName: "expiryMonth"
-    Type: "NSString * _Nullable"
-  - Name: "expiryYear"
-    PropertyKind: "Instance"
-    SwiftName: "expiryYear"
-    Type: "NSString * _Nullable"
-  - Name: "nameOnCard"
-    PropertyKind: "Instance"
-    SwiftName: "nameOnCard"
-    Type: "NSString * _Nullable"
-  - Name: "numberEncrypted"
-    PropertyKind: "Instance"
-    SwiftName: "numberEncrypted"
-    Type: "NSString * _Nullable"
-  - Name: "payerConsentForToken"
-    PropertyKind: "Instance"
-    SwiftName: "payerConsentForToken"
-    Type: "SharedLogicBoolean * _Nullable"
-  - Name: "sdkSignature"
-    PropertyKind: "Instance"
-    SwiftName: "sdkSignature"
-    Type: "NSString * _Nullable"
-  - Name: "tokenIdentifier"
-    PropertyKind: "Instance"
-    SwiftName: "tokenIdentifier"
-    Type: "NSString * _Nullable"
-  Methods:
-  - Selector: "initWithCvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:"
-    MethodKind: "Instance"
-    SwiftName: "init(cvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "SharedLogicBoolean * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyCvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(cvv:tokenIdentifier:nameOnCard:numberEncrypted:expiryMonth:expiryYear:payerConsentForToken:sdkSignature:)"
-    ResultType: "SharedLogicCardPaymentInput * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-    - Position: 4
-      Type: "NSString * _Nullable"
-    - Position: 5
-      Type: "NSString * _Nullable"
-    - Position: 6
-      Type: "SharedLogicBoolean * _Nullable"
-    - Position: 7
-      Type: "NSString * _Nullable"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
 - Name: "SharedLogicCancelPaymentDemoState"
   SwiftName: "CancelPaymentDemoState"
   Properties:
@@ -3372,142 +5939,6 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicApplePayConfiguration"
-  SwiftName: "ApplePayConfiguration"
-  Properties:
-  - Name: "countryCode"
-    PropertyKind: "Instance"
-    SwiftName: "countryCode"
-    Type: "NSString * _Nonnull"
-  - Name: "currencyCode"
-    PropertyKind: "Instance"
-    SwiftName: "currencyCode"
-    Type: "NSString * _Nonnull"
-  - Name: "merchantIdentifier"
-    PropertyKind: "Instance"
-    SwiftName: "merchantIdentifier"
-    Type: "NSString * _Nonnull"
-  - Name: "summaryAmount"
-    PropertyKind: "Instance"
-    SwiftName: "summaryAmount"
-    Type: "NSString * _Nonnull"
-  - Name: "summaryLabel"
-    PropertyKind: "Instance"
-    SwiftName: "summaryLabel"
-    Type: "NSString * _Nonnull"
-  - Name: "supportedNetworks"
-    PropertyKind: "Instance"
-    SwiftName: "supportedNetworks"
-    Type: "NSArray<NSString *> * _Nonnull"
-  Methods:
-  - Selector: "initWithMerchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:"
-    MethodKind: "Instance"
-    SwiftName: "init(merchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:)"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-    - Position: 4
-      Type: "NSString * _Nonnull"
-    - Position: 5
-      Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "doCopyMerchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(merchantIdentifier:countryCode:currencyCode:summaryLabel:summaryAmount:supportedNetworks:)"
-    ResultType: "SharedLogicApplePayConfiguration * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-    - Position: 4
-      Type: "NSString * _Nonnull"
-    - Position: 5
-      Type: "NSArray<NSString *> * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
-- Name: "SharedLogicGooglePayConfiguration"
-  SwiftName: "GooglePayConfiguration"
-  Properties:
-  - Name: "apiVersion"
-    PropertyKind: "Instance"
-    SwiftName: "apiVersion"
-    Type: "int32_t"
-  - Name: "apiVersionMinor"
-    PropertyKind: "Instance"
-    SwiftName: "apiVersionMinor"
-    Type: "int32_t"
-  - Name: "environment"
-    PropertyKind: "Instance"
-    SwiftName: "environment"
-    Type: "NSString * _Nonnull"
-  - Name: "requestJson"
-    PropertyKind: "Instance"
-    SwiftName: "requestJson"
-    Type: "NSString * _Nonnull"
-  Methods:
-  - Selector: "initWithApiVersion:apiVersionMinor:environment:requestJson:"
-    MethodKind: "Instance"
-    SwiftName: "init(apiVersion:apiVersionMinor:environment:requestJson:)"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "doCopyApiVersion:apiVersionMinor:environment:requestJson:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(apiVersion:apiVersionMinor:environment:requestJson:)"
-    ResultType: "SharedLogicGooglePayConfiguration * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int32_t"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "NSString * _Nonnull"
-    - Position: 3
-      Type: "NSString * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
 - Name: "SharedLogicPaymentFailureHttp"
   SwiftName: "PaymentFailureHttp"
   Properties:
@@ -3763,46 +6194,6 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-- Name: "SharedLogicTokenizeGooglePayUseCase"
-  SwiftName: "TokenizeGooglePayUseCase"
-  Methods:
-  - Selector: "initWithRepository:"
-    MethodKind: "Instance"
-    SwiftName: "init(repository:)"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
-  - Selector: "invokeConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__invoke(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-- Name: "SharedLogicGetOrderConfigurationUseCase"
-  SwiftName: "GetOrderConfigurationUseCase"
-  Methods:
-  - Selector: "initWithRepository:"
-    MethodKind: "Instance"
-    SwiftName: "init(repository:)"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicIPaymentOrderRepository> _Nonnull"
-  - Selector: "invokeConfig:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__invoke(config:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
 - Name: "SharedLogicPaymentUseCasesFactory"
   SwiftName: "PaymentUseCasesFactory"
   Methods:
@@ -3857,6 +6248,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "orderConfigurationViewModel"
     Type: "SharedLogicOrderConfigurationDemoViewModel * _Nonnull"
+  - Name: "paymentMethodViewModel"
+    PropertyKind: "Instance"
+    SwiftName: "paymentMethodViewModel"
+    Type: "SharedLogicPaymentMethodDemoViewModel * _Nonnull"
   - Name: "sessionStore"
     PropertyKind: "Instance"
     SwiftName: "sessionStore"
@@ -7604,157 +9999,63 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__3__joinDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__3__loadDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__3__join(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__3__load(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "id<SharedLogicKotlinx_coroutines_coreJob> _Nonnull"
+      Type: "SharedLogicPaymentMethodDemoViewModel * _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__4__executeDispatchReceiver:context:subject:suspendHandler:"
+  - Selector: "Skie_Suspend__4__submitApplePayDispatchReceiver:paymentToken:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__4__execute(dispatchReceiver:context:subject:suspendHandler:)"
+    SwiftName: "Skie_Suspend__4__submitApplePay(dispatchReceiver:paymentToken:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "SharedLogicKtor_utilsPipeline<id, id> * _Nonnull"
-    - Position: 1
-      Type: "id _Nonnull"
-    - Position: 2
-      Type: "id _Nonnull"
-    - Position: 3
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__5__invokeDispatchReceiver:p1:p2:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__5__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicKotlinSuspendFunction2> _Nonnull"
-    - Position: 1
-      Type: "id _Nullable"
-    - Position: 2
-      Type: "id _Nullable"
-    - Position: 3
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__6__bodyDispatchReceiver:info:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__6__body(dispatchReceiver:info:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicKtor_utilsTypeInfo * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__7__bodyNullableDispatchReceiver:info:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__7__bodyNullable(dispatchReceiver:info:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicKtor_utilsTypeInfo * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__8__getResponseContentDispatchReceiver:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__8__getResponseContent(dispatchReceiver:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__9__awaitContentDispatchReceiver:min:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__9__awaitContent(dispatchReceiver:min:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicKtor_ioByteReadChannel> _Nonnull"
-    - Position: 1
-      Type: "int32_t"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__10__executeDispatchReceiver:data:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__10__execute(dispatchReceiver:data:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicKtor_client_coreHttpClientEngine> _Nonnull"
-    - Position: 1
-      Type: "SharedLogicKtor_client_coreHttpRequestData * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__11__executeDispatchReceiver:request:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__11__execute(dispatchReceiver:request:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "id<SharedLogicNetworkTransport> _Nonnull"
-    - Position: 1
-      Type: "SharedLogicNetworkRequest * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__12__requestDispatchReceiver:endpoint:orderId:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__12__request(dispatchReceiver:endpoint:orderId:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicNetworkClient * _Nonnull"
-    - Position: 1
-      Type: "id<SharedLogicEndpoint> _Nonnull"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__13__submitDispatchReceiver:paymentToken:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__13__submit(dispatchReceiver:paymentToken:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicApplePayDemoViewModel * _Nonnull"
+      Type: "SharedLogicPaymentMethodDemoViewModel * _Nonnull"
     - Position: 1
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__14__invokeDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__5__submitGooglePayDispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__14__invoke(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__5__submitGooglePay(dispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "SharedLogicTokenizeApplePayUseCase * _Nonnull"
+      Type: "SharedLogicPaymentMethodDemoViewModel * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "int32_t"
+    - Position: 3
+      Type: "int32_t"
+    - Position: 4
+      Type: "BOOL"
+    - Position: 5
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__6__invokeDispatchReceiver:config:input:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__6__invoke(dispatchReceiver:config:input:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicTokenizeGooglePayUseCase * _Nonnull"
     - Position: 1
       Type: "SharedLogicPaymentApiConfig * _Nonnull"
     - Position: 2
-      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
+      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__15__addCardPaymentInfoDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__7__addCardPaymentInfoDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__15__addCardPaymentInfo(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__7__addCardPaymentInfo(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7766,9 +10067,9 @@ Classes:
       Type: "SharedLogicCardPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__16__cancelPaymentDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__8__cancelPaymentDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__16__cancelPayment(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__8__cancelPayment(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7780,9 +10081,9 @@ Classes:
       Type: "SharedLogicCancelPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__17__fetchOrderStatusDispatchReceiver:config:orderId:suspendHandler:"
+  - Selector: "Skie_Suspend__9__fetchOrderStatusDispatchReceiver:config:orderId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__17__fetchOrderStatus(dispatchReceiver:config:orderId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__9__fetchOrderStatus(dispatchReceiver:config:orderId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7794,9 +10095,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__18__getOrderConfigurationDispatchReceiver:config:suspendHandler:"
+  - Selector: "Skie_Suspend__10__getOrderConfigurationDispatchReceiver:config:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__18__getOrderConfiguration(dispatchReceiver:config:suspendHandler:)"
+    SwiftName: "Skie_Suspend__10__getOrderConfiguration(dispatchReceiver:config:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7806,9 +10107,9 @@ Classes:
       Type: "SharedLogicPaymentApiConfig * _Nonnull"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__19__tokenizeApplePayDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__11__tokenizeApplePayDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__19__tokenizeApplePay(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__11__tokenizeApplePay(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7820,9 +10121,9 @@ Classes:
       Type: "SharedLogicApplePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__20__tokenizeGooglePayDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__12__tokenizeGooglePayDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__20__tokenizeGooglePay(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__12__tokenizeGooglePay(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7834,9 +10135,169 @@ Classes:
       Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__21__cancelDispatchReceiver:reason:suspendHandler:"
+  - Selector: "Skie_Suspend__13__invokeDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__21__cancel(dispatchReceiver:reason:suspendHandler:)"
+    SwiftName: "Skie_Suspend__13__invoke(dispatchReceiver:config:input:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicTokenizeApplePayUseCase * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__14__invokeDispatchReceiver:config:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__14__invoke(dispatchReceiver:config:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicGetOrderConfigurationUseCase * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__15__joinDispatchReceiver:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__15__join(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicKotlinx_coroutines_coreJob> _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__16__executeDispatchReceiver:context:subject:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__16__execute(dispatchReceiver:context:subject:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicKtor_utilsPipeline<id, id> * _Nonnull"
+    - Position: 1
+      Type: "id _Nonnull"
+    - Position: 2
+      Type: "id _Nonnull"
+    - Position: 3
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__17__invokeDispatchReceiver:p1:p2:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__17__invoke(dispatchReceiver:p1:p2:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicKotlinSuspendFunction2> _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
+    - Position: 2
+      Type: "id _Nullable"
+    - Position: 3
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__18__bodyDispatchReceiver:info:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__18__body(dispatchReceiver:info:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicKtor_utilsTypeInfo * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__19__bodyNullableDispatchReceiver:info:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__19__bodyNullable(dispatchReceiver:info:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicKtor_utilsTypeInfo * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__20__getResponseContentDispatchReceiver:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__20__getResponseContent(dispatchReceiver:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicKtor_client_coreHttpClientCall * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__21__awaitContentDispatchReceiver:min:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__21__awaitContent(dispatchReceiver:min:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicKtor_ioByteReadChannel> _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__22__executeDispatchReceiver:data:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__22__execute(dispatchReceiver:data:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicKtor_client_coreHttpClientEngine> _Nonnull"
+    - Position: 1
+      Type: "SharedLogicKtor_client_coreHttpRequestData * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__23__executeDispatchReceiver:request:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__23__execute(dispatchReceiver:request:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "id<SharedLogicNetworkTransport> _Nonnull"
+    - Position: 1
+      Type: "SharedLogicNetworkRequest * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__24__requestDispatchReceiver:endpoint:orderId:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__24__request(dispatchReceiver:endpoint:orderId:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicNetworkClient * _Nonnull"
+    - Position: 1
+      Type: "id<SharedLogicEndpoint> _Nonnull"
+    - Position: 2
+      Type: "NSString * _Nullable"
+    - Position: 3
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__25__submitDispatchReceiver:paymentToken:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__25__submit(dispatchReceiver:paymentToken:suspendHandler:)"
+    Availability: "nonswift"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicApplePayDemoViewModel * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
+  - Selector: "Skie_Suspend__26__cancelDispatchReceiver:reason:suspendHandler:"
+    MethodKind: "Class"
+    SwiftName: "Skie_Suspend__26__cancel(dispatchReceiver:reason:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7846,9 +10307,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__22__invokeDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__27__invokeDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__22__invoke(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__27__invoke(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7860,9 +10321,9 @@ Classes:
       Type: "SharedLogicCancelPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__23__submitNewCardDispatchReceiver:cvv:cardNumber:expiryMonth:expiryYear:nameOnCard:payerConsentForToken:suspendHandler:"
+  - Selector: "Skie_Suspend__28__submitNewCardDispatchReceiver:cvv:cardNumber:expiryMonth:expiryYear:nameOnCard:payerConsentForToken:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__23__submitNewCard(dispatchReceiver:cvv:cardNumber:expiryMonth:expiryYear:nameOnCard:payerConsentForToken:suspendHandler:)"
+    SwiftName: "Skie_Suspend__28__submitNewCard(dispatchReceiver:cvv:cardNumber:expiryMonth:expiryYear:nameOnCard:payerConsentForToken:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7882,9 +10343,9 @@ Classes:
       Type: "BOOL"
     - Position: 7
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__24__submitSavedCardDispatchReceiver:tokenIdentifier:cvv:suspendHandler:"
+  - Selector: "Skie_Suspend__29__submitSavedCardDispatchReceiver:tokenIdentifier:cvv:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__24__submitSavedCard(dispatchReceiver:tokenIdentifier:cvv:suspendHandler:)"
+    SwiftName: "Skie_Suspend__29__submitSavedCard(dispatchReceiver:tokenIdentifier:cvv:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7896,9 +10357,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__25__invokeDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__30__invokeDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__25__invoke(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__30__invoke(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7910,9 +10371,9 @@ Classes:
       Type: "SharedLogicCardPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__26__invokeDispatchReceiver:config:orderId:suspendHandler:"
+  - Selector: "Skie_Suspend__31__invokeDispatchReceiver:config:orderId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__26__invoke(dispatchReceiver:config:orderId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__31__invoke(dispatchReceiver:config:orderId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7924,35 +10385,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__27__invokeDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__32__loadDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__27__invoke(dispatchReceiver:config:input:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicTokenizeGooglePayUseCase * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
-    - Position: 3
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__28__invokeDispatchReceiver:config:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__28__invoke(dispatchReceiver:config:suspendHandler:)"
-    Availability: "nonswift"
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicGetOrderConfigurationUseCase * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 2
-      Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__29__loadDispatchReceiver:suspendHandler:"
-    MethodKind: "Class"
-    SwiftName: "Skie_Suspend__29__load(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__32__load(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7960,9 +10395,9 @@ Classes:
       Type: "SharedLogicOrderConfigurationDemoViewModel * _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__30__submitDispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:"
+  - Selector: "Skie_Suspend__33__submitDispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__30__submit(dispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:)"
+    SwiftName: "Skie_Suspend__33__submit(dispatchReceiver:paymentMethodDataJson:apiVersion:apiVersionMinor:payerConsentForToken:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7978,9 +10413,9 @@ Classes:
       Type: "BOOL"
     - Position: 5
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__31__fetchDispatchReceiver:orderIdOverride:suspendHandler:"
+  - Selector: "Skie_Suspend__34__fetchDispatchReceiver:orderIdOverride:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__31__fetch(dispatchReceiver:orderIdOverride:suspendHandler:)"
+    SwiftName: "Skie_Suspend__34__fetch(dispatchReceiver:orderIdOverride:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -7990,9 +10425,9 @@ Classes:
       Type: "NSString * _Nullable"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__32__addCardPaymentInfoDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__35__addCardPaymentInfoDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__32__addCardPaymentInfo(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__35__addCardPaymentInfo(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8004,9 +10439,9 @@ Classes:
       Type: "SharedLogicCardPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__33__cancelPaymentDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__36__cancelPaymentDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__33__cancelPayment(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__36__cancelPayment(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8018,9 +10453,9 @@ Classes:
       Type: "SharedLogicCancelPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__34__fetchOrderStatusDispatchReceiver:config:orderId:suspendHandler:"
+  - Selector: "Skie_Suspend__37__fetchOrderStatusDispatchReceiver:config:orderId:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__34__fetchOrderStatus(dispatchReceiver:config:orderId:suspendHandler:)"
+    SwiftName: "Skie_Suspend__37__fetchOrderStatus(dispatchReceiver:config:orderId:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8032,9 +10467,9 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__35__getOrderConfigurationDispatchReceiver:config:suspendHandler:"
+  - Selector: "Skie_Suspend__38__getOrderConfigurationDispatchReceiver:config:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__35__getOrderConfiguration(dispatchReceiver:config:suspendHandler:)"
+    SwiftName: "Skie_Suspend__38__getOrderConfiguration(dispatchReceiver:config:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8044,9 +10479,9 @@ Classes:
       Type: "SharedLogicPaymentApiConfig * _Nonnull"
     - Position: 2
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__36__tokenizeApplePayDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__39__tokenizeApplePayDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__36__tokenizeApplePay(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__39__tokenizeApplePay(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8058,9 +10493,9 @@ Classes:
       Type: "SharedLogicApplePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__37__tokenizeGooglePayDispatchReceiver:config:input:suspendHandler:"
+  - Selector: "Skie_Suspend__40__tokenizeGooglePayDispatchReceiver:config:input:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__37__tokenizeGooglePay(dispatchReceiver:config:input:suspendHandler:)"
+    SwiftName: "Skie_Suspend__40__tokenizeGooglePay(dispatchReceiver:config:input:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8072,9 +10507,9 @@ Classes:
       Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
     - Position: 3
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__38__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
+  - Selector: "Skie_Suspend__41__upgradeDispatchReceiver:input:output:engineContext:userContext:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__38__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
+    SwiftName: "Skie_Suspend__41__upgrade(dispatchReceiver:input:output:engineContext:userContext:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8090,9 +10525,9 @@ Classes:
       Type: "id<SharedLogicKotlinCoroutineContext> _Nonnull"
     - Position: 5
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__39__flushDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__42__flushDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__39__flush(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__42__flush(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8100,9 +10535,9 @@ Classes:
       Type: "id<SharedLogicKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__40__flushAndCloseDispatchReceiver:suspendHandler:"
+  - Selector: "Skie_Suspend__43__flushAndCloseDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__40__flushAndClose(dispatchReceiver:suspendHandler:)"
+    SwiftName: "Skie_Suspend__43__flushAndClose(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8110,9 +10545,9 @@ Classes:
       Type: "id<SharedLogicKtor_ioByteWriteChannel> _Nonnull"
     - Position: 1
       Type: "SharedLogicSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__41__writeToDispatchReceiver:channel:suspendHandler:"
+  - Selector: "Skie_Suspend__44__writeToDispatchReceiver:channel:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__41__writeTo(dispatchReceiver:channel:suspendHandler:)"
+    SwiftName: "Skie_Suspend__44__writeTo(dispatchReceiver:channel:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -8554,7 +10989,7 @@ Protocols:
     Parameters:
     - Position: 0
       Type: "id<SharedLogicKotlinx_coroutines_coreChildJob> _Nonnull"
-  - Selector: "cancelCause_:"
+  - Selector: "cancelCause:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"
@@ -8704,6 +11139,108 @@ Protocols:
   SwiftName: "Kotlinx_coroutines_coreSelectClause1"
 - Name: "SharedLogicKotlinx_coroutines_coreSelectClause2"
   SwiftName: "Kotlinx_coroutines_coreSelectClause2"
+- Name: "SharedLogicPaymentOperationResult"
+  SwiftName: "PaymentOperationResult"
+- Name: "SharedLogicIPaymentOrderRepository"
+  SwiftName: "IPaymentOrderRepository"
+  Methods:
+  - Selector: "addCardPaymentInfoConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__addCardPaymentInfo(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicCardPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+  - Selector: "cancelPaymentConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__cancelPayment(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicCancelPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+  - Selector: "fetchOrderStatusConfig:orderId:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__fetchOrderStatus(config:orderId:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+  - Selector: "getOrderConfigurationConfig:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__getOrderConfiguration(config:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+  - Selector: "tokenizeApplePayConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__tokenizeApplePay(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+  - Selector: "tokenizeGooglePayConfig:input:completionHandler:"
+    MethodKind: "Instance"
+    SwiftName: "__tokenizeGooglePay(config:input:completionHandler:)"
+    SwiftPrivate: true
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "SharedLogicPaymentApiConfig * _Nonnull"
+    - Position: 1
+      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
+    - Position: 2
+      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
+- Name: "SharedLogicIThemeTokenRepository"
+  SwiftName: "IThemeTokenRepository"
+  Properties:
+  - Name: "catalog"
+    PropertyKind: "Instance"
+    SwiftName: "catalog"
+    Type: "SharedLogicThemeTokenCatalog * _Nonnull"
+  - Name: "isRemoteActive"
+    PropertyKind: "Instance"
+    SwiftName: "isRemoteActive"
+    Type: "BOOL"
+  Methods:
+  - Selector: "applyRemoteTokensCustomizableJson:foundationJson:"
+    MethodKind: "Instance"
+    SwiftName: "applyRemoteTokens(customizableJson:foundationJson:)"
+    ResultType: "id<SharedLogicRemoteTokenResult> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "NSString * _Nonnull"
+  - Selector: "resetToLocal"
+    MethodKind: "Instance"
+    SwiftName: "resetToLocal()"
+    ResultType: "void"
+- Name: "SharedLogicRemoteTokenResult"
+  SwiftName: "RemoteTokenResult"
 - Name: "SharedLogicSdkFailureDelegate"
   SwiftName: "SdkFailureDelegate"
   Methods:
@@ -8826,81 +11363,6 @@ Protocols:
   SwiftName: "NetworkResult"
 - Name: "SharedLogicNetworkError"
   SwiftName: "NetworkError"
-- Name: "SharedLogicPaymentOperationResult"
-  SwiftName: "PaymentOperationResult"
-- Name: "SharedLogicIPaymentOrderRepository"
-  SwiftName: "IPaymentOrderRepository"
-  Methods:
-  - Selector: "addCardPaymentInfoConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__addCardPaymentInfo(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicCardPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-  - Selector: "cancelPaymentConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__cancelPayment(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicCancelPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-  - Selector: "fetchOrderStatusConfig:orderId:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__fetchOrderStatus(config:orderId:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-  - Selector: "getOrderConfigurationConfig:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__getOrderConfiguration(config:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-  - Selector: "tokenizeApplePayConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__tokenizeApplePay(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicApplePayPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
-  - Selector: "tokenizeGooglePayConfig:input:completionHandler:"
-    MethodKind: "Instance"
-    SwiftName: "__tokenizeGooglePay(config:input:completionHandler:)"
-    SwiftPrivate: true
-    ResultType: "void"
-    Parameters:
-    - Position: 0
-      Type: "SharedLogicPaymentApiConfig * _Nonnull"
-    - Position: 1
-      Type: "SharedLogicGooglePayPaymentInput * _Nonnull"
-    - Position: 2
-      Type: "void (^ _Nonnull)(id<SharedLogicPaymentOperationResult> _Nullable, NSError * _Nullable)"
 - Name: "SharedLogicCardBrandDetector"
   SwiftName: "CardBrandDetector"
   Properties:
@@ -10045,7 +12507,7 @@ Protocols:
       Type: "int32_t"
     - Position: 1
       Type: "void (^ _Nonnull)(SharedLogicBoolean * _Nullable, NSError * _Nullable)"
-  - Selector: "cancelCause:"
+  - Selector: "cancelCause_:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"
@@ -10075,7 +12537,7 @@ Protocols:
     SwiftName: "writeBuffer"
     Type: "id<SharedLogicKotlinx_io_coreSink> _Nonnull"
   Methods:
-  - Selector: "cancelCause:"
+  - Selector: "cancelCause_:"
     MethodKind: "Instance"
     SwiftName: "cancel(cause:)"
     ResultType: "void"
